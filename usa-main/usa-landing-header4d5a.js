@@ -4008,7 +4008,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
     p3 = ["href"],
     f3 = ["src", "alt"],
     u3 = { class: "app-footer__bottom-label" },
-    d3 = d("div", { class: "desktop" }, "© Code Campus, 2025", -1),
+    d3 = d("div", { class: "desktop" }, "Â© Code Campus, 2025", -1),
     h3 = ["href"],
     m3 = d(
       "a",
@@ -4016,7 +4016,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
       "Manage cookies",
       -1
     ),
-    g3 = d("div", { class: "mobile spacing-top" }, "© Code Campus, 2025", -1),
+    g3 = d("div", { class: "mobile spacing-top" }, "Â© Code Campus, 2025", -1),
     H3 = G({
       __name: "AppFooter",
       setup(e) {
@@ -4055,7 +4055,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
                 href: "https://tripleten.com/sql/",
               },
               {
-                title: "Can’t decide? Take a career quiz!",
+                title: "Canâ€™t decide? Take a career quiz!",
                 href: "https://tripleten.com/quiz/career-quiz-nc/?form_position=footer",
               },
             ],
@@ -4646,7 +4646,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
   const Y3 = v0(D3, [["render", L3]]),
     O3 = ["href"],
     R3 = ["src"],
-    F3 = { href: "/Code-Campus/code-campus/index.html", class: "logo-svg" },
+    F3 = { href: "/index.html", class: "logo-svg" },
     U3 = ["src"],
     W3 = ["href"],
     G3 = ["src"],
@@ -4715,7 +4715,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
                             key: 0,
                             href:
                               t.partnerLogoHref ??
-                              "/Code-Campus/code-campus/index.html",
+                              "/index.html",
                             class: "header__logo-practicum__alt",
                           },
                           [d("img", { src: i.value }, null, 8, R3)],
@@ -5802,13 +5802,13 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
       {
         title: "Programs",
         children: [
-          { title: "AI Automation", href: "/Code-Campus/code-campus/ai-automation/index.html" },
-          { title: "Business Intelligence Analytics", href: "/Code-Campus/code-campus/bi/index.html" },
-          { title: "Cyber Security", href: "/Code-Campus/code-campus/cybersecurity/index.html" },
-          { title: "Data Science", href: "/Code-Campus/code-campus/data-science/index.html" },
-          { title: "Software Engineering", href: "/Code-Campus/code-campus/software-engineer/index.html" },
-          { title: "Quality Assurance", href: "/Code-Campus/code-campus/qa-engineer/index.html" },
-          { title: "UX/UI Design", href: "/Code-Campus/code-campus/uxui-design/index.html" },
+          { title: "AI Automation", href: "/ai-automation/index.html" },
+          { title: "Business Intelligence Analytics", href: "/bi/index.html" },
+          { title: "Cyber Security", href: "/cybersecurity/index.html" },
+          { title: "Data Science", href: "/data-science/index.html" },
+          { title: "Software Engineering", href: "/software-engineer/index.html" },
+          { title: "Quality Assurance", href: "/qa-engineer/index.html" },
+          { title: "UX/UI Design", href: "/uxui-design/index.html" },
           {
             title: "Not sure? Take our career quiz!",
             icon: "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20fill='none'%3e%3cpath%20fill='%23E96E3A'%20d='M6.485%2011.424A3%203%200%200%200%204.581%209.52l-2.43-.805c-.686-.228-.686-1.197%200-1.424l2.43-.806a3%203%200%200%200%201.904-1.904l.806-2.43c.227-.686%201.196-.686%201.424%200l.805%202.43a3%203%200%200%200%201.904%201.904l2.43.806c.686.227.686%201.196%200%201.424l-2.43.805a3%203%200%200%200-1.904%201.904l-.805%202.43c-.228.686-1.197.686-1.424%200zm10.528%202.957a2%202%200%200%200-1.406-1.406l-1.836-.498c-.492-.134-.492-.832%200-.965l1.836-.499a2%202%200%200%200%201.406-1.406l.499-1.836c.133-.492.831-.492.965%200l.498%201.836a2%202%200%200%200%201.406%201.406l1.836.499c.492.133.492.831%200%20.965l-1.836.498a2%202%200%200%200-1.406%201.406l-.498%201.836c-.134.492-.832.492-.965%200zm-6.634%204.537a1%201%200%200%201%20.703.703l.435%201.602c.134.492.832.492.966%200l.435-1.602a1%201%200%200%201%20.703-.703l1.602-.435c.492-.134.492-.832%200-.966l-1.602-.435a1%201%200%200%201-.703-.703l-.435-1.602c-.134-.492-.832-.492-.966%200l-.435%201.602a1%201%200%200%201-.703.703l-1.602.435c-.492.134-.492.832%200%20.966z'/%3e%3c/svg%3e",
@@ -5819,62 +5819,62 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
       {
         title: "Why Code Campus",
         children: [
-          { title: "2025 Outcomes report", href: "/Code-Campus/code-campus/outcomes/index.html" },
+          { title: "2025 Outcomes report", href: "/outcomes/index.html" },
           {
             title: "Flexible payment options",
-            href: "/Code-Campus/code-campus/about/payment-options/index.html",
+            href: "/about/payment-options/index.html",
           },
           {
             title: "1000+ successful graduates",
-            href: "/Code-Campus/code-campus/about/student-success/index.html",
+            href: "/about/student-success/index.html",
           },
-          { title: "Real industry experience", href: "/Code-Campus/code-campus/externships/index.html" },
-          { title: "One-on-one support", href: "/Code-Campus/code-campus/team/index.html" },
-          { title: "Student reviews", href: "/Code-Campus/code-campus/reviews/index.html" },
+          { title: "Real industry experience", href: "/externships/index.html" },
+          { title: "One-on-one support", href: "/team/index.html" },
+          { title: "Student reviews", href: "/reviews/index.html" },
         ],
       },
       {
         title: "Resources",
         children: [
-          { title: "About Code Campus", href: "/Code-Campus/code-campus/about/index.html" },
-          { title: "Free SQL Bootcamp", href: "/Code-Campus/code-campus/sql/index.html" },
-          { title: "FAQ", href: "/Code-Campus/code-campus/faq/index.html" },
-          { title: "Podcast", href: "/Code-Campus/code-campus/special/podcast/index.html" },
-          { title: "Career Webinar", href: "/Code-Campus/code-campus/special/webinar-tech-career/index.html" },
+          { title: "About Code Campus", href: "/about/index.html" },
+          { title: "Free SQL Bootcamp", href: "/sql/index.html" },
+          { title: "FAQ", href: "/faq/index.html" },
+          { title: "Podcast", href: "/special/podcast/index.html" },
+          { title: "Career Webinar", href: "/special/webinar-tech-career/index.html" },
           {
             title: "Report: Employer Secrets for Success",
-            href: "/Code-Campus/code-campus/blog/employer-secrets-for-success.html",
+            href: "/blog/employer-secrets-for-success.html",
           },
         ],
       },
-      { title: "Blog", href: "/Code-Campus/code-campus/blog/index.html" },
+      { title: "Blog", href: "/blog/index.html" },
     ],
     pl = [
       {
         title: "Why Code Campus?",
         children: [
-          { title: "2025 Outcomes report", href: "/Code-Campus/code-campus/outcomes/index.html" },
+          { title: "2025 Outcomes report", href: "/outcomes/index.html" },
           {
             title: "Flexible payment options",
-            href: "/Code-Campus/code-campus/about/payment-options/index.html",
+            href: "/about/payment-options/index.html",
           },
           {
             title: "1000+ successful graduates",
-            href: "/Code-Campus/code-campus/about/student-success/index.html",
+            href: "/about/student-success/index.html",
           },
-          { title: "Real industry experience", href: "/Code-Campus/code-campus/externships/index.html" },
-          { title: "One-on-one support", href: "/Code-Campus/code-campus/team/index.html" },
-          { title: "Student reviews", href: "/Code-Campus/code-campus/reviews/index.html" },
+          { title: "Real industry experience", href: "/externships/index.html" },
+          { title: "One-on-one support", href: "/team/index.html" },
+          { title: "Student reviews", href: "/reviews/index.html" },
         ],
       },
       {
         title: "Resources",
         children: [
-          { title: "Free SQL Bootcamp", href: "/Code-Campus/code-campus/sql/index.html" },
-          { title: "FAQ", href: "/Code-Campus/code-campus/faq/index.html" },
+          { title: "Free SQL Bootcamp", href: "/sql/index.html" },
+          { title: "FAQ", href: "/faq/index.html" },
         ],
       },
-      { title: "Blog", href: "/Code-Campus/code-campus/blog/index.html" },
+      { title: "Blog", href: "/blog/index.html" },
     ],
     fl = [
       { title: "Programs", place: "left", children: M2[0].children },
@@ -6288,9 +6288,9 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
             t.popup || N(o).class === "may-offer"
               ? (h(),
                 b("div", ea, [
-                  Q(" Book a call with an advisor by "),
+                  Q(" Book a call with anÂ advisor by "),
                   d("span", ta, F(N(o).date), 1),
-                  Q(" to take "),
+                  Q(" toÂ take "),
                   Z(C2),
                   Q(),
                   N(o).class !== "july-offer" ? (h(), b("br", oa)) : U("", !0),
@@ -6298,9 +6298,9 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
                 ]))
               : (h(),
                 b("div", na, [
-                  Q(" Book a call with an advisor by "),
+                  Q(" Book a call with anÂ advisor by "),
                   d("span", ia, F(N(o).date), 1),
-                  Q(" to take " + F(N(o).discount) + "% off your tuition! ", 1),
+                  Q(" toÂ take " + F(N(o).discount) + "% off your tuition! ", 1),
                 ])),
           ])
         );
@@ -6741,9 +6741,9 @@ This offer is available to new students who enroll in the upfront and monthly pa
                 d(
                   "div",
                   Ia,
-                  " Book a call with an advisor by " +
+                  " Book a call with anÂ advisor by " +
                     F(N(t).date) +
-                    " to claim offer! ",
+                    " toÂ claim offer! ",
                   1
                 ),
                 Z(Xt),
@@ -6863,7 +6863,7 @@ This offer is available to new students who enroll in the upfront and monthly pa
       {
         class: "cta-block__label-img",
         src: Ja,
-        alt: "It’s Code Campus’s birthday!",
+        alt: "Itâ€™s Code Campusâ€™s birthday!",
       },
       null,
       -1
@@ -6873,7 +6873,7 @@ This offer is available to new students who enroll in the upfront and monthly pa
       {
         class: "cta-block__label-img mobile",
         src: Xa,
-        alt: "It’s Code Campus’s birthday!",
+        alt: "Itâ€™s Code Campusâ€™s birthday!",
       },
       null,
       -1
@@ -6896,9 +6896,9 @@ This offer is available to new students who enroll in the upfront and monthly pa
                   ? (h(), b(L, { key: 0 }, [qa, Ka], 64))
                   : U("", !0),
                 d("div", _a, [
-                  Q(" Book a call with an advisor by " + F(N(t).date), 1),
+                  Q(" Book a call with anÂ advisor by " + F(N(t).date), 1),
                   $a,
-                  Q(" to take "),
+                  Q(" toÂ take "),
                   Z(C2),
                   Q(" your tuition! "),
                 ]),
@@ -6940,11 +6940,11 @@ This offer is available to new students who enroll in the upfront and monthly pa
                 d("div", e9, [
                   Q(" Book a call with "),
                   t9,
-                  Q("an advisor "),
+                  Q("anÂ advisor "),
                   d("span", o9, "by " + F(N(t).date), 1),
                   Q(),
                   n9,
-                  Q(" to take "),
+                  Q(" toÂ take "),
                   Z(C2, { class: "small-tablet" }),
                   Q(" your tuition! "),
                 ]),
@@ -7041,7 +7041,7 @@ This offer is available to new students who enroll in the upfront and monthly pa
     H9 = d(
       "div",
       { class: "prices-block__title" },
-      "The most affordable way into tech–only at Code Campus",
+      "The most affordable way into techâ€“only at Code Campus",
       -1
     ),
     x9 = d(
@@ -7097,7 +7097,7 @@ This offer is available to new students who enroll in the upfront and monthly pa
               subtitle: "save up to $3,170",
               labelIcon: i9,
               label: "The best price",
-              text: "We offer a great deal across all our bootcamps when you pay upfront. There’s no risk—you can withdraw with a 100% refund in your first 2 weeks.",
+              text: "We offer a great deal across all our bootcamps when you pay upfront. Thereâ€™s no riskâ€”you can withdraw with a 100% refund in your first 2 weeks.",
             },
             {
               title: "Code Campus installments",
@@ -7110,7 +7110,7 @@ This offer is available to new students who enroll in the upfront and monthly pa
               text: `${
                 ((i = t.prices) == null ? void 0 : i[1].deposit) ??
                 "$600 deposit"
-              }, preapproved—no credit check req'd, 0% interest!
+              }, preapprovedâ€”no credit check req'd, 0% interest!
 
 Multiple installment options available. Book a call to learn more!`,
             },
@@ -7121,7 +7121,7 @@ Multiple installment options available. Book a call to learn more!`,
               labelIcon: s9,
               label: "Learn now, pay later",
               perMonth: !0,
-              text: "Work with one of our financing partners to finance your new career move! Credit check req’d.",
+              text: "Work with one of our financing partners to finance your new career move! Credit check reqâ€™d.",
               rich: !0,
             },
           ];
@@ -7278,7 +7278,7 @@ Multiple installment options available. Book a call to learn more!`,
     tc = d(
       "div",
       { class: "prices-short-block__subtitle" },
-      " Book a call with an advisor to find a payment option or special offer that works for you! ",
+      " Book a call with anÂ advisor to find a payment option or special offer that works for you! ",
       -1
     ),
     Ne = G({
@@ -7288,7 +7288,7 @@ Multiple installment options available. Book a call to learn more!`,
         const t = e,
           o = H0("commonProps"),
           n = [
-            { title: "Upfront", text: "Best deal—save up to $3,170!" },
+            { title: "Upfront", text: "Best dealâ€”save up to $3,170!" },
             {
               title: "Learn now, pay later",
               text: "Payments vary by credit score",
@@ -7333,7 +7333,7 @@ Multiple installment options available. Book a call to learn more!`,
                     null,
                     F(
                       t.text ??
-                        "$600 deposit, preapproved—no credit check req'd, 0% interest!"
+                        "$600 deposit, preapprovedâ€”no credit check req'd, 0% interest!"
                     ),
                     1
                   ),
