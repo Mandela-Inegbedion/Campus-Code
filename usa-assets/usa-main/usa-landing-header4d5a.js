@@ -4008,7 +4008,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
     p3 = ["href"],
     f3 = ["src", "alt"],
     u3 = { class: "app-footer__bottom-label" },
-    d3 = d("div", { class: "desktop" }, "Â© Code Campus International, 2026", -1),
+    d3 = d("div", { class: "desktop" }, "© Code Campus International, 2026", -1),
     h3 = ["href"],
     m3 = d(
       "a",
@@ -4016,7 +4016,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
       "Manage cookies",
       -1
     ),
-    g3 = d("div", { class: "mobile spacing-top" }, "Â© Code Campus International, 2026", -1),
+    g3 = d("div", { class: "mobile spacing-top" }, "© Code Campus International, 2026", -1),
     H3 = G({
       __name: "AppFooter",
       setup(e) {
@@ -6285,9 +6285,9 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
             t.popup || N(o).class === "may-offer"
               ? (h(),
                 b("div", ea, [
-                  Q(" Book a call with anÂ advisor by "),
+                  Q(" Book a call with an advisor by "),
                   d("span", ta, F(N(o).date), 1),
-                  Q(" toÂ take "),
+                  Q(" to take "),
                   Z(C2),
                   Q(),
                   N(o).class !== "july-offer" ? (h(), b("br", oa)) : U("", !0),
@@ -6295,9 +6295,9 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
                 ]))
               : (h(),
                 b("div", na, [
-                  Q(" Book a call with anÂ advisor by "),
+                  Q(" Book a call with an advisor by "),
                   d("span", ia, F(N(o).date), 1),
-                  Q(" toÂ take " + F(N(o).discount) + "% off your tuition! ", 1),
+                  Q(" to take " + F(N(o).discount) + "% off your tuition! ", 1),
                 ])),
           ])
         );
@@ -6738,9 +6738,9 @@ This offer is available to new students who enroll in the upfront and monthly pa
                 d(
                   "div",
                   Ia,
-                  " Book a call with anÂ advisor by " +
+                  " Book a call with an advisor by " +
                     F(N(t).date) +
-                    " toÂ claim offer! ",
+                    " to claim offer! ",
                   1
                 ),
                 Z(Xt),
@@ -6893,9 +6893,9 @@ This offer is available to new students who enroll in the upfront and monthly pa
                   ? (h(), b(L, { key: 0 }, [qa, Ka], 64))
                   : U("", !0),
                 d("div", _a, [
-                  Q(" Book a call with anÂ advisor by " + F(N(t).date), 1),
+                  Q(" Book a call with an advisor by " + F(N(t).date), 1),
                   $a,
-                  Q(" toÂ take "),
+                  Q(" to take "),
                   Z(C2),
                   Q(" your tuition! "),
                 ]),
@@ -6937,11 +6937,11 @@ This offer is available to new students who enroll in the upfront and monthly pa
                 d("div", e9, [
                   Q(" Book a call with "),
                   t9,
-                  Q("anÂ advisor "),
+                  Q("an advisor "),
                   d("span", o9, "by " + F(N(t).date), 1),
                   Q(),
                   n9,
-                  Q(" toÂ take "),
+                  Q(" to take "),
                   Z(C2, { class: "small-tablet" }),
                   Q(" your tuition! "),
                 ]),
@@ -7275,7 +7275,7 @@ Multiple installment options available. Book a call to learn more!`,
     tc = d(
       "div",
       { class: "prices-short-block__subtitle" },
-      " Book a call with anÂ advisor to find a payment option or special offer that works for you! ",
+      " Book a call with an advisor to find a payment option or special offer that works for you! ",
       -1
     ),
     Ne = G({
