@@ -4139,12 +4139,12 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
           o = [
             {
               title: "Facebook",
-              href: "https://www.facebook.com/tripleten.tech",
+              href: "https://www.facebook.com/share/1A4Wd5Axyz/?mibextid=wwXIfr",
               icon: Fr,
             },
             {
               title: "Instagram",
-              href: "https://www.instagram.com/tripleten.tech/",
+              href: "https://www.instagram.com/codecampusng?igsh=dm53cmQ3dHZyYjdi&utm_source=qr",
               icon: Ur,
             },
             {
