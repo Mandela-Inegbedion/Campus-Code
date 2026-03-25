@@ -3995,20 +3995,20 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
     e3 = d("div", { class: "title" }, "Beginner-friendly tech bootcamps", -1),
     t3 = ["href"],
     o3 = { class: "app-footer__column" },
-    n3 = d("div", { class: "title" }, "Why TripleTen", -1),
+    n3 = d("div", { class: "title" }, "Why Code Campus", -1),
     i3 = ["href"],
     r3 = { class: "app-footer__column" },
-    s3 = d("div", { class: "title" }, "About TripleTen", -1),
+    s3 = d("div", { class: "title" }, "About Code Campus", -1),
     l3 = ["href"],
     a3 = Dt(
-      '<div class="app-footer__column two-columns hide-mobile"></div><div class="app-footer__column"><a class="title label" href="mailto:support@tripleten.com">support@tripleten.com</a><div class="subtitle">For all your questions</div><a class="title label spacing-top" href="mailto:press@tripleten.com">press@tripleten.com</a><div class="subtitle">For all media inquiries</div></div><div class="app-footer__column"><a class="title label" href="tel:18007364461">+1 (800) 736-4461</a><div class="subtitle">9amâ€“8pm ET, Mon-Thu <br>9amâ€“6pm ET, Fri-Sun</div><div class="subtitle spacing-top">1603 Capitol Ave, SuiteÂ #512A, Cheyenne, WY 82001</div></div>',
+      '<div class="app-footer__column"><div class="title label">Location</div><div class="subtitle">Abuja</div><div class="subtitle spacing-top">DBM Plaza, Suite 207, Aminu Kano Crescent, Wuse 2.</div></div><div class="app-footer__column"><a class="title label" href="mailto:info@codecampus.com.ng">info@codecampus.com.ng</a><div class="subtitle">For all your questions</div><a class="title label spacing-top" href="mailto:enquiries@codecampus.com.ng">enquiries@codecampus.com.ng</a><div class="subtitle">For all media inquiries</div></div><div class="app-footer__column"><div class="title label">Phone</div><div class="subtitle">+ (234) 817 282 0839</div><div class="subtitle">+ (234) 817 282 0869</div><div class="subtitle spacing-top">+ (234) 817 282 0899</div></div>',
       3
     ),
     c3 = { class: "app-footer__social-media desktop" },
     p3 = ["href"],
     f3 = ["src", "alt"],
     u3 = { class: "app-footer__bottom-label" },
-    d3 = d("div", { class: "desktop" }, "Â© TripleTen, 2025", -1),
+    d3 = d("div", { class: "desktop" }, "Â© Code Campus International, 2026", -1),
     h3 = ["href"],
     m3 = d(
       "a",
@@ -4016,7 +4016,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
       "Manage cookies",
       -1
     ),
-    g3 = d("div", { class: "mobile spacing-top" }, "Â© TripleTen, 2025", -1),
+    g3 = d("div", { class: "mobile spacing-top" }, "Â© Code Campus International, 2026", -1),
     H3 = G({
       __name: "AppFooter",
       setup(e) {
@@ -5814,7 +5814,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
         ],
       },
       {
-        title: "Why TripleTen",
+        title: "Why Code Campus",
         children: [
           { title: "2025 Outcomes report", href: "/outcomes/index.html" },
           {
@@ -5833,7 +5833,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
       {
         title: "Resources",
         children: [
-          { title: "About TripleTen", href: "/about/index.html" },
+          { title: "About Code Campus", href: "/about/index.html" },
           { title: "Free SQL Bootcamp", href: "/sql/index.html" },
           { title: "FAQ", href: "/faq/index.html" },
           { title: "Podcast", href: "/special/podcast/index.html" },
@@ -5848,7 +5848,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
     ],
     pl = [
       {
-        title: "Why TripleTen",
+        title: "Why Code Campus",
         children: [
           { title: "2025 Outcomes report", href: "/outcomes/index.html" },
           {
