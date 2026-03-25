@@ -4683,7 +4683,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
           Uo(r, (l) => {
             if (!r.value) return;
             const a = r.value.children[0].clientWidth;
-            s.value = Math.min(l[0].contentRect.width / a, 1);
+            s.value = Math.min(Math.max(l[0].contentRect.width - 56, 0) / a, 1);
           }),
           (l, a) => (
             h(),
@@ -6621,13 +6621,13 @@ This offer is available to new students who enroll in the upfront and monthly pa
     Aa = d("div", { class: "app-offer-july__backing" }, null, -1),
     va = d(
       "img",
-      { src: '', height: "90", alt: "Decoration", class: "decoration-left" },
+      { src: gl, height: "90", alt: "Decoration", class: "decoration-left" },
       null,
       -1
     ),
     ya = d(
       "img",
-      { src: '', height: "90", alt: "Decoration", class: "decoration-right" },
+      { src: Hl, height: "90", alt: "Decoration", class: "decoration-right" },
       null,
       -1
     ),
@@ -6635,7 +6635,7 @@ This offer is available to new students who enroll in the upfront and monthly pa
       "img",
       {
         class: "app-offer-july__title",
-        src: '',
+        src: xl,
         alt: "A Gift for You on Our Birthday!",
       },
       null,
