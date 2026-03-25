@@ -4001,7 +4001,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
     s3 = d("div", { class: "title" }, "About Code Campus", -1),
     l3 = ["href"],
     a3 = Dt(
-      '<div class="app-footer__column"><div class="title label">Location</div><div class="subtitle">Abuja</div><div class="subtitle spacing-top">DBM Plaza, Suite 207, Aminu Kano Crescent, Wuse 2.</div></div><div class="app-footer__column"><a class="title label" href="mailto:info@codecampus.com.ng">info@codecampus.com.ng</a><div class="subtitle">For all your questions</div><a class="title label spacing-top" href="mailto:enquiries@codecampus.com.ng">enquiries@codecampus.com.ng</a><div class="subtitle">For all media inquiries</div></div><div class="app-footer__column"><div class="title label">Phone</div><div class="subtitle">+ (234) 817 282 0839</div><div class="subtitle">+ (234) 817 282 0869</div><div class="subtitle spacing-top">+ (234) 817 282 0899</div></div>',
+      '<div class="app-footer__column"><div class="title label">Location</div><div class="subtitle">Abuja</div><div class="subtitle spacing-top">DBM Plaza, Suite 207, Aminu Kano Crescent, Wuse 2.</div></div><div class="app-footer__column"><a class="title label" href="mailto:info@codecampus.com.ng">info@codecampus.com.ng</a><a class="title label spacing-top" href="mailto:enquiries@codecampus.com.ng">enquiries@codecampus.com.ng</a></div><div class="app-footer__column"><div class="title label">Phone</div><div class="subtitle">+ (234) 817 282 0839</div><div class="subtitle">+ (234) 817 282 0869</div><div class="subtitle spacing-top">+ (234) 817 282 0899</div></div>',
       3
     ),
     c3 = { class: "app-footer__social-media desktop" },
