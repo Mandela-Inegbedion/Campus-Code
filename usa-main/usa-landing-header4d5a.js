@@ -5797,13 +5797,8 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
           { title: "FAQ", href: "/faq/index.html" },
           { title: "Podcast", href: "/special/podcast/index.html" },
           { title: "Career Webinar", href: "/special/webinar-tech-career/index.html" },
-          {
-            title: "Report: Employer Secrets for Success",
-            href: "/blog/employer-secrets-for-success.html",
-          },
         ],
       },
-      { title: "Blog", href: "/blog/index.html" },
     ],
     pl = [
       {
@@ -5830,7 +5825,6 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
           { title: "FAQ", href: "/faq/index.html" },
         ],
       },
-      { title: "Blog", href: "/blog/index.html" },
     ],
     fl = [
       { title: "Programs", place: "left", children: M2[0].children },
