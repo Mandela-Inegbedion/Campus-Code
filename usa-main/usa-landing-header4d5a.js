@@ -5775,14 +5775,9 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
       {
         title: "Why Code Campus",
         children: [
-          { title: "2025 Outcomes report", href: "/outcomes/index.html" },
           {
             title: "Flexible payment options",
             href: "/about/payment-options/index.html",
-          },
-          {
-            title: "1000+ successful graduates",
-            href: "/about/student-success/index.html",
           },
           { title: "Real industry experience", href: "/externships/index.html" },
           { title: "One-on-one support", href: "/team/index.html" },
@@ -5802,14 +5797,9 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
       {
         title: "Why Code Campus?",
         children: [
-          { title: "2025 Outcomes report", href: "/outcomes/index.html" },
           {
             title: "Flexible payment options",
             href: "/about/payment-options/index.html",
-          },
-          {
-            title: "1000+ successful graduates",
-            href: "/about/student-success/index.html",
           },
           { title: "Real industry experience", href: "/externships/index.html" },
           { title: "One-on-one support", href: "/team/index.html" },
