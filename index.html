@@ -25433,6 +25433,126 @@ ${el.id} {
             <div class="t123">
                 <div class="t-container_100 ">
                     <div class="t-width t-width_100 "> <!-- nominify begin -->
+                        <style>
+                            .cta-form-fallback {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                gap: 20px;
+                                min-height: 520px;
+                                padding: 40px 32px;
+                                box-sizing: border-box;
+                                font-family: Suisse Intl, Arial, sans-serif;
+                                color: #1a1a1a;
+                            }
+
+                            .cta-form-fallback__eyebrow {
+                                margin: 0;
+                                font-size: 13px;
+                                font-weight: 600;
+                                letter-spacing: 0.08em;
+                                text-transform: uppercase;
+                                color: rgba(0, 0, 0, 0.55);
+                            }
+
+                            .cta-form-fallback__title {
+                                margin: 0;
+                                font-size: 36px;
+                                line-height: 1.04;
+                                letter-spacing: -0.02em;
+                                font-weight: 600;
+                            }
+
+                            .cta-form-fallback__group {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+                            }
+
+                            .cta-form-fallback__label {
+                                margin: 0;
+                                font-size: 13px;
+                                font-weight: 600;
+                                letter-spacing: 0.08em;
+                                text-transform: uppercase;
+                                color: rgba(0, 0, 0, 0.55);
+                            }
+
+                            .cta-form-fallback__link,
+                            .cta-form-fallback__phone {
+                                display: block;
+                                width: fit-content;
+                                font-size: 24px;
+                                line-height: 1.2;
+                                font-weight: 500;
+                                color: #1a1a1a;
+                                text-decoration: none;
+                                word-break: break-word;
+                            }
+
+                            .cta-form-fallback__actions {
+                                display: flex;
+                                flex-wrap: wrap;
+                                gap: 12px;
+                            }
+
+                            .cta-form-fallback__button {
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                                min-height: 48px;
+                                padding: 0 18px;
+                                border-radius: 12px;
+                                box-sizing: border-box;
+                                text-decoration: none;
+                                font-size: 16px;
+                                font-weight: 500;
+                            }
+
+                            .cta-form-fallback__button.primary {
+                                background: linear-gradient(180deg, #3b3b3b 0%, #1a1a1a 80%);
+                                color: #fff !important;
+                            }
+
+                            .cta-form-fallback__button.secondary {
+                                background: #f2f1ee;
+                                color: #1a1a1a !important;
+                            }
+
+                            @media (max-width: 1199px) {
+                                .cta-form-fallback {
+                                    min-height: 0;
+                                    padding: 32px 24px;
+                                }
+
+                                .cta-form-fallback__title {
+                                    font-size: 30px;
+                                }
+
+                                .cta-form-fallback__link,
+                                .cta-form-fallback__phone {
+                                    font-size: 20px;
+                                }
+                            }
+
+                            @media (max-width: 767px) {
+                                .cta-form-fallback {
+                                    padding: 24px 16px;
+                                }
+
+                                .cta-form-fallback__title {
+                                    font-size: 26px;
+                                }
+
+                                .cta-form-fallback__actions {
+                                    flex-direction: column;
+                                }
+
+                                .cta-form-fallback__button {
+                                    width: 100%;
+                                }
+                            }
+                        </style>
                         <div id="cta-form">
                             <div style="display: none;" class="contact-form-widget" data-program="main"
                                 data-scoring-enabled="true" data-view="headless" data-steps-mod="default"
@@ -25491,7 +25611,96 @@ ${el.id} {
                 <div class="t-container_100 ">
                     <div class="t-width t-width_100 "> <!-- nominify begin -->
                         <script type="module" defer="" src="usa-assets/usa-main/widgets/widget.js"
-                            onerror="handleScriptError(event)"></script> <!-- nominify end -->
+                            onerror="window.__ctaFormWidgetFailed = true; handleScriptError(event)"></script>
+                        <script>
+                            (function () {
+                                const fallbackDelay = 1500;
+
+                                function hasRenderedWidget(column) {
+                                    return !!column.querySelector('.contact-form-widget .prisma, .contact-form-widget .contact-form-layout, .contact-form-widget [data-testid^="contact-form-"]');
+                                }
+
+                                function createFallback() {
+                                    const node = document.createElement('div');
+                                    node.className = 'cta-form-fallback';
+                                    node.innerHTML = `
+                                        <p class="cta-form-fallback__eyebrow">Need help now?</p>
+                                        <h3 class="cta-form-fallback__title">Talk to an advisor directly.</h3>
+                                        <div class="cta-form-fallback__group">
+                                            <p class="cta-form-fallback__label">Emails</p>
+                                            <a class="cta-form-fallback__link" href="mailto:info@codecampus.com.ng">info@codecampus.com.ng</a>
+                                            <a class="cta-form-fallback__link" href="mailto:enquiries@codecampus.com.ng">enquiries@codecampus.com.ng</a>
+                                        </div>
+                                        <div class="cta-form-fallback__group">
+                                            <p class="cta-form-fallback__label">Phone</p>
+                                            <a class="cta-form-fallback__phone" href="tel:+2348172820839">+ (234) 817 282 0839</a>
+                                            <a class="cta-form-fallback__phone" href="tel:+2348172820869">+ (234) 817 282 0869</a>
+                                        </div>
+                                        <div class="cta-form-fallback__actions">
+                                            <a class="cta-form-fallback__button primary" href="mailto:enquiries@codecampus.com.ng">Email the team</a>
+                                            <a class="cta-form-fallback__button secondary" href="tel:+2348172820839">Call now</a>
+                                        </div>
+                                    `;
+                                    return node;
+                                }
+
+                                function syncFallback(forceFallback) {
+                                    const column = document.querySelector('#cta-form .cta-form__form-column');
+                                    if (!column) {
+                                        return;
+                                    }
+
+                                    const widget = column.querySelector('.contact-form-widget');
+                                    const fallback = column.querySelector('.cta-form-fallback');
+
+                                    if (hasRenderedWidget(column)) {
+                                        if (widget) {
+                                            widget.style.display = '';
+                                        }
+                                        if (fallback) {
+                                            fallback.remove();
+                                        }
+                                        return;
+                                    }
+
+                                    if (!forceFallback) {
+                                        return;
+                                    }
+
+                                    if (widget) {
+                                        widget.style.display = 'none';
+                                    }
+
+                                    if (!fallback) {
+                                        column.appendChild(createFallback());
+                                    }
+                                }
+
+                                function initCTAFormFallback() {
+                                    const startedAt = Date.now();
+                                    const runCheck = () => {
+                                        const shouldForceFallback = !!window.__ctaFormWidgetFailed || Date.now() - startedAt >= fallbackDelay;
+                                        syncFallback(shouldForceFallback);
+                                    };
+
+                                    [200, 800, 1600, 3000].forEach((delay) => {
+                                        window.setTimeout(runCheck, delay);
+                                    });
+
+                                    window.addEventListener('load', runCheck, { once: true });
+
+                                    const observer = new MutationObserver(runCheck);
+                                    observer.observe(document.body, { childList: true, subtree: true });
+                                    window.setTimeout(() => observer.disconnect(), 5000);
+                                }
+
+                                if (document.readyState === 'loading') {
+                                    document.addEventListener('DOMContentLoaded', initCTAFormFallback, { once: true });
+                                } else {
+                                    initCTAFormFallback();
+                                }
+                            })();
+                        </script> <!-- nominify end -->
                     </div>
                 </div>
             </div>

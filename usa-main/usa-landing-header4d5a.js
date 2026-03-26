@@ -5795,8 +5795,6 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
           { title: "About Code Campus", href: "/about/index.html" },
           { title: "Free SQL Bootcamp", href: "/sql/index.html" },
           { title: "FAQ", href: "/faq/index.html" },
-          { title: "Podcast", href: "/special/podcast/index.html" },
-          { title: "Career Webinar", href: "/special/webinar-tech-career/index.html" },
         ],
       },
     ],
