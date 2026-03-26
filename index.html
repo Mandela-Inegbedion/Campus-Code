@@ -1892,7 +1892,7 @@ ${el.id} {
                 <div class="t-container_100 ">
                     <div class="t-width t-width_100 "> <!-- nominify begin -->
                         <header id="header"></header>
-                        <div id="offer"></div>
+                        <div id="offer" style="display:none !important;"></div>
                         <div id="offer-popup-form" style="display: none;" class="contact-form-widget"
                             data-program="main" data-scoring-enabled="true" data-view="headless"
                             data-steps-mod="default" data-form-position="last_screen"></div>
@@ -1904,7 +1904,8 @@ ${el.id} {
                             })   // Available templates: contentPage, fullLanding, shortLanding
 
                             onHeaderLoaded(() => {
-                                mountOffer("#offer", { popupForm: "#offer-popup-form" })
+                                // Keep the offer block in code for later, but do not show it now.
+                                // mountOffer("#offer", { popupForm: "#offer-popup-form" })
                             })
 
                         </script>
@@ -1915,6 +1916,7 @@ ${el.id} {
                             }
 
                             #offer {
+                                display: none;
                                 height: 90px;
                                 background-color: #f2f1ee;
                             }
