@@ -5765,11 +5765,6 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
           { title: "Software Engineering", href: "/software-engineer/index.html" },
           { title: "Quality Assurance", href: "/qa-engineer/index.html" },
           { title: "UX/UI Design", href: "/uxui-design/index.html" },
-          {
-            title: "Not sure? Take our career quiz!",
-            icon: "data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='24'%20height='24'%20fill='none'%3e%3cpath%20fill='%23E96E3A'%20d='M6.485%2011.424A3%203%200%200%200%204.581%209.52l-2.43-.805c-.686-.228-.686-1.197%200-1.424l2.43-.806a3%203%200%200%200%201.904-1.904l.806-2.43c.227-.686%201.196-.686%201.424%200l.805%202.43a3%203%200%200%200%201.904%201.904l2.43.806c.686.227.686%201.196%200%201.424l-2.43.805a3%203%200%200%200-1.904%201.904l-.805%202.43c-.228.686-1.197.686-1.424%200zm10.528%202.957a2%202%200%200%200-1.406-1.406l-1.836-.498c-.492-.134-.492-.832%200-.965l1.836-.499a2%202%200%200%200%201.406-1.406l.499-1.836c.133-.492.831-.492.965%200l.498%201.836a2%202%200%200%200%201.406%201.406l1.836.499c.492.133.492.831%200%20.965l-1.836.498a2%202%200%200%200-1.406%201.406l-.498%201.836c-.134.492-.832.492-.965%200zm-6.634%204.537a1%201%200%200%201%20.703.703l.435%201.602c.134.492.832.492.966%200l.435-1.602a1%201%200%200%201%20.703-.703l1.602-.435c.492-.134.492-.832%200-.966l-1.602-.435a1%201%200%200%201-.703-.703l-.435-1.602c-.134-.492-.832-.492-.966%200l-.435%201.602a1%201%200%200%201-.703.703l-1.602.435c-.492.134-.492.832%200%20.966z'/%3e%3c/svg%3e",
-            href: "https://tripleten.com/quiz/career-quiz-nc/?form_position=header",
-          },
         ],
       },
       {
@@ -5780,7 +5775,6 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
             href: "/about/payment-options/index.html",
           },
           { title: "Real industry experience", href: "/externships/index.html" },
-          { title: "One-on-one support", href: "/team/index.html" },
           { title: "Student reviews", href: "/reviews/index.html" },
         ],
       },
@@ -5802,7 +5796,6 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
             href: "/about/payment-options/index.html",
           },
           { title: "Real industry experience", href: "/externships/index.html" },
-          { title: "One-on-one support", href: "/team/index.html" },
           { title: "Student reviews", href: "/reviews/index.html" },
         ],
       },
