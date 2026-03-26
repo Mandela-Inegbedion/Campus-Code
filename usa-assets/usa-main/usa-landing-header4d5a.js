@@ -4008,7 +4008,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
     p3 = ["href"],
     f3 = ["src", "alt"],
     u3 = { class: "app-footer__bottom-label" },
-    d3 = d("div", { class: "desktop" }, "© Code Campus International, 2026", -1),
+    d3 = d("div", { class: "desktop" }, "Â© Code Campus International, 2026", -1),
     h3 = ["href"],
     m3 = d(
       "a",
@@ -4016,7 +4016,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
       "Manage cookies",
       -1
     ),
-    g3 = d("div", { class: "mobile spacing-top" }, "© Code Campus International, 2026", -1),
+    g3 = d("div", { class: "mobile spacing-top" }, "Â© Code Campus International, 2026", -1),
     H3 = G({
       __name: "AppFooter",
       setup(e) {
@@ -4055,7 +4055,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
                 href: "https://tripleten.com/sql/",
               },
               {
-                title: "Canâ€™t decide? Take a career quiz!",
+                title: "CanÃ¢â‚¬â„¢t decide? Take a career quiz!",
                 href: "https://tripleten.com/quiz/career-quiz-nc/?form_position=footer",
               },
             ],
@@ -6284,21 +6284,9 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
               : U("", !0),
             t.popup || N(o).class === "may-offer"
               ? (h(),
-                b("div", ea, [
-                  Q(" Book a call with an advisor by "),
-                  d("span", ta, F(N(o).date), 1),
-                  Q(" to take "),
-                  Z(C2),
-                  Q(),
-                  N(o).class !== "july-offer" ? (h(), b("br", oa)) : U("", !0),
-                  Q("your tuition! "),
-                ]))
+                b("div", ea, [Q(" Book a call with an advisor today! ")]))
               : (h(),
-                b("div", na, [
-                  Q(" Book a call with an advisor by "),
-                  d("span", ia, F(N(o).date), 1),
-                  Q(" to take " + F(N(o).discount) + "% off your tuition! ", 1),
-                ])),
+                b("div", na, [Q(" Book a call with an advisor today! ")])),
           ])
         );
       },
@@ -6738,9 +6726,7 @@ This offer is available to new students who enroll in the upfront and monthly pa
                 d(
                   "div",
                   Ia,
-                  " Book a call with an advisor by " +
-                    F(N(t).date) +
-                    " to claim offer! ",
+                  " Book a call with an advisor today! ",
                   1
                 ),
                 Z(Xt),
@@ -6860,7 +6846,7 @@ This offer is available to new students who enroll in the upfront and monthly pa
       {
         class: "cta-block__label-img",
         src: Ja,
-        alt: "Itâ€™s TripleTenâ€™s birthday!",
+        alt: "ItÃ¢â‚¬â„¢s TripleTenÃ¢â‚¬â„¢s birthday!",
       },
       null,
       -1
@@ -6870,7 +6856,7 @@ This offer is available to new students who enroll in the upfront and monthly pa
       {
         class: "cta-block__label-img mobile",
         src: Xa,
-        alt: "Itâ€™s TripleTenâ€™s birthday!",
+        alt: "ItÃ¢â‚¬â„¢s TripleTenÃ¢â‚¬â„¢s birthday!",
       },
       null,
       -1
@@ -6892,13 +6878,7 @@ This offer is available to new students who enroll in the upfront and monthly pa
                 N(t).class === "june-offer"
                   ? (h(), b(L, { key: 0 }, [qa, Ka], 64))
                   : U("", !0),
-                d("div", _a, [
-                  Q(" Book a call with an advisor by " + F(N(t).date), 1),
-                  $a,
-                  Q(" to take "),
-                  Z(C2),
-                  Q(" your tuition! "),
-                ]),
+                d("div", _a, [Q(" Book a call with an advisor today! ")]),
                 Z(Xt),
               ]),
               _: 1,
@@ -6934,17 +6914,7 @@ This offer is available to new students who enroll in the upfront and monthly pa
               "div",
               { class: b0(["horizontal-form-block", N(t).class]) },
               [
-                d("div", e9, [
-                  Q(" Book a call with "),
-                  t9,
-                  Q("an advisor "),
-                  d("span", o9, "by " + F(N(t).date), 1),
-                  Q(),
-                  n9,
-                  Q(" to take "),
-                  Z(C2, { class: "small-tablet" }),
-                  Q(" your tuition! "),
-                ]),
+                d("div", e9, [Q(" Book a call with an advisor today! ")]),
                 d(
                   "div",
                   { ref_key: "contentWrapper", ref: n, class: "content" },
@@ -7038,7 +7008,7 @@ This offer is available to new students who enroll in the upfront and monthly pa
     H9 = d(
       "div",
       { class: "prices-block__title" },
-      "The most affordable way into techâ€“only at TripleTen",
+      "The most affordable way into techÃ¢â‚¬â€œonly at TripleTen",
       -1
     ),
     x9 = d(
@@ -7094,7 +7064,7 @@ This offer is available to new students who enroll in the upfront and monthly pa
               subtitle: "save up to $3,170",
               labelIcon: i9,
               label: "The best price",
-              text: "We offer a great deal across all our bootcamps when you pay upfront. Thereâ€™s no riskâ€”you can withdraw with a 100% refund in your first 2 weeks.",
+              text: "We offer a great deal across all our bootcamps when you pay upfront. ThereÃ¢â‚¬â„¢s no riskÃ¢â‚¬â€you can withdraw with a 100% refund in your first 2 weeks.",
             },
             {
               title: "TripleTen installments",
@@ -7107,7 +7077,7 @@ This offer is available to new students who enroll in the upfront and monthly pa
               text: `${
                 ((i = t.prices) == null ? void 0 : i[1].deposit) ??
                 "$600 deposit"
-              }, preapprovedâ€”no credit check req'd, 0% interest!
+              }, preapprovedÃ¢â‚¬â€no credit check req'd, 0% interest!
 
 Multiple installment options available. Book a call to learn more!`,
             },
@@ -7118,7 +7088,7 @@ Multiple installment options available. Book a call to learn more!`,
               labelIcon: s9,
               label: "Learn now, pay later",
               perMonth: !0,
-              text: "Work with one of our financing partners to finance your new career move! Credit check reqâ€™d.",
+              text: "Work with one of our financing partners to finance your new career move! Credit check reqÃ¢â‚¬â„¢d.",
               rich: !0,
             },
           ];
@@ -7285,7 +7255,7 @@ Multiple installment options available. Book a call to learn more!`,
         const t = e,
           o = H0("commonProps"),
           n = [
-            { title: "Upfront", text: "Best dealâ€”save up to $3,170!" },
+            { title: "Upfront", text: "Best dealÃ¢â‚¬â€save up to $3,170!" },
             {
               title: "Learn now, pay later",
               text: "Payments vary by credit score",
@@ -7330,7 +7300,7 @@ Multiple installment options available. Book a call to learn more!`,
                     null,
                     F(
                       t.text ??
-                        "$600 deposit, preapprovedâ€”no credit check req'd, 0% interest!"
+                        "$600 deposit, preapprovedÃ¢â‚¬â€no credit check req'd, 0% interest!"
                     ),
                     1
                   ),
