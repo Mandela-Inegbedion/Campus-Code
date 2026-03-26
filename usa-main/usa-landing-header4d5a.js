@@ -4197,50 +4197,6 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
               )),
             ]),
             d("div", _r, [
-              d("div", $r, [
-                e3,
-                (h(!0),
-                b(
-                  L,
-                  null,
-                  C0(
-                    t[0],
-                    (r) => (
-                      h(),
-                      b(
-                        "a",
-                        { href: r.href, target: "_blank" },
-                        F(r.title),
-                        9,
-                        t3
-                      )
-                    )
-                  ),
-                  256
-                )),
-              ]),
-              d("div", o3, [
-                n3,
-                (h(!0),
-                b(
-                  L,
-                  null,
-                  C0(
-                    t[1],
-                    (r) => (
-                      h(),
-                      b(
-                        "a",
-                        { href: r.href, target: "_blank" },
-                        F(r.title),
-                        9,
-                        i3
-                      )
-                    )
-                  ),
-                  256
-                )),
-              ]),
               d("div", r3, [
                 s3,
                 (h(!0),
