@@ -4120,7 +4120,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
             [
               {
                 title: "Terms of use",
-                href: "https://docs.tripleten.com/legal/terms_of_use.html",
+                href: "/terms-of-use/",
               },
               {
                 title: "Code of Conduct",
@@ -4136,7 +4136,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
               },
               {
                 title: "Privacy policy",
-                href: "https://docs.tripleten.com/legal/confidential.html",
+                href: "/privacy-policy/",
               },
             ],
           ],
@@ -6071,7 +6071,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
               ? typeof t.guaranteeLink == "string"
                 ? t.guaranteeLink
                 : "#guarantee"
-              : "https://docs.tripleten.com/legal/terms_of_use.html",
+              : "/terms-of-use/",
           n = o.startsWith("https") ? 'target="_blank"' : void 0,
           i = p0(() => [
             t.features[0] ??
