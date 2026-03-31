@@ -1898,17 +1898,6 @@ ${el.id} {
                             data-steps-mod="default" data-form-position="last_screen"></div>
                         <script type="text/javascript"
                             src="usa-main/usa-landing-header4d5a.js?ts=1750848402577"></script>
-                        <script>
-                            mountHeader("#header", "contentPage", {
-                                disableBottomPanel: true
-                            })   // Available templates: contentPage, fullLanding, shortLanding
-
-                            onHeaderLoaded(() => {
-                                // Keep the offer block in code for later, but do not show it now.
-                                // mountOffer("#offer", { popupForm: "#offer-popup-form" })
-                            })
-
-                        </script>
                         <style>
                             #header {
                                 height: 90px;
@@ -1930,7 +1919,8 @@ ${el.id} {
 
                             #header .header-main__container .logo-svg img {
                                 display: block;
-                                height: 56px;
+                                height: 62px;
+                                max-height: none;
                                 width: auto;
                                 max-width: none;
                             }
@@ -1956,7 +1946,8 @@ ${el.id} {
                                 }
 
                                 #header .header-main__container .logo-svg img {
-                                    height: 50px;
+                                    height: 54px;
+                                    max-height: none;
                                     transform: translateX(-6px) scale(1.02);
                                     transform-origin: left center;
                                 }
@@ -1966,6 +1957,17 @@ ${el.id} {
                                 }
                             }
                         </style> <!-- nominify end -->
+                        <script>
+                            mountHeader("#header", "contentPage", {
+                                disableBottomPanel: true
+                            })   // Available templates: contentPage, fullLanding, shortLanding
+
+                            onHeaderLoaded(() => {
+                                // Keep the offer block in code for later, but do not show it now.
+                                // mountOffer("#offer", { popupForm: "#offer-popup-form" })
+                            })
+
+                        </script>
                     </div>
                 </div>
             </div>
