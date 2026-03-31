@@ -12,7 +12,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
     document.head.appendChild(e2);
   var e2b = document.createElement("style");
   (e2b.textContent =
-    ".app-footer__bottom-label{justify-content:center;text-align:center;width:100%}"),
+    ".header__logo-practucum .logo-svg{display:flex;align-items:center;text-decoration:none!important;line-height:0;font-size:0;color:transparent!important}.header__logo-practucum .logo-svg:hover{color:transparent!important}.header__logo-practucum .logo-svg img{display:block;height:36px;width:auto;max-width:min(100%,155px)}@media (max-width: 1279px){.header__logo-practucum .logo-svg img{height:34px;max-width:150px}}@media (max-width: 767px){.header__logo-practucum .logo-svg img{height:28px;max-width:124px}.header__mobile-menu .header__logo-practucum .logo-svg img{height:24px;max-width:106px}}"),
     document.head.appendChild(e2b);
   function L0(e, t) {
     const o = Object.create(null),
@@ -4645,7 +4645,17 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
                           O3
                         ))
                       : U("", !0),
-                    d("a", F3, "CODE CAMPUS"),
+                    d("a", F3, [
+                      d(
+                        "img",
+                        {
+                          src: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NjAiIGhlaWdodD0iMTMwIiB2aWV3Qm94PSIwIDAgNTYwIDEzMCIgZmlsbD0ibm9uZSI+CiAgPHBhdGgKICAgIGQ9Ik0xMDYuNCAyNC43QTU4IDU4IDAgMSAwIDEwNi40IDk5LjNMOTAuMyA4NS44QTM3IDM3IDAgMSAxIDkwLjMgMzguMloiCiAgICBmaWxsPSIjMDA1NzJCIi8+CiAgPGNpcmNsZSBjeD0iNjIiIGN5PSI2MiIgcj0iMzEiIGZpbGw9IndoaXRlIi8+CiAgPGcgc3Ryb2tlPSIjMDA1NzJCIiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgPGNpcmNsZSBjeD0iNjIiIGN5PSI2MiIgcj0iMjQiIHN0cm9rZS13aWR0aD0iNCIvPgogICAgPHBhdGggZD0iTTYyIDM4Vjg2IiBzdHJva2Utd2lkdGg9IjQiLz4KICAgIDxwYXRoIGQ9Ik01MCA0MUM0NiA0NyA0NCA1NCA0NCA2MkM0NCA3MCA0NiA3NyA1MCA4MyIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgICA8cGF0aCBkPSJNNzQgNDFDNzggNDcgODAgNTQgODAgNjJDODAgNzAgNzggNzcgNzQgODMiIHN0cm9rZS13aWR0aD0iNCIvPgogICAgPHBhdGggZD0iTTM5IDYySDg1IiBzdHJva2Utd2lkdGg9IjQiLz4KICAgIDxwYXRoIGQ9Ik00NSA1MEg3OSIgc3Ryb2tlLXdpZHRoPSI0Ii8+CiAgICA8cGF0aCBkPSJNNDUgNzRINzkiIHN0cm9rZS13aWR0aD0iNCIvPgogIDwvZz4KICA8ZyBmb250LWZhbWlseT0iQXJpYWwgQmxhY2ssIEFyaWFsLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI5MDAiPgogICAgPHRleHQgeD0iMTE4IiB5PSI1NyIgZmlsbD0iIzAwNTcyQiIgZm9udC1zaXplPSI1MCIgbGV0dGVyLXNwYWNpbmc9IjEuNSI+T0RFPC90ZXh0PgogICAgPHRleHQgeD0iMTE4IiB5PSI5OCIgZmlsbD0iIzAwNTcyQiIgZm9udC1zaXplPSI1MCIgbGV0dGVyLXNwYWNpbmc9IjEuNSI+QU1QVVM8L3RleHQ+CiAgICA8dGV4dCB4PSIxMTgiIHk9IjEyMiIgZmlsbD0iIzExMTExMSIgZm9udC1zaXplPSIyNiIgbGV0dGVyLXNwYWNpbmc9IjEuMiI+SU5URVJOQVRJT05BTDwvdGV4dD4KICA8L2c+Cjwvc3ZnPgo=",
+                          alt: "Code Campus International",
+                        },
+                        null,
+                        -1
+                      ),
+                    ]),
                     t.partnerLogo && !n.value
                       ? (h(), O(Y3, { key: 1, class: "cross-icon" }))
                       : U("", !0),
