@@ -4012,7 +4012,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
     p3 = ["href"],
     f3 = ["src", "alt"],
     u3 = { class: "app-footer__bottom-label" },
-    d3 = d("div", { class: "desktop" }, "Â© Code Campus International, 2026", -1),
+    d3 = d("div", { class: "desktop" }, "Copyright Code Campus International, 2026", -1),
     h3 = ["href"],
     m3 = d(
       "a",
@@ -4020,7 +4020,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
       "Manage cookies",
       -1
     ),
-    g3 = d("div", { class: "mobile spacing-top" }, "Â© Code Campus International, 2026", -1),
+    g3 = d("div", { class: "mobile spacing-top" }, "Copyright Code Campus International, 2026", -1),
     H3 = G({
       __name: "AppFooter",
       setup(e) {

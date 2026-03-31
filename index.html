@@ -26230,16 +26230,12 @@ ${el.id} {
                                 <div class="t585__content" id="accordion4_772231288" hidden="">
                                     <div class="t585__textwrapper">
                                         <div class="t585__text t-descr t-descr_xs" field="li_descr__1720714121167">If
-                                            you don't get a new job in tech within 10 months of graduation, we will
-                                            refund 100% of your Code Campus tuition. <br>There are several conditions that
-                                            apply to the refund:<br>- You must complete the program, including Career
-                                            Prep and Career Acceleration program.<br>- You actively participate in a job
-                                            search, applying to relevant positions and going through interviews.<br>-
-                                            You need to be a U.S. resident.<br>More details can be found in<a
-                                                href="https://docs.tripleten.com/legal/terms_of_use.html"
-                                                target="_blank" rel="noreferrer noopener"
-                                                style="color: rgb(26, 26, 26); border-bottom: 1px solid rgb(26, 26, 26); box-shadow: none; text-decoration: none;">
-                                                the Terms of Use</a>.</div>
+                                            a new job in tech is not secured within 10 months of graduation, 100% of the
+                                            Code Campus tuition will be refunded.<br><br>The refund is subject to the
+                                            following conditions:<br>- The program must be fully completed, including the
+                                            Career Prep and Career Acceleration components.<br>- Active participation in
+                                            the job search process is required, including applying to relevant roles and
+                                            attending interviews.</div>
                                     </div>
                                 </div>
                             </div>
@@ -27838,7 +27834,7 @@ ${el.id} {
             "name": "What if I don't get a new job?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "If you don't get a new job in tech within 6 months of graduation, we will refund 100% of your Code Campus tuition. There are several conditions that apply to the refund: - You must complete the program, including Career Prep and Career Acceleration program. - You actively participate in a job search, applying to relevant positions and going through interviews. - You need to be a U.S. resident. More details can be found in the Terms of Use."
+              "text": "If a new job in tech is not secured within 10 months of graduation, 100% of the Code Campus tuition will be refunded. The refund is subject to the following conditions: The program must be fully completed, including the Career Prep and Career Acceleration components. Active participation in the job search process is required, including applying to relevant roles and attending interviews."
             }
         }, 
         {
@@ -27894,10 +27890,71 @@ ${el.id} {
                 <div class="t123">
                     <div class="t-container_100 ">
                         <div class="t-width t-width_100 "> <!-- nominify begin -->
+                            <style>
+                                #footer .app-footer {
+                                    width: min(1160px, calc(100% - 40px));
+                                }
+
+                                #footer .app-footer__grid {
+                                    grid-template-columns: repeat(3, minmax(220px, 280px));
+                                    justify-content: space-between;
+                                    column-gap: 40px;
+                                    row-gap: 32px;
+                                }
+
+                                #footer .app-footer__social-media {
+                                    justify-content: center;
+                                    margin: 48px auto 40px;
+                                }
+
+                                #footer .app-footer__bottom-label {
+                                    justify-content: center;
+                                    width: 100%;
+                                    text-align: center;
+                                }
+
+                                @media (max-width: 1199px) {
+                                    #footer .app-footer {
+                                        width: 464px;
+                                    }
+
+                                    #footer .app-footer__grid {
+                                        grid-template-columns: repeat(2, minmax(0, 1fr));
+                                        justify-content: initial;
+                                        column-gap: 16px;
+                                        row-gap: 56px;
+                                    }
+
+                                    #footer .app-footer__social-media,
+                                    #footer .app-footer__bottom-label {
+                                        justify-content: flex-start;
+                                        text-align: left;
+                                    }
+                                }
+
+                                @media (max-width: 767px) {
+                                    #footer .app-footer {
+                                        width: 328px;
+                                    }
+
+                                    #footer .app-footer__grid {
+                                        grid-template-columns: 1fr;
+                                    }
+                                }
+                            </style>
                             <footer id="footer"></footer>
                             <script>
                                 onHeaderLoaded(() => {
                                     mountFooter("#footer")
+                                    requestAnimationFrame(() => {
+                                        const footerBottom = document.querySelector("#footer .app-footer__bottom-label")
+                                        if (!footerBottom) return
+
+                                        const firstNode = Array.from(footerBottom.childNodes).find((node) => node.nodeType === Node.TEXT_NODE)
+                                        if (!firstNode || !firstNode.textContent) return
+
+                                        firstNode.textContent = firstNode.textContent.replace(/^[AÃÂ]+/, "")
+                                    })
                                 })
                             </script> <!-- nominify end -->
                         </div>
