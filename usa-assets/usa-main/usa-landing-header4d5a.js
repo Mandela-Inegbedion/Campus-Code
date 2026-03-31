@@ -12,7 +12,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
     document.head.appendChild(e2);
   var e2b = document.createElement("style");
   (e2b.textContent =
-    ".header__logo-practucum .logo-svg{display:flex;align-items:center;text-decoration:none!important;line-height:0;font-size:0;color:transparent!important}.header__logo-practucum .logo-svg:hover{color:transparent!important}.header__logo-practucum .logo-svg img{display:block;height:36px;width:auto;max-width:min(100%,155px)}@media (max-width: 1279px){.header__logo-practucum .logo-svg img{height:34px;max-width:150px}}@media (max-width: 767px){.header__logo-practucum .logo-svg img{height:28px;max-width:124px}.header__mobile-menu .header__logo-practucum .logo-svg img{height:24px;max-width:106px}}"),
+    ".header__logo-practucum .logo-svg{display:flex;align-items:center;text-decoration:none!important;line-height:0;font-size:0;color:transparent!important}.header__logo-practucum .logo-svg:hover{color:transparent!important}.header__logo-practucum .logo-svg img{display:block;height:44px;width:auto;max-width:min(100%,190px)}@media (max-width: 1279px){.header__logo-practucum .logo-svg img{height:40px;max-width:178px}}@media (max-width: 767px){.header__logo-practucum .logo-svg img{height:34px;max-width:148px}.header__mobile-menu .header__logo-practucum .logo-svg img{height:28px;max-width:124px}}"),
     document.head.appendChild(e2b);
   function L0(e, t) {
     const o = Object.create(null),
