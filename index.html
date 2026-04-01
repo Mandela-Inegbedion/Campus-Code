@@ -7509,11 +7509,6 @@ ${el.id} {
                     display: none !important;
                 }
 
-                #rec1075004031 .class106,
-                #rec1075004031 .class106 + .tn-elem {
-                    display: none !important;
-                }
-
                 #rec878549380 .tn-elem:has(a[href*="linkedin.com"]),
                 #rec878549380 a[href*="linkedin.com"] {
                     display: none !important;
@@ -8240,8 +8235,7 @@ ${el.id} {
                         data-field-widthmode-res-360-value="fixed" data-field-top-res-768-value="0"
                         data-field-left-res-768-value="0" data-field-width-res-768-value="768">
                         <div class="tn-atom" field="tn_text_1747911772386">Only at Code Campus the&nbsp;no-barriers way
-                            into&nbsp;tech <span style="color: #029642;">from</span> <span
-                                style="color: #029642;">$190 <sup>/mo</sup></span></div>
+                            into&nbsp;tech</div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10805016211749028090376" data-elem-id="1749028090376"
                         data-elem-type="text" data-field-top-value="0" data-field-left-value="20"
@@ -8255,8 +8249,7 @@ ${el.id} {
                         data-field-widthmode-res-360-value="fixed" data-field-top-res-768-value="10"
                         data-field-left-res-768-value="0" data-field-width-res-768-value="768">
                         <div class="tn-atom" field="tn_text_1749028090376">Only at<br>Code Campus<br>the
-                            no-barriers<br>way into tech<br><span style="color: #029642;">from</span> <span
-                                style="color: #029642;">$190 <sup>/mo</sup></span></div>
+                            no-barriers<br>way into tech</div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10805016211741346844747" data-elem-id="1741346844747"
                         data-elem-type="shape" data-field-top-value="78" data-field-left-value="0"
@@ -15808,7 +15801,85 @@ ${el.id} {
                                 height: 24px;
                                 transition: transform s, width s, height s;
                             }
+
+                            @media (min-width: 1200px) {
+                                #rec1075004031 .t396__artboard,
+                                #rec1075004031 .t396__filter,
+                                #rec1075004031 .t396__carrier {
+                                    height: 3700px !important;
+                                }
+
+                                #rec1075004031 .bgshape-white {
+                                    height: 878px !important;
+                                }
+
+                                #rec1075004031 .image-card,
+                                #rec1075004031 .class106,
+                                #rec1075004031 .class106 + .tn-elem {
+                                    transform: translateY(calc(var(--program-row-shift, 0px) + 236px));
+                                }
+                            }
+
+                            @media (max-width: 1199px) {
+                                #rec1075004031 .t396__artboard,
+                                #rec1075004031 .t396__filter,
+                                #rec1075004031 .t396__carrier {
+                                    height: 720px !important;
+                                }
+
+                                #rec1075004031 .bgshape-white {
+                                    height: 720px !important;
+                                }
+
+                                #rec1075004031 .image-card,
+                                #rec1075004031 .class106,
+                                #rec1075004031 .class106 + .tn-elem {
+                                    transform: translateY(calc(var(--program-row-shift, 0px) + 129px));
+                                }
+                            }
                         </style> <!-- nominify end -->
+                        <script>
+                            (function () {
+                                function adjustProgramCardRows() {
+                                    const record = document.getElementById('rec1075004031');
+                                    if (!record) return;
+
+                                    const desktop = window.innerWidth >= 1200;
+                                    record.querySelectorAll('.t396__elem').forEach(function (elem) {
+                                        const top = Number(elem.getAttribute('data-field-top-value'));
+                                        let offset = 0;
+
+                                        if (desktop) {
+                                            if (top >= 1974) {
+                                                offset = 708;
+                                            } else if (top >= 1316) {
+                                                offset = 472;
+                                            } else if (top >= 658) {
+                                                offset = 236;
+                                            }
+                                        }
+
+                                        elem.style.setProperty('--program-row-shift', offset + 'px');
+                                        if (elem.classList.contains('image-card') || elem.classList.contains('class106') || (elem.getAttribute('data-elem-type') === 'shape' && elem.previousElementSibling && elem.previousElementSibling.classList.contains('class106'))) {
+                                            elem.style.transform = '';
+                                            return;
+                                        }
+                                        elem.style.transform = offset ? 'translateY(var(--program-row-shift))' : '';
+                                    });
+                                }
+
+                                function runProgramCardAdjustments() {
+                                    adjustProgramCardRows();
+                                    window.addEventListener('resize', adjustProgramCardRows);
+                                }
+
+                                if (document.readyState === 'loading') {
+                                    document.addEventListener('DOMContentLoaded', runProgramCardAdjustments);
+                                } else {
+                                    runProgramCardAdjustments();
+                                }
+                            })();
+                        </script>
                     </div>
                 </div>
             </div>
