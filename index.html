@@ -1963,6 +1963,11 @@ ${el.id} {
                             })   // Available templates: contentPage, fullLanding, shortLanding
 
                             onHeaderLoaded(() => {
+                                const homeHeaderLogo = document.querySelector("#header .header-main__container .logo-svg img")
+                                if (homeHeaderLogo) {
+                                    homeHeaderLogo.src = "home-header-logo.svg"
+                                }
+
                                 // Keep the offer block in code for later, but do not show it now.
                                 // mountOffer("#offer", { popupForm: "#offer-popup-form" })
                             })
@@ -8712,22 +8717,23 @@ ${el.id} {
                 }
 
                 #rec1075004031 .tn-elem[data-elem-id="1741342728208"] {
-                    color: #3aa65e;
+                    color: #000000;
                     z-index: 10;
-                    top: 231px;
-                    left: calc(50% - 600px + 848px);
-                    width: 244px;
+                    top: 272px;
+                    left: calc(50% - 600px + 828px);
+                    width: 304px;
                     height: auto;
                     pointer-events: none;
                 }
 
                 #rec1075004031 .tn-elem[data-elem-id="1741342728208"] .tn-atom {
                     vertical-align: middle;
-                    color: #3aa65e;
+                    color: #000000;
                     font-size: 16px;
                     font-family: 'SuisseIntl', Arial, sans-serif;
-                    line-height: 1.25;
+                    line-height: 1.5;
                     font-weight: 500;
+                    opacity: 1;
                     background-position: center center;
                     border-color: transparent;
                     border-style: solid;
@@ -8758,7 +8764,7 @@ ${el.id} {
                 #rec1075004031 .tn-elem[data-elem-id="1741342728219"] {
                     color: #000000;
                     z-index: 11;
-                    top: 203px;
+                    top: 236px;
                     left: calc(50% - 600px + 828px);
                     width: 207px;
                     height: auto;
@@ -8772,7 +8778,7 @@ ${el.id} {
                     font-family: 'SuisseIntl', Arial, sans-serif;
                     line-height: 1.25;
                     font-weight: 500;
-                    opacity: 0.5;
+                    opacity: 1;
                     background-position: center center;
                     border-color: transparent;
                     border-style: solid;
@@ -8895,7 +8901,7 @@ ${el.id} {
                 }
 
                 #rec1075004031 .tn-elem[data-elem-id="1741342728230"] {
-                    color: #1a1a1a;
+                    color: #029642;
                     z-index: 14;
                     top: 60px;
                     left: calc(50% - 600px + 828px);
@@ -8906,7 +8912,7 @@ ${el.id} {
 
                 #rec1075004031 .tn-elem[data-elem-id="1741342728230"] .tn-atom {
                     vertical-align: middle;
-                    color: #1a1a1a;
+                    color: #029642;
                     font-size: 32px;
                     font-family: 'SuisseIntl', Arial, sans-serif;
                     line-height: 1;
@@ -8999,7 +9005,7 @@ ${el.id} {
                     font-family: 'SuisseIntl', Arial, sans-serif;
                     line-height: 1.25;
                     font-weight: 400;
-                    opacity: 0.5;
+                    opacity: 1;
                     background-position: center center;
                     border-color: transparent;
                     border-style: solid;
@@ -9473,7 +9479,7 @@ ${el.id} {
                     font-family: 'SuisseIntl', Arial, sans-serif;
                     line-height: 1.25;
                     font-weight: 400;
-                    opacity: 0.5;
+                    opacity: 1;
                     background-position: center center;
                     border-color: transparent;
                     border-style: solid;
@@ -9565,7 +9571,7 @@ ${el.id} {
                     font-family: 'SuisseIntl', Arial, sans-serif;
                     line-height: 1.25;
                     font-weight: 500;
-                    opacity: 0.5;
+                    opacity: 1;
                     background-position: center center;
                     border-color: transparent;
                     border-style: solid;
@@ -10861,7 +10867,7 @@ ${el.id} {
                 #rec1075004031 .tn-elem[data-elem-id="1741354877862"] {
                     color: #000000;
                     z-index: 71;
-                    top: 1420px;
+                    top: 1436px;
                     left: calc(50% - 600px + 436px);
                     width: 304px;
                     height: auto;
@@ -10873,9 +10879,9 @@ ${el.id} {
                     color: #000000;
                     font-size: 16px;
                     font-family: 'SuisseIntl', Arial, sans-serif;
-                    line-height: 1.25;
+                    line-height: 1.45;
                     font-weight: 400;
-                    opacity: 0.5;
+                    opacity: 1;
                     background-position: center center;
                     border-color: transparent;
                     border-style: solid;
@@ -10905,7 +10911,7 @@ ${el.id} {
                 }
 
                 #rec1075004031 .tn-elem[data-elem-id="1741354877874"] {
-                    color: #1a1a1a;
+                    color: #029642;
                     z-index: 72;
                     top: 1376px;
                     left: calc(50% - 600px + 436px);
@@ -10916,7 +10922,7 @@ ${el.id} {
 
                 #rec1075004031 .tn-elem[data-elem-id="1741354877874"] .tn-atom {
                     vertical-align: middle;
-                    color: #1a1a1a;
+                    color: #029642;
                     font-size: 32px;
                     font-family: 'SuisseIntl', Arial, sans-serif;
                     line-height: 1;
@@ -10953,7 +10959,7 @@ ${el.id} {
                 #rec1075004031 .tn-elem[data-elem-id="1741354877887"] {
                     color: #000000;
                     z-index: 73;
-                    top: 1520px;
+                    top: 1548px;
                     left: calc(50% - 600px + 436px);
                     width: 207px;
                     height: auto;
@@ -10967,7 +10973,7 @@ ${el.id} {
                     font-family: 'SuisseIntl', Arial, sans-serif;
                     line-height: 1.25;
                     font-weight: 500;
-                    opacity: 0.5;
+                    opacity: 1;
                     background-position: center center;
                     border-color: transparent;
                     border-style: solid;
@@ -13737,7 +13743,7 @@ ${el.id} {
                         data-field-widthunits-value="px" data-field-widthmode-value="fixed"
                         data-field-heightmode-value="fixed" data-field-top-res-360-value="451"
                         data-field-left-res-360-value="345" data-field-top-res-768-value="451"
-                        data-field-left-res-768-value="361">
+                        data-field-left-res-768-value="361" style="display:none !important;">
                         <div class="tn-atom"> </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741342728144" data-elem-id="1741342728144"
@@ -13749,7 +13755,8 @@ ${el.id} {
                         data-field-heightmode-value="fixed" data-field-top-res-360-value="477"
                         data-field-left-res-360-value="345" data-field-height-res-360-value="6"
                         data-field-width-res-360-value="6" data-field-container-res-360-value="grid"
-                        data-field-top-res-768-value="477" data-field-left-res-768-value="361">
+                        data-field-top-res-768-value="477" data-field-left-res-768-value="361"
+                        style="display:none !important;">
                         <div class="tn-atom"> </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741342728153" data-elem-id="1741342728153"
@@ -13762,7 +13769,7 @@ ${el.id} {
                         data-field-heightmode-value="hug" data-field-top-res-360-value="399"
                         data-field-left-res-360-value="340" data-field-height-res-360-value="16"
                         data-field-top-res-768-value="400" data-field-left-res-768-value="356"
-                        data-field-height-res-768-value="16">
+                        data-field-height-res-768-value="16" style="display:none !important;">
                         <div class="tn-atom"> <img class="tn-atom__img t-img"
                                 data-original="https://tripleten.com/usa-assets/usa-main/tild3739-3366-4366-a233-303364386137__lightning.svg"
                                 src="usa-assets/usa-main/tild3739-3366-4366-a233-303364386137__lightning.svg" alt=""
@@ -13778,8 +13785,9 @@ ${el.id} {
                         data-field-height-res-360-value="22" data-field-width-res-360-value="227"
                         data-field-container-res-360-value="grid" data-field-heightunits-res-360-value="px"
                         data-field-textfit-res-360-value="autoheight" data-field-top-res-768-value="443"
-                        data-field-left-res-768-value="376" data-field-width-res-768-value="227">
-                        <div class="tn-atom" field="tn_text_1741342728184">Upfront to save up to $1,910!</div>
+                        data-field-left-res-768-value="376" data-field-width-res-768-value="227"
+                        style="display:none !important;">
+                        <div class="tn-atom" field="tn_text_1741342728184"></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741342728196" data-elem-id="1741342728196"
                         data-elem-type="text" data-field-top-value="301" data-field-left-value="848"
@@ -13791,29 +13799,32 @@ ${el.id} {
                         data-field-height-res-360-value="22" data-field-width-res-360-value="245"
                         data-field-container-res-360-value="grid" data-field-heightunits-res-360-value="px"
                         data-field-textfit-res-360-value="autoheight" data-field-top-res-768-value="469"
-                        data-field-left-res-768-value="376" data-field-width-res-768-value="245">
-                        <div class="tn-atom" field="tn_text_1741342728196">Loans available w/ credit check </div>
+                        data-field-left-res-768-value="376" data-field-width-res-768-value="245"
+                        style="display:none !important;">
+                        <div class="tn-atom" field="tn_text_1741342728196"></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741342728208" data-elem-id="1741342728208"
-                        data-elem-type="text" data-field-top-value="231" data-field-left-value="848"
-                        data-field-height-value="40" data-field-width-value="244" data-field-axisy-value="top"
+                        data-elem-type="text" data-field-top-value="286" data-field-left-value="828"
+                        data-field-height-value="240" data-field-width-value="304" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="399" data-field-left-res-360-value="360"
-                        data-field-top-res-768-value="399" data-field-left-res-768-value="376"
+                        data-field-top-res-360-value="413" data-field-left-res-360-value="360"
+                        data-field-top-res-768-value="413" data-field-left-res-768-value="376"
                         data-field-width-res-768-value="245">
-                        <div class="tn-atom" field="tn_text_1741342728208">$235/mo with Code Campus Installments </div>
+                        <div class="tn-atom" field="tn_text_1741342728208"><span
+                                style="color:#1a1a1a; font-size:16px; line-height:1.5;">&bull; Data cleaning, manipulation, and analysis using Python<br>&bull; Statistical analysis and hypothesis testing<br>&bull; Data visualization techniques and tools (Excel, Power BI, SQL)<br>&bull; How to derive actionable insights from data<br>&bull; Statistical analysis and probability</span></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741342728219" data-elem-id="1741342728219"
-                        data-elem-type="text" data-field-top-value="203" data-field-left-value="828"
+                        data-elem-type="text" data-field-top-value="266" data-field-left-value="828"
                         data-field-height-value="20" data-field-width-value="207" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="371" data-field-left-res-360-value="340"
-                        data-field-top-res-768-value="371" data-field-left-res-768-value="356">
-                        <div class="tn-atom" field="tn_text_1741342728219">Tuition options:</div>
+                        data-field-top-res-360-value="401" data-field-left-res-360-value="340"
+                        data-field-top-res-768-value="401" data-field-left-res-768-value="356">
+                        <div class="tn-atom" field="tn_text_1741342728219"><span
+                                style="color:#1a1a1a; font-weight:600;">What you will learn;</span></div>
                     </div>
                     <div class="t396__elem tn-elem class106 tn-elem__10750040311741342728242 t396__elem--anim-hidden"
                         data-elem-id="1741342728242" data-elem-type="button" data-field-top-value="359"
@@ -13873,15 +13884,15 @@ ${el.id} {
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741352143362" data-elem-id="1741352143362"
                         data-elem-type="text" data-field-top-value="136" data-field-left-value="828"
-                        data-field-height-value="40" data-field-width-value="304" data-field-axisy-value="top"
+                        data-field-height-value="108" data-field-width-value="304" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
                         data-field-top-res-360-value="287" data-field-left-res-360-value="340"
                         data-field-width-res-360-value="229" data-field-top-res-768-value="247"
                         data-field-left-res-768-value="356" data-field-width-res-768-value="245">
-                        <div class="tn-atom" field="tn_text_1741352143362">Use accessible tools to make data useful and
-                            insightful.</div>
+                        <div class="tn-atom" field="tn_text_1741352143362"><span
+                                style="color:#1a1a1a; font-size:16px; line-height:1.45;">Explore how to extract valuable insights from data using statistical analysis, machine learning, and data visualization, turning raw data into actionable strategies.</span></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311748866207226" data-elem-id="1748866207226"
                         data-elem-type="shape" data-field-top-value="20" data-field-left-value="828"
@@ -14000,13 +14011,13 @@ ${el.id} {
                         <div class="tn-atom" field="tn_text_1741342728013"></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741342728025" data-elem-id="1741342728025"
-                        data-elem-type="text" data-field-top-value="272" data-field-left-value="436"
+                        data-elem-type="text" data-field-top-value="286" data-field-left-value="436"
                         data-field-height-value="260" data-field-width-value="304" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="399" data-field-left-res-360-value="52"
-                        data-field-top-res-768-value="399" data-field-left-res-768-value="68"
+                        data-field-top-res-360-value="413" data-field-left-res-360-value="52"
+                        data-field-top-res-768-value="413" data-field-left-res-768-value="68"
                         data-field-width-res-768-value="245">
                         <div class="tn-atom" field="tn_text_1741342728025"><span
                                 style="color:#1a1a1a; font-size:16px; line-height:1.5;">&bull; Programming languages such as HTML/CSS, Python, JavaScript, ReactJS, NodeJS<br>&bull; Front-end and back-end development<br>&bull; Version control with Git<br>&bull; Object-oriented and functional programming principles<br>&bull; Front-end and back-end development frameworks<br>&bull; Building and deploying web applications<br>&bull; Debugging and testing techniques</span></div>
@@ -14035,13 +14046,13 @@ ${el.id} {
                         <div class="tn-atom" field="tn_text_1741342728047">Software Engineering </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741351731743" data-elem-id="1741351731743"
-                        data-elem-type="text" data-field-top-value="256" data-field-left-value="436"
+                        data-elem-type="text" data-field-top-value="266" data-field-left-value="436"
                         data-field-height-value="20" data-field-width-value="207" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="391" data-field-left-res-360-value="32"
-                        data-field-top-res-768-value="391" data-field-left-res-768-value="48">
+                        data-field-top-res-360-value="401" data-field-left-res-360-value="32"
+                        data-field-top-res-768-value="401" data-field-left-res-768-value="48">
                         <div class="tn-atom" field="tn_text_1741351731743"><span
                                 style="color:#1a1a1a; font-weight:600;">What you will learn;</span></div>
                     </div>
@@ -14154,7 +14165,7 @@ ${el.id} {
                         data-field-widthunits-value="px" data-field-widthmode-value="fixed"
                         data-field-heightmode-value="fixed" data-field-top-res-360-value="451"
                         data-field-left-res-360-value="653" data-field-top-res-768-value="451"
-                        data-field-left-res-768-value="669">
+                        data-field-left-res-768-value="669" style="display:none !important;">
                         <div class="tn-atom"> </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354612536" data-elem-id="1741354612536"
@@ -14165,7 +14176,7 @@ ${el.id} {
                         data-field-widthunits-value="px" data-field-widthmode-value="fixed"
                         data-field-heightmode-value="fixed" data-field-top-res-360-value="477"
                         data-field-left-res-360-value="653" data-field-top-res-768-value="477"
-                        data-field-left-res-768-value="669">
+                        data-field-left-res-768-value="669" style="display:none !important;">
                         <div class="tn-atom"> </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354612547" data-elem-id="1741354612547"
@@ -14178,77 +14189,79 @@ ${el.id} {
                         data-field-heightmode-value="hug" data-field-top-res-360-value="399"
                         data-field-left-res-360-value="648" data-field-height-res-360-value="16"
                         data-field-top-res-768-value="399" data-field-left-res-768-value="664"
-                        data-field-height-res-768-value="16">
+                        data-field-height-res-768-value="16" style="display:none !important;">
                         <div class="tn-atom"> <img class="tn-atom__img t-img"
                                 data-original="https://tripleten.com/usa-assets/usa-main/tild3764-6366-4838-a266-376361383437__lightning.svg"
                                 src="usa-assets/usa-main/tild3764-6366-4838-a266-376361383437__lightning.svg" alt=""
                                 imgfield="tn_img_1741354612547"> </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354612580" data-elem-id="1741354612580"
-                        data-elem-type="text" data-field-top-value="1591" data-field-left-value="848"
+                        data-elem-type="text" data-field-top-value="1574" data-field-left-value="828"
                         data-field-height-value="22" data-field-width-value="244" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="443" data-field-left-res-360-value="668"
-                        data-field-top-res-768-value="443" data-field-left-res-768-value="684"
+                        data-field-top-res-360-value="428" data-field-left-res-360-value="648"
+                        data-field-top-res-768-value="428" data-field-left-res-768-value="664"
                         data-field-width-res-768-value="227">
-                        <div class="tn-atom" field="tn_text_1741354612580">Upfront to save up to $1,590!</div>
+                        <div class="tn-atom" field="tn_text_1741354612580"><span
+                                style="color:#1a1a1a; font-weight:600;">What you will learn;</span></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354612594" data-elem-id="1741354612594"
-                        data-elem-type="text" data-field-top-value="1617" data-field-left-value="848"
+                        data-elem-type="text" data-field-top-value="0" data-field-left-value="848"
                         data-field-height-value="22" data-field-width-value="244" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
                         data-field-top-res-360-value="469" data-field-left-res-360-value="668"
                         data-field-top-res-768-value="469" data-field-left-res-768-value="684"
-                        data-field-width-res-768-value="245">
+                        data-field-width-res-768-value="245" style="display:none !important;">
                         <div class="tn-atom" field="tn_text_1741354612594">Loans available w/ credit check </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354612606" data-elem-id="1741354612606"
-                        data-elem-type="text" data-field-top-value="1547" data-field-left-value="848"
-                        data-field-height-value="40" data-field-width-value="244" data-field-axisy-value="top"
+                        data-elem-type="text" data-field-top-value="1620" data-field-left-value="828"
+                        data-field-height-value="220" data-field-width-value="304" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="399" data-field-left-res-360-value="668"
-                        data-field-top-res-768-value="399" data-field-left-res-768-value="684"
+                        data-field-top-res-360-value="467" data-field-left-res-360-value="648"
+                        data-field-top-res-768-value="467" data-field-left-res-768-value="664"
                         data-field-width-res-768-value="245">
-                        <div class="tn-atom" field="tn_text_1741354612606">$190/mo with Code Campus Installments </div>
+                        <div class="tn-atom" field="tn_text_1741354612606"><span
+                                style="color:#1a1a1a; font-size:16px; line-height:1.5;">&bull; Fundamentals of blockchain and decentralized systems<br>&bull; Smart contract development and Ethereum basics<br>&bull; Cryptocurrency mechanics and security in blockchain environments<br>&bull; Blockchain applications in various sector<br>&bull; Emerging trends and innovations in the blockchain space</span></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354612618" data-elem-id="1741354612618"
-                        data-elem-type="text" data-field-top-value="1420" data-field-left-value="828"
-                        data-field-height-value="40" data-field-width-value="254" data-field-axisy-value="top"
+                        data-elem-type="text" data-field-top-value="1442" data-field-left-value="828"
+                        data-field-height-value="130" data-field-width-value="324" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="263" data-field-left-res-360-value="648"
-                        data-field-width-res-360-value="229" data-field-top-res-768-value="223"
-                        data-field-left-res-768-value="664" data-field-width-res-768-value="235">
-                        <div class="tn-atom" field="tn_text_1741354612618">Break software and document the&nbsp;results,
-                            without knowing code.</div>
+                        data-field-top-res-360-value="285" data-field-left-res-360-value="648"
+                        data-field-width-res-360-value="250" data-field-top-res-768-value="245"
+                        data-field-left-res-768-value="664" data-field-width-res-768-value="250">
+                        <div class="tn-atom" field="tn_text_1741354612618"><span
+                                style="color:#1a1a1a; font-size:16px; line-height:1.45;">Dive into the technology behind cryptocurrencies, learning about decentralized systems, smart contracts, and the transformative potential of blockchain across industries.</span></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354612629" data-elem-id="1741354612629"
                         data-elem-type="text" data-field-top-value="1376" data-field-left-value="828"
-                        data-field-height-value="32" data-field-width-value="261" data-field-axisy-value="top"
+                        data-field-height-value="64" data-field-width-value="320" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
                         data-field-top-res-360-value="227" data-field-left-res-360-value="648"
                         data-field-top-res-768-value="187" data-field-left-res-768-value="664"
-                        data-field-width-res-768-value="197">
-                        <div class="tn-atom" field="tn_text_1741354612629">Quality Assurance</div>
+                        data-field-width-res-768-value="250">
+                        <div class="tn-atom" field="tn_text_1741354612629">Blockchain Engineering</div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354612643" data-elem-id="1741354612643"
-                        data-elem-type="text" data-field-top-value="1520" data-field-left-value="828"
+                        data-elem-type="text" data-field-top-value="0" data-field-left-value="828"
                         data-field-height-value="20" data-field-width-value="207" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
                         data-field-top-res-360-value="371" data-field-left-res-360-value="648"
                         data-field-top-res-768-value="371" data-field-left-res-768-value="664">
-                        <div class="tn-atom" field="tn_text_1741354612643">Tuition options:</div>
+                        <div class="tn-atom" field="tn_text_1741354612643" style="display:none !important;">Tuition options:</div>
                     </div>
                     <div class="t396__elem tn-elem class106 tn-elem__10750040311741354612655 t396__elem--anim-hidden"
                         data-elem-id="1741354612655" data-elem-type="button" data-field-top-value="1675"
@@ -14319,7 +14332,7 @@ ${el.id} {
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311748867716409" data-elem-id="1748867716409"
                         data-elem-type="shape" data-field-top-value="1336" data-field-left-value="905"
-                        data-field-height-value="24" data-field-width-value="190" data-field-axisy-value="top"
+                        data-field-height-value="24" data-field-width-value="214" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-widthmode-value="fixed"
@@ -14330,14 +14343,14 @@ ${el.id} {
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311748867716450" data-elem-id="1748867716450"
                         data-elem-type="text" data-field-top-value="1341" data-field-left-value="914"
-                        data-field-height-value="14" data-field-width-value="174" data-field-axisy-value="top"
+                        data-field-height-value="14" data-field-width-value="198" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autowidth"
                         data-field-top-res-360-value="191" data-field-left-res-360-value="657"
                         data-field-top-res-768-value="295" data-field-left-res-768-value="673"
-                        data-field-width-res-768-value="174">
-                        <div class="tn-atom" field="tn_text_1748867716450">AI-powered testing automation</div>
+                        data-field-width-res-768-value="198">
+                        <div class="tn-atom" field="tn_text_1748867716450">Smart contracts &amp; web3 systems</div>
                     </div>
                     <div class="t396__elem tn-elem bgshape-white tn-elem__10750040311741354877776"
                         data-elem-id="1741354877776" data-elem-type="shape" data-field-top-value="1316"
@@ -14359,7 +14372,7 @@ ${el.id} {
                         data-field-widthunits-value="px" data-field-widthmode-value="fixed"
                         data-field-heightmode-value="fixed" data-field-top-res-360-value="451"
                         data-field-left-res-360-value="1577" data-field-top-res-768-value="451"
-                        data-field-left-res-768-value="1593">
+                        data-field-left-res-768-value="1593" style="display:none !important;">
                         <div class="tn-atom"> </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877794" data-elem-id="1741354877794"
@@ -14370,7 +14383,7 @@ ${el.id} {
                         data-field-widthunits-value="px" data-field-widthmode-value="fixed"
                         data-field-heightmode-value="fixed" data-field-top-res-360-value="477"
                         data-field-left-res-360-value="1577" data-field-top-res-768-value="477"
-                        data-field-left-res-768-value="1593">
+                        data-field-left-res-768-value="1593" style="display:none !important;">
                         <div class="tn-atom"> </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877803" data-elem-id="1741354877803"
@@ -14383,7 +14396,7 @@ ${el.id} {
                         data-field-heightmode-value="hug" data-field-top-res-360-value="399"
                         data-field-left-res-360-value="1572" data-field-height-res-360-value="16"
                         data-field-top-res-768-value="399" data-field-left-res-768-value="1588"
-                        data-field-height-res-768-value="16">
+                        data-field-height-res-768-value="16" style="display:none !important;">
                         <div class="tn-atom"> <img class="tn-atom__img t-img"
                                 data-original="https://tripleten.com/usa-assets/usa-main/tild3165-3164-4032-a339-333834383330__lightning.svg"
                                 src="usa-assets/usa-main/tild3165-3164-4032-a339-333834383330__lightning.svg" alt=""
@@ -14397,62 +14410,65 @@ ${el.id} {
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
                         data-field-top-res-360-value="443" data-field-left-res-360-value="1592"
                         data-field-top-res-768-value="443" data-field-left-res-768-value="1608"
-                        data-field-width-res-768-value="227">
-                        <div class="tn-atom" field="tn_text_1741354877824">Upfront to save up to $1,610!</div>
+                        data-field-width-res-768-value="227" style="display:none !important;">
+                        <div class="tn-atom" field="tn_text_1741354877824"></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877837" data-elem-id="1741354877837"
-                        data-elem-type="text" data-field-top-value="1617" data-field-left-value="456"
+                        data-elem-type="text" data-field-top-value="0" data-field-left-value="456"
                         data-field-height-value="22" data-field-width-value="244" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
                         data-field-top-res-360-value="469" data-field-left-res-360-value="1592"
                         data-field-top-res-768-value="469" data-field-left-res-768-value="1608"
-                        data-field-width-res-768-value="245">
-                        <div class="tn-atom" field="tn_text_1741354877837">Loans available w/ credit check </div>
+                        data-field-width-res-768-value="245" style="display:none !important;">
+                        <div class="tn-atom" field="tn_text_1741354877837"></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877851" data-elem-id="1741354877851"
-                        data-elem-type="text" data-field-top-value="1547" data-field-left-value="456"
-                        data-field-height-value="40" data-field-width-value="244" data-field-axisy-value="top"
+                        data-elem-type="text" data-field-top-value="1586" data-field-left-value="436"
+                        data-field-height-value="220" data-field-width-value="304" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="399" data-field-left-res-360-value="1592"
-                        data-field-top-res-768-value="399" data-field-left-res-768-value="1608"
+                        data-field-top-res-360-value="438" data-field-left-res-360-value="1592"
+                        data-field-top-res-768-value="438" data-field-left-res-768-value="1608"
                         data-field-width-res-768-value="245">
-                        <div class="tn-atom" field="tn_text_1741354877851">$210/mo with Code Campus Installments </div>
+                        <div class="tn-atom" field="tn_text_1741354877851"><span
+                                style="color:#1a1a1a; font-size:16px; line-height:1.5;">&bull; Cloud infrastructure concepts and service models<br>&bull; Working with platforms like AWS, Azure, or Google Cloud<br>&bull; Containerization using Docker and orchestration with Kubernetes<br>&bull; Cloud deployment and automation strategies<br>&bull; Managing and scaling cloud resources<br>&bull; Cloud service providers (e.g., AWS, Azure, Google Cloud)<br>&bull; Infrastructure as Code (IaC)<br>&bull; Cloud security best practices</span></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877862" data-elem-id="1741354877862"
-                        data-elem-type="text" data-field-top-value="1420" data-field-left-value="436"
-                        data-field-height-value="20" data-field-width-value="304" data-field-axisy-value="top"
+                        data-elem-type="text" data-field-top-value="1416" data-field-left-value="436"
+                        data-field-height-value="130" data-field-width-value="324" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="263" data-field-left-res-360-value="1572"
-                        data-field-width-res-360-value="229" data-field-top-res-768-value="224"
+                        data-field-top-res-360-value="259" data-field-left-res-360-value="1572"
+                        data-field-width-res-360-value="229" data-field-top-res-768-value="220"
                         data-field-left-res-768-value="1588" data-field-width-res-768-value="235">
-                        <div class="tn-atom" field="tn_text_1741354877862">implement cloud computing solutions, focusing on efficient cloud environments.</div>
+                        <div class="tn-atom" field="tn_text_1741354877862"><span
+                                style="color:#1a1a1a; font-size:16px; line-height:1.45;">Understand and implement cloud computing solutions, focusing on infrastructure, deployment, and management of scalable, secure, and efficient cloud environments.</span></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877874" data-elem-id="1741354877874"
                         data-elem-type="text" data-field-top-value="1376" data-field-left-value="436"
-                        data-field-height-value="32" data-field-width-value="261" data-field-axisy-value="top"
+                        data-field-height-value="64" data-field-width-value="320" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
                         data-field-top-res-360-value="227" data-field-left-res-360-value="1572"
                         data-field-top-res-768-value="188" data-field-left-res-768-value="1588"
-                        data-field-width-res-768-value="197">
+                        data-field-width-res-768-value="250">
                         <div class="tn-atom" field="tn_text_1741354877874">Cloud Engineering</div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877887" data-elem-id="1741354877887"
-                        data-elem-type="text" data-field-top-value="1520" data-field-left-value="436"
+                        data-elem-type="text" data-field-top-value="1548" data-field-left-value="436"
                         data-field-height-value="20" data-field-width-value="207" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="371" data-field-left-res-360-value="1572"
-                        data-field-top-res-768-value="371" data-field-left-res-768-value="1588">
-                        <div class="tn-atom" field="tn_text_1741354877887">Tuition options:</div>
+                        data-field-top-res-360-value="399" data-field-left-res-360-value="1572"
+                        data-field-top-res-768-value="399" data-field-left-res-768-value="1588">
+                        <div class="tn-atom" field="tn_text_1741354877887"><span
+                                style="color:#1a1a1a; font-weight:600;">What you will learn;</span></div>
                     </div>
                     <div class="t396__elem tn-elem class106 tn-elem__10750040311741354877901 t396__elem--anim-hidden"
                         data-elem-id="1741354877901" data-elem-type="button" data-field-top-value="1675"
@@ -14523,7 +14539,7 @@ ${el.id} {
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311748867326871" data-elem-id="1748867326871"
                         data-elem-type="shape" data-field-top-value="1336" data-field-left-value="513"
-                        data-field-height-value="24" data-field-width-value="214" data-field-axisy-value="top"
+                        data-field-height-value="24" data-field-width-value="252" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-widthmode-value="fixed"
@@ -14534,13 +14550,13 @@ ${el.id} {
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311748867326916" data-elem-id="1748867326916"
                         data-elem-type="text" data-field-top-value="1341" data-field-left-value="522"
-                        data-field-height-value="14" data-field-width-value="198" data-field-axisy-value="top"
+                        data-field-height-value="14" data-field-width-value="236" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autowidth"
                         data-field-top-res-360-value="191" data-field-left-res-360-value="1581"
                         data-field-top-res-768-value="276" data-field-left-res-768-value="1597"
-                        data-field-width-res-768-value="198">
+                        data-field-width-res-768-value="236">
                         <div class="tn-atom" field="tn_text_1748867326916">Cloud infrastructure concepts</div>
                     </div>
                     <div class="t396__elem tn-elem bgshape-white tn-elem__10750040311747915793854"
@@ -14563,7 +14579,7 @@ ${el.id} {
                         data-field-widthunits-value="px" data-field-widthmode-value="fixed"
                         data-field-heightmode-value="fixed" data-field-top-res-360-value="451"
                         data-field-left-res-360-value="1885" data-field-top-res-768-value="451"
-                        data-field-left-res-768-value="1901">
+                        data-field-left-res-768-value="1901" style="display:none !important;">
                         <div class="tn-atom"> </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311747915793893" data-elem-id="1747915793893"
@@ -14574,7 +14590,7 @@ ${el.id} {
                         data-field-widthunits-value="px" data-field-widthmode-value="fixed"
                         data-field-heightmode-value="fixed" data-field-top-res-360-value="477"
                         data-field-left-res-360-value="1885" data-field-top-res-768-value="477"
-                        data-field-left-res-768-value="1901">
+                        data-field-left-res-768-value="1901" style="display:none !important;">
                         <div class="tn-atom"> </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311747915793912" data-elem-id="1747915793912"
@@ -14587,77 +14603,79 @@ ${el.id} {
                         data-field-heightmode-value="hug" data-field-top-res-360-value="399"
                         data-field-left-res-360-value="1880" data-field-height-res-360-value="16"
                         data-field-top-res-768-value="399" data-field-left-res-768-value="1896"
-                        data-field-height-res-768-value="16">
+                        data-field-height-res-768-value="16" style="display:none !important;">
                         <div class="tn-atom"> <img class="tn-atom__img t-img"
                                 data-original="https://tripleten.com/usa-assets/usa-main/tild3165-3164-4032-a339-333834383330__lightning.svg"
                                 src="usa-assets/usa-main/tild3165-3164-4032-a339-333834383330__lightning.svg" alt=""
                                 imgfield="tn_img_1747915793912"> </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311747915793955" data-elem-id="1747915793955"
-                        data-elem-type="text" data-field-top-value="2249" data-field-left-value="456"
+                        data-elem-type="text" data-field-top-value="2232" data-field-left-value="436"
                         data-field-height-value="22" data-field-width-value="244" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="443" data-field-left-res-360-value="1900"
-                        data-field-top-res-768-value="443" data-field-left-res-768-value="1916"
+                        data-field-top-res-360-value="428" data-field-left-res-360-value="1880"
+                        data-field-top-res-768-value="428" data-field-left-res-768-value="1896"
                         data-field-width-res-768-value="227">
-                        <div class="tn-atom" field="tn_text_1747915793955">Upfront to save up to $1,610!</div>
+                        <div class="tn-atom" field="tn_text_1747915793955"><span
+                                style="color:#1a1a1a; font-weight:600;">What you will learn;</span></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311747915793980" data-elem-id="1747915793980"
-                        data-elem-type="text" data-field-top-value="2275" data-field-left-value="456"
+                        data-elem-type="text" data-field-top-value="0" data-field-left-value="456"
                         data-field-height-value="22" data-field-width-value="244" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
                         data-field-top-res-360-value="469" data-field-left-res-360-value="1900"
                         data-field-top-res-768-value="469" data-field-left-res-768-value="1916"
-                        data-field-width-res-768-value="245">
+                        data-field-width-res-768-value="245" style="display:none !important;">
                         <div class="tn-atom" field="tn_text_1747915793980">Loans available w/ credit check </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311747915794005" data-elem-id="1747915794005"
-                        data-elem-type="text" data-field-top-value="2205" data-field-left-value="456"
-                        data-field-height-value="40" data-field-width-value="244" data-field-axisy-value="top"
+                        data-elem-type="text" data-field-top-value="2278" data-field-left-value="436"
+                        data-field-height-value="220" data-field-width-value="304" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="399" data-field-left-res-360-value="1900"
-                        data-field-top-res-768-value="399" data-field-left-res-768-value="1916"
+                        data-field-top-res-360-value="467" data-field-left-res-360-value="1880"
+                        data-field-top-res-768-value="467" data-field-left-res-768-value="1896"
                         data-field-width-res-768-value="245">
-                        <div class="tn-atom" field="tn_text_1747915794005">$210/mo with Code Campus Installments </div>
+                        <div class="tn-atom" field="tn_text_1747915794005"><span
+                                style="color:#1a1a1a; font-size:16px; line-height:1.5;">&bull; User research and design thinking methodologies<br>&bull; Wireframing and prototyping using industry-standard tools<br>&bull; Visual design principles and UI/UX best practices<br>&bull; Usability testing and iteration for product improvement<br>&bull; Collaboration with developers and stakeholders for seamless implementation</span></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311747915794032" data-elem-id="1747915794032"
-                        data-elem-type="text" data-field-top-value="2078" data-field-left-value="436"
-                        data-field-height-value="40" data-field-width-value="304" data-field-axisy-value="top"
+                        data-elem-type="text" data-field-top-value="2100" data-field-left-value="436"
+                        data-field-height-value="130" data-field-width-value="324" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="263" data-field-left-res-360-value="1880"
-                        data-field-width-res-360-value="229" data-field-top-res-768-value="223"
-                        data-field-left-res-768-value="1896" data-field-width-res-768-value="235">
-                        <div class="tn-atom" field="tn_text_1747915794032">Automate routine tasks to make work fly.
-                        </div>
+                        data-field-top-res-360-value="285" data-field-left-res-360-value="1880"
+                        data-field-width-res-360-value="250" data-field-top-res-768-value="245"
+                        data-field-left-res-768-value="1896" data-field-width-res-768-value="250">
+                        <div class="tn-atom" field="tn_text_1747915794032"><span
+                                style="color:#1a1a1a; font-size:16px; line-height:1.45;">Learn the fundamentals of creating user-centric digital experiences by mastering design principles, prototyping, and usability testing.</span></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311747915794057" data-elem-id="1747915794057"
                         data-elem-type="text" data-field-top-value="2034" data-field-left-value="436"
-                        data-field-height-value="32" data-field-width-value="261" data-field-axisy-value="top"
+                        data-field-height-value="64" data-field-width-value="320" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
                         data-field-top-res-360-value="227" data-field-left-res-360-value="1880"
                         data-field-top-res-768-value="187" data-field-left-res-768-value="1896"
-                        data-field-width-res-768-value="197">
-                        <div class="tn-atom" field="tn_text_1747915794057">AI Automation</div>
+                        data-field-width-res-768-value="250">
+                        <div class="tn-atom" field="tn_text_1747915794057">Product Design</div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311747915794082" data-elem-id="1747915794082"
-                        data-elem-type="text" data-field-top-value="2178" data-field-left-value="436"
+                        data-elem-type="text" data-field-top-value="0" data-field-left-value="436"
                         data-field-height-value="20" data-field-width-value="207" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
                         data-field-top-res-360-value="371" data-field-left-res-360-value="1880"
                         data-field-top-res-768-value="371" data-field-left-res-768-value="1896">
-                        <div class="tn-atom" field="tn_text_1747915794082">Tuition options:</div>
+                        <div class="tn-atom" field="tn_text_1747915794082" style="display:none !important;">Tuition options:</div>
                     </div>
                     <div class="t396__elem tn-elem class106 tn-elem__10750040311747915794108 t396__elem--anim-hidden"
                         data-elem-id="1747915794108" data-elem-type="button" data-field-top-value="2333"
@@ -14728,7 +14746,7 @@ ${el.id} {
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311748868116056" data-elem-id="1748868116056"
                         data-elem-type="shape" data-field-top-value="1994" data-field-left-value="513"
-                        data-field-height-value="24" data-field-width-value="153" data-field-axisy-value="top"
+                        data-field-height-value="24" data-field-width-value="252" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-widthmode-value="fixed"
@@ -14739,13 +14757,13 @@ ${el.id} {
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311748868116094" data-elem-id="1748868116094"
                         data-elem-type="text" data-field-top-value="1999" data-field-left-value="522"
-                        data-field-height-value="14" data-field-width-value="137" data-field-axisy-value="top"
+                        data-field-height-value="14" data-field-width-value="236" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autowidth"
                         data-field-top-res-360-value="191" data-field-left-res-360-value="1889"
                         data-field-top-res-768-value="275" data-field-left-res-768-value="1905"
-                        data-field-width-res-768-value="137">
+                        data-field-width-res-768-value="236">
                         <div class="tn-atom" field="tn_text_1748868116094">AI tools for business ops</div>
                     </div>
                     <div class="t396__elem tn-elem bgshape-white tn-elem__10750040311747915793492"
@@ -14861,7 +14879,7 @@ ${el.id} {
                         data-field-widthunits-value="px" data-field-widthmode-value="fixed"
                         data-field-heightmode-value="fixed" data-field-top-res-360-value="451"
                         data-field-left-res-360-value="961" data-field-top-res-768-value="451"
-                        data-field-left-res-768-value="977">
+                        data-field-left-res-768-value="977" style="display:none !important;">
                         <div class="tn-atom"> </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877567" data-elem-id="1741354877567"
@@ -14872,7 +14890,7 @@ ${el.id} {
                         data-field-widthunits-value="px" data-field-widthmode-value="fixed"
                         data-field-heightmode-value="fixed" data-field-top-res-360-value="477"
                         data-field-left-res-360-value="961" data-field-top-res-768-value="477"
-                        data-field-left-res-768-value="977">
+                        data-field-left-res-768-value="977" style="display:none !important;">
                         <div class="tn-atom"> </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877575" data-elem-id="1741354877575"
@@ -14885,77 +14903,79 @@ ${el.id} {
                         data-field-heightmode-value="hug" data-field-top-res-360-value="399"
                         data-field-left-res-360-value="956" data-field-height-res-360-value="16"
                         data-field-top-res-768-value="399" data-field-left-res-768-value="972"
-                        data-field-height-res-768-value="16">
+                        data-field-height-res-768-value="16" style="display:none !important;">
                         <div class="tn-atom"> <img class="tn-atom__img t-img"
                                 data-original="https://tripleten.com/usa-assets/usa-main/tild3666-3565-4631-b433-346664336532__lightning.svg"
                                 src="usa-assets/usa-main/tild3666-3565-4631-b433-346664336532__lightning.svg" alt=""
                                 imgfield="tn_img_1741354877575"> </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877601" data-elem-id="1741354877601"
-                        data-elem-type="text" data-field-top-value="933" data-field-left-value="456"
+                        data-elem-type="text" data-field-top-value="918" data-field-left-value="436"
                         data-field-height-value="22" data-field-width-value="244" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="443" data-field-left-res-360-value="976"
-                        data-field-top-res-768-value="443" data-field-left-res-768-value="992"
+                        data-field-top-res-360-value="415" data-field-left-res-360-value="956"
+                        data-field-top-res-768-value="415" data-field-left-res-768-value="972"
                         data-field-width-res-768-value="227">
-                        <div class="tn-atom" field="tn_text_1741354877601">Upfront to save up to $3,170!</div>
+                        <div class="tn-atom" field="tn_text_1741354877601"><span
+                                style="color:#1a1a1a; font-weight:600;">What you will learn;</span></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877617" data-elem-id="1741354877617"
-                        data-elem-type="text" data-field-top-value="959" data-field-left-value="456"
+                        data-elem-type="text" data-field-top-value="0" data-field-left-value="456"
                         data-field-height-value="22" data-field-width-value="244" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
                         data-field-top-res-360-value="469" data-field-left-res-360-value="976"
                         data-field-top-res-768-value="469" data-field-left-res-768-value="992"
-                        data-field-width-res-768-value="245">
+                        data-field-width-res-768-value="245" style="display:none !important;">
                         <div class="tn-atom" field="tn_text_1741354877617">Loans available w/ credit check </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877630" data-elem-id="1741354877630"
-                        data-elem-type="text" data-field-top-value="889" data-field-left-value="456"
-                        data-field-height-value="40" data-field-width-value="244" data-field-axisy-value="top"
+                        data-elem-type="text" data-field-top-value="962" data-field-left-value="436"
+                        data-field-height-value="220" data-field-width-value="304" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="399" data-field-left-res-360-value="976"
-                        data-field-top-res-768-value="399" data-field-left-res-768-value="992"
+                        data-field-top-res-360-value="454" data-field-left-res-360-value="956"
+                        data-field-top-res-768-value="454" data-field-left-res-768-value="972"
                         data-field-width-res-768-value="245">
-                        <div class="tn-atom" field="tn_text_1741354877630">$240/mo with Code Campus Installments </div>
+                        <div class="tn-atom" field="tn_text_1741354877630"><span
+                                style="color:#1a1a1a; font-size:16px; line-height:1.5;">&bull; Fundamentals of network and system security<br>&bull; Vulnerability assessments and ethical hacking techniques<br>&bull; Encryption, authentication, and access control methods<br>&bull; Security protocols and risk management practices<br>&bull; Incident response and threat mitigation strategies</span></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877643" data-elem-id="1741354877643"
-                        data-elem-type="text" data-field-top-value="762" data-field-left-value="436"
-                        data-field-height-value="40" data-field-width-value="304" data-field-axisy-value="top"
+                        data-elem-type="text" data-field-top-value="786" data-field-left-value="436"
+                        data-field-height-value="120" data-field-width-value="318" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="263" data-field-left-res-360-value="956"
-                        data-field-width-res-360-value="229" data-field-top-res-768-value="223"
-                        data-field-left-res-768-value="972" data-field-width-res-768-value="235">
-                        <div class="tn-atom" field="tn_text_1741354877643">Protect people, organizations, networks, and
-                            data.</div>
+                        data-field-top-res-360-value="280" data-field-left-res-360-value="956"
+                        data-field-width-res-360-value="250" data-field-top-res-768-value="240"
+                        data-field-left-res-768-value="972" data-field-width-res-768-value="250">
+                        <div class="tn-atom" field="tn_text_1741354877643"><span
+                                style="color:#1a1a1a; font-size:16px; line-height:1.45;">Gain the skills to protect systems and networks from cyber threats by learning about risk management, ethical hacking, encryption, and proactive defense strategies.</span></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877655" data-elem-id="1741354877655"
                         data-elem-type="text" data-field-top-value="718" data-field-left-value="436"
-                        data-field-height-value="32" data-field-width-value="252" data-field-axisy-value="top"
+                        data-field-height-value="64" data-field-width-value="330" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
                         data-field-top-res-360-value="227" data-field-left-res-360-value="956"
                         data-field-top-res-768-value="187" data-field-left-res-768-value="972"
-                        data-field-width-res-768-value="197">
-                        <div class="tn-atom" field="tn_text_1741354877655">Cybersecurity</div>
+                        data-field-width-res-768-value="240">
+                        <div class="tn-atom" field="tn_text_1741354877655">Cybersecurity Engineering</div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877668" data-elem-id="1741354877668"
-                        data-elem-type="text" data-field-top-value="862" data-field-left-value="436"
+                        data-elem-type="text" data-field-top-value="0" data-field-left-value="436"
                         data-field-height-value="20" data-field-width-value="207" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
                         data-field-top-res-360-value="371" data-field-left-res-360-value="956"
                         data-field-top-res-768-value="371" data-field-left-res-768-value="972">
-                        <div class="tn-atom" field="tn_text_1741354877668">Tuition options:</div>
+                        <div class="tn-atom" field="tn_text_1741354877668" style="display:none !important;">Tuition options:</div>
                     </div>
                     <div class="t396__elem tn-elem class106 tn-elem__10750040311741354877681 t396__elem--anim-hidden"
                         data-elem-id="1741354877681" data-elem-type="button" data-field-top-value="1017"
@@ -15066,7 +15086,7 @@ ${el.id} {
                         data-field-widthunits-value="px" data-field-widthmode-value="fixed"
                         data-field-heightmode-value="fixed" data-field-top-res-360-value="451"
                         data-field-left-res-360-value="1269" data-field-top-res-768-value="451"
-                        data-field-left-res-768-value="1285">
+                        data-field-left-res-768-value="1285" style="display:none !important;">
                         <div class="tn-atom"> </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877324" data-elem-id="1741354877324"
@@ -15077,7 +15097,7 @@ ${el.id} {
                         data-field-widthunits-value="px" data-field-widthmode-value="fixed"
                         data-field-heightmode-value="fixed" data-field-top-res-360-value="477"
                         data-field-left-res-360-value="1269" data-field-top-res-768-value="477"
-                        data-field-left-res-768-value="1285">
+                        data-field-left-res-768-value="1285" style="display:none !important;">
                         <div class="tn-atom"> </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877336" data-elem-id="1741354877336"
@@ -15090,54 +15110,56 @@ ${el.id} {
                         data-field-heightmode-value="hug" data-field-top-res-360-value="399"
                         data-field-left-res-360-value="1264" data-field-height-res-360-value="16"
                         data-field-top-res-768-value="400" data-field-left-res-768-value="1280"
-                        data-field-height-res-768-value="16">
+                        data-field-height-res-768-value="16" style="display:none !important;">
                         <div class="tn-atom"> <img class="tn-atom__img t-img"
                                 data-original="https://tripleten.com/usa-assets/usa-main/tild3861-3439-4437-b665-353465333435__lightning.svg"
                                 src="usa-assets/usa-main/tild3861-3439-4437-b665-353465333435__lightning.svg" alt=""
                                 imgfield="tn_img_1741354877336"> </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877362" data-elem-id="1741354877362"
-                        data-elem-type="text" data-field-top-value="933" data-field-left-value="848"
+                        data-elem-type="text" data-field-top-value="918" data-field-left-value="828"
                         data-field-height-value="22" data-field-width-value="244" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="443" data-field-left-res-360-value="1284"
-                        data-field-top-res-768-value="443" data-field-left-res-768-value="1300"
+                        data-field-top-res-360-value="415" data-field-left-res-360-value="1264"
+                        data-field-top-res-768-value="415" data-field-left-res-768-value="1280"
                         data-field-width-res-768-value="227">
-                        <div class="tn-atom" field="tn_text_1741354877362">Upfront to save up to $3,170!</div>
+                        <div class="tn-atom" field="tn_text_1741354877362"><span
+                                style="color:#1a1a1a; font-weight:600;">What you will learn;</span></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877379" data-elem-id="1741354877379"
-                        data-elem-type="text" data-field-top-value="959" data-field-left-value="848"
+                        data-elem-type="text" data-field-top-value="0" data-field-left-value="848"
                         data-field-height-value="22" data-field-width-value="244" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
                         data-field-top-res-360-value="469" data-field-left-res-360-value="1284"
                         data-field-top-res-768-value="469" data-field-left-res-768-value="1300"
-                        data-field-width-res-768-value="245">
+                        data-field-width-res-768-value="245" style="display:none !important;">
                         <div class="tn-atom" field="tn_text_1741354877379">Loans available w/ credit check </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877393" data-elem-id="1741354877393"
-                        data-elem-type="text" data-field-top-value="889" data-field-left-value="848"
-                        data-field-height-value="40" data-field-width-value="244" data-field-axisy-value="top"
+                        data-elem-type="text" data-field-top-value="962" data-field-left-value="828"
+                        data-field-height-value="220" data-field-width-value="304" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="399" data-field-left-res-360-value="1284"
-                        data-field-top-res-768-value="399" data-field-left-res-768-value="1300"
+                        data-field-top-res-360-value="454" data-field-left-res-360-value="1264"
+                        data-field-top-res-768-value="454" data-field-left-res-768-value="1280"
                         data-field-width-res-768-value="245">
-                        <div class="tn-atom" field="tn_text_1741354877393">$240/mo with Code Campus Installments </div>
+                        <div class="tn-atom" field="tn_text_1741354877393"><span
+                                style="color:#1a1a1a; font-size:16px; line-height:1.5;">&bull; Core concepts of machine learning and deep learning<br>&bull; Building and training neural networks<br>&bull; Natural language processing techniques<br>&bull; Evaluating and optimizing AI models<br>&bull; Ethical considerations and practical applications of AI</span></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877409" data-elem-id="1741354877409"
-                        data-elem-type="text" data-field-top-value="861" data-field-left-value="828"
+                        data-elem-type="text" data-field-top-value="0" data-field-left-value="828"
                         data-field-height-value="20" data-field-width-value="207" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
                         data-field-top-res-360-value="371" data-field-left-res-360-value="1264"
                         data-field-top-res-768-value="371" data-field-left-res-768-value="1280">
-                        <div class="tn-atom" field="tn_text_1741354877409">Tuition options:</div>
+                        <div class="tn-atom" field="tn_text_1741354877409" style="display:none !important;">Tuition options:</div>
                     </div>
                     <div class="t396__elem tn-elem class106 tn-elem__10750040311741354877424 t396__elem--anim-hidden"
                         data-elem-id="1741354877424" data-elem-type="button" data-field-top-value="1017"
@@ -15169,14 +15191,14 @@ ${el.id} {
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877451" data-elem-id="1741354877451"
                         data-elem-type="text" data-field-top-value="718" data-field-left-value="828"
-                        data-field-height-value="32" data-field-width-value="306" data-field-axisy-value="top"
+                        data-field-height-value="64" data-field-width-value="338" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
                         data-field-top-res-360-value="227" data-field-left-res-360-value="1264"
                         data-field-top-res-768-value="187" data-field-left-res-768-value="1280"
-                        data-field-width-res-768-value="197">
-                        <div class="tn-atom" field="tn_text_1741354877451">Artificial Intelligence</div>
+                        data-field-width-res-768-value="250">
+                        <div class="tn-atom" field="tn_text_1741354877451">Artificial Intelligence (AI)</div>
                     </div>
                     <div class="t396__elem tn-elem image-card tn-elem__10750040311741354877467"
                         data-elem-id="1741354877467" data-elem-type="shape" data-field-top-value="1080"
@@ -15196,16 +15218,16 @@ ${el.id} {
                             aria-label="" role="img"> </div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311741354877476" data-elem-id="1741354877476"
-                        data-elem-type="text" data-field-top-value="758" data-field-left-value="828"
-                        data-field-height-value="40" data-field-width-value="338" data-field-axisy-value="top"
+                        data-elem-type="text" data-field-top-value="786" data-field-left-value="828"
+                        data-field-height-value="120" data-field-width-value="324" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-textfit-value="autoheight"
-                        data-field-top-res-360-value="263" data-field-left-res-360-value="1264"
-                        data-field-width-res-360-value="229" data-field-top-res-768-value="223"
-                        data-field-left-res-768-value="1282" data-field-width-res-768-value="245">
-                        <div class="tn-atom" field="tn_text_1741354877476">Train AI/ML models, turn raw data into
-                            predictions.</div>
+                        data-field-top-res-360-value="280" data-field-left-res-360-value="1264"
+                        data-field-width-res-360-value="250" data-field-top-res-768-value="240"
+                        data-field-left-res-768-value="1282" data-field-width-res-768-value="250">
+                        <div class="tn-atom" field="tn_text_1741354877476"><span
+                                style="color:#1a1a1a; font-size:16px; line-height:1.45;">Explore the fundamentals of AI, including machine learning, deep learning, and neural networks, to design intelligent systems and understand their ethical implications.</span></div>
                     </div>
                     <div class="t396__elem tn-elem tn-elem__10750040311748867069292" data-elem-id="1748867069292"
                         data-elem-type="shape" data-field-top-value="678" data-field-left-value="828"
@@ -15808,7 +15830,7 @@ ${el.id} {
                                 #rec1075004031 .t396__artboard,
                                 #rec1075004031 .t396__filter,
                                 #rec1075004031 .t396__carrier {
-                                    height: 3700px !important;
+                                    height: 4700px !important;
                                 }
 
                                 #rec1075004031 .bgshape-white {
@@ -15823,6 +15845,98 @@ ${el.id} {
                             }
 
                             @media (max-width: 1199px) {
+                                #rec1075004031 .t396 {
+                                    display: none !important;
+                                }
+
+                                #rec1075004031 .program-cards-mobile {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 16px;
+                                    width: min(100%, 520px);
+                                    margin: 0 auto;
+                                    padding: 16px;
+                                    box-sizing: border-box;
+                                }
+
+                                #rec1075004031 .program-cards-mobile__card {
+                                    background: #fff;
+                                    border-radius: 16px;
+                                    padding: 16px;
+                                    box-sizing: border-box;
+                                }
+
+                                #rec1075004031 .program-cards-mobile__badge {
+                                    display: inline-flex;
+                                    align-items: center;
+                                    min-height: 24px;
+                                    padding: 0 10px;
+                                    border-radius: 999px;
+                                    background: #63d68a;
+                                    color: #1a1a1a;
+                                    font-size: 12px;
+                                    line-height: 1.2;
+                                    margin-bottom: 12px;
+                                }
+
+                                #rec1075004031 .program-cards-mobile__title {
+                                    color: #08b44b;
+                                    font-size: 24px;
+                                    line-height: 1.05;
+                                    font-weight: 500;
+                                    margin-bottom: 12px;
+                                }
+
+                                #rec1075004031 .program-cards-mobile__desc {
+                                    color: #1a1a1a;
+                                    font-size: 16px;
+                                    line-height: 1.45;
+                                    margin-bottom: 16px;
+                                }
+
+                                #rec1075004031 .program-cards-mobile__learn {
+                                    color: #1a1a1a;
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    margin-bottom: 12px;
+                                }
+
+                                #rec1075004031 .program-cards-mobile__list {
+                                    margin: 0 0 16px 20px;
+                                    padding: 0;
+                                    color: #1a1a1a;
+                                    font-size: 16px;
+                                    line-height: 1.5;
+                                }
+
+                                #rec1075004031 .program-cards-mobile__list li + li {
+                                    margin-top: 8px;
+                                }
+
+                                #rec1075004031 .program-cards-mobile__link {
+                                    display: inline-flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    min-height: 40px;
+                                    padding: 0 16px;
+                                    border-radius: 12px;
+                                    background: #029642;
+                                    color: #fff !important;
+                                    text-decoration: none;
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                }
+
+                                #rec1075004031 .t396__elem[data-elem-id="1747915793492"],
+                                #rec1075004031 .t396__elem[data-elem-id="1747915793675"],
+                                #rec1075004031 .t396__elem[data-elem-id="1747915793701"],
+                                #rec1075004031 .t396__elem[data-elem-id="1747915793754"],
+                                #rec1075004031 .t396__elem[data-elem-id="1747915793784"],
+                                #rec1075004031 .t396__elem[data-elem-id="1747916305034"],
+                                #rec1075004031 .t396__elem[data-elem-id="1747916305039"] {
+                                    display: none !important;
+                                }
+
                                 #rec1075004031 .t396__artboard,
                                 #rec1075004031 .t396__filter,
                                 #rec1075004031 .t396__carrier {
@@ -15839,9 +15953,397 @@ ${el.id} {
                                     transform: translateY(calc(var(--program-row-shift, 0px) + 129px));
                                 }
                             }
+
+                            @media (min-width: 1200px) {
+                                #rec1075004031 .program-cards-mobile {
+                                    display: none !important;
+                                }
+                            }
                         </style> <!-- nominify end -->
                         <script>
                             (function () {
+                                const PROGRAM_CARD_UPDATES = [
+                                    {
+                                        shapeId: '1741354877548',
+                                        titleId: '1741354877655',
+                                        descId: '1741354877643',
+                                        badgeId: '1748866713281',
+                                        href: 'cybersecurity-engineering/index.html',
+                                        title: 'Cybersecurity Engineering',
+                                        description: 'Protect people, organizations, networks, and data.',
+                                        badge: 'AI tools & risks in cyber defense'
+                                    },
+                                    {
+                                        shapeId: '1741354877300',
+                                        titleId: '1741354877451',
+                                        descId: '1741354877476',
+                                        badgeId: '1748867069424',
+                                        href: 'artificial-intelligence/index.html',
+                                        title: 'Artificial Intelligence (AI)',
+                                        description: 'Train AI/ML models, turn raw data into predictions.',
+                                        badge: 'LLMs & Generative AI training'
+                                    },
+                                    {
+                                        shapeId: '1741354612509',
+                                        titleId: '1741354612629',
+                                        descId: '1741354612618',
+                                        badgeId: '1748867716450',
+                                        href: 'blockchain-engineering/index.html',
+                                        title: 'Blockchain Engineering',
+                                        description: 'Build decentralized apps, smart contracts, and secure web3 systems.',
+                                        badge: 'Smart contracts & web3 systems'
+                                    },
+                                    {
+                                        shapeId: '1747915793854',
+                                        titleId: '1747915794057',
+                                        descId: '1747915794032',
+                                        badgeId: '1748868116094',
+                                        href: 'product-design/index.html',
+                                        title: 'Product Design',
+                                        description: 'Design user-centered products, interfaces, and digital experiences.',
+                                        badge: 'UX research & interface systems'
+                                    }
+                                ];
+
+                                const DESKTOP_ONLY_PROGRAMS = [
+                                    {
+                                        sourceShapeId: '1741354612509',
+                                        sourceTitleId: '1741354612629',
+                                        sourceDescId: '1741354612618',
+                                        sourceLearnTitleId: '1741354612580',
+                                        sourceLearnListId: '1741354612606',
+                                        sourceBadgeId: '1748867716450',
+                                        topDelta: 658,
+                                        href: 'digital-marketing/index.html',
+                                        title: 'Digital Marketing',
+                                        description: 'Drive growth with content, campaigns, SEO, and performance marketing.',
+                                        badge: 'SEO, ads & growth campaigns',
+                                        learnTitle: 'What you will learn;',
+                                        learnList: '&bull; Search engine optimization (SEO) and content marketing<br>&bull; Social media marketing and community engagement strategies<br>&bull; Digital analytics and campaign optimization<br>&bull; Email marketing and lead generation techniques<br>&bull; Effective branding and digital advertising'
+                                    },
+                                    {
+                                        sourceShapeId: '1747915793854',
+                                        sourceTitleId: '1747915794057',
+                                        sourceDescId: '1747915794032',
+                                        sourceLearnTitleId: '1747915793955',
+                                        sourceLearnListId: '1747915794005',
+                                        sourceBadgeId: '1748868116094',
+                                        topDelta: 658,
+                                        href: 'project-management/index.html',
+                                        title: 'Project Management',
+                                        description: 'Plan, coordinate, and deliver projects from kickoff to completion.',
+                                        badge: 'Agile, Scrum & team delivery',
+                                        learnTitle: 'What you will learn;',
+                                        learnList: '&bull; Project planning and scheduling techniques<br>&bull; Agile and traditional project management methodologies<br>&bull; Risk assessment and mitigation strategies<br>&bull; Effective communication and stakeholder management<br>&bull; Use of project management tools for tracking and collaboration'
+                                    },
+                                    {
+                                        sourceShapeId: '1741354612509',
+                                        sourceTitleId: '1741354612629',
+                                        sourceDescId: '1741354612618',
+                                        sourceLearnTitleId: '1741354612580',
+                                        sourceLearnListId: '1741354612606',
+                                        sourceBadgeId: '1748867716450',
+                                        topDelta: 1316,
+                                        href: 'product-management/index.html',
+                                        title: 'Product Management',
+                                        description: 'Define product strategy, prioritize features, and guide delivery.',
+                                        badge: 'Strategy, roadmap & execution',
+                                        learnTitle: 'What you will learn;',
+                                        learnList: '&bull; Product lifecycle management and go-to-market strategies<br>&bull; Agile methodologies and roadmap planning<br>&bull; Market research and user feedback analysis<br>&bull; Prioritization frameworks for feature development<br>&bull; Effective communication with engineering, design, and business teams'
+                                    }
+                                ];
+
+                                const MOBILE_PROGRAMS = [
+                                    {
+                                        badge: 'Faster coding with AI',
+                                        title: 'Software Engineering',
+                                        description: 'Learn to build, test, and maintain software applications by mastering coding, debugging, and problem-solving techniques across various programming languages and frameworks.',
+                                        learnList: [
+                                            'Programming languages such as HTML/CSS, Python, JavaScript, ReactJS, NodeJS',
+                                            'Front-end and back-end development',
+                                            'Version control with Git',
+                                            'Object-oriented and functional programming principles',
+                                            'Front-end and back-end development frameworks',
+                                            'Building and deploying web applications',
+                                            'Debugging and testing techniques'
+                                        ],
+                                        href: 'software-engineer/index.html'
+                                    },
+                                    {
+                                        badge: 'AI for faster data workflows',
+                                        title: 'Data Analytics',
+                                        description: 'Explore how to extract valuable insights from data using statistical analysis, machine learning, and data visualization, turning raw data into actionable strategies.',
+                                        learnList: [
+                                            'Data cleaning, manipulation, and analysis using Python',
+                                            'Statistical analysis and hypothesis testing',
+                                            'Data visualization techniques and tools (Excel, Power BI, SQL)',
+                                            'How to derive actionable insights from data',
+                                            'Statistical analysis and probability'
+                                        ],
+                                        href: 'bi/index.html'
+                                    },
+                                    {
+                                        badge: 'AI tools & risks in cyber defense',
+                                        title: 'Cybersecurity Engineering',
+                                        description: 'Gain the skills to protect systems and networks from cyber threats by learning about risk management, ethical hacking, encryption, and proactive defense strategies.',
+                                        learnList: [
+                                            'Fundamentals of network and system security',
+                                            'Vulnerability assessments and ethical hacking techniques',
+                                            'Encryption, authentication, and access control methods',
+                                            'Security protocols and risk management practices',
+                                            'Incident response and threat mitigation strategies'
+                                        ],
+                                        href: 'cybersecurity-engineering/index.html'
+                                    },
+                                    {
+                                        badge: 'LLMs & Generative AI training',
+                                        title: 'Artificial Intelligence (AI)',
+                                        description: 'Explore the fundamentals of AI, including machine learning, deep learning, and neural networks, to design intelligent systems and understand their ethical implications.',
+                                        learnList: [
+                                            'Core concepts of machine learning and deep learning',
+                                            'Building and training neural networks',
+                                            'Natural language processing techniques',
+                                            'Evaluating and optimizing AI models',
+                                            'Ethical considerations and practical applications of AI'
+                                        ],
+                                        href: 'artificial-intelligence/index.html'
+                                    },
+                                    {
+                                        badge: 'Cloud infrastructure concepts',
+                                        title: 'Cloud Engineering',
+                                        description: 'Understand and implement cloud computing solutions, focusing on infrastructure, deployment, and management of scalable, secure, and efficient cloud environments.',
+                                        learnList: [
+                                            'Cloud infrastructure concepts and service models',
+                                            'Working with platforms like AWS, Azure, or Google Cloud',
+                                            'Containerization using Docker and orchestration with Kubernetes',
+                                            'Cloud deployment and automation strategies',
+                                            'Managing and scaling cloud resources',
+                                            'Cloud service providers (e.g., AWS, Azure, Google Cloud)',
+                                            'Infrastructure as Code (IaC)',
+                                            'Cloud security best practices'
+                                        ],
+                                        href: 'cloud-engineering/index.html'
+                                    },
+                                    {
+                                        badge: 'Smart contracts & web3 systems',
+                                        title: 'Blockchain Engineering',
+                                        description: 'Dive into the technology behind cryptocurrencies, learning about decentralized systems, smart contracts, and the transformative potential of blockchain across industries.',
+                                        learnList: [
+                                            'Fundamentals of blockchain and decentralized systems',
+                                            'Smart contract development and Ethereum basics',
+                                            'Cryptocurrency mechanics and security in blockchain environments',
+                                            'Blockchain applications in various sector',
+                                            'Emerging trends and innovations in the blockchain space'
+                                        ],
+                                        href: 'blockchain-engineering/index.html'
+                                    },
+                                    {
+                                        badge: 'UX research & interface systems',
+                                        title: 'Product Design',
+                                        description: 'Learn the fundamentals of creating user-centric digital experiences by mastering design principles, prototyping, and usability testing.',
+                                        learnList: [
+                                            'User research and design thinking methodologies',
+                                            'Wireframing and prototyping using industry-standard tools',
+                                            'Visual design principles and UI/UX best practices',
+                                            'Usability testing and iteration for product improvement',
+                                            'Collaboration with developers and stakeholders for seamless implementation'
+                                        ],
+                                        href: 'product-design/index.html'
+                                    },
+                                    {
+                                        badge: 'SEO, ads & growth campaigns',
+                                        title: 'Digital Marketing',
+                                        description: 'Discover how to leverage digital channels to create impactful marketing campaigns, using SEO, social media, content creation, and analytics to drive brand engagement.',
+                                        learnList: [
+                                            'Search engine optimization (SEO) and content marketing',
+                                            'Social media marketing and community engagement strategies',
+                                            'Digital analytics and campaign optimization',
+                                            'Email marketing and lead generation techniques',
+                                            'Effective branding and digital advertising'
+                                        ],
+                                        href: 'digital-marketing/index.html'
+                                    },
+                                    {
+                                        badge: 'Agile, Scrum & team delivery',
+                                        title: 'Project Management',
+                                        description: 'Learn the essentials of planning, executing, and overseeing projects with a focus on agile methodologies, resource management, and effective team communication.',
+                                        learnList: [
+                                            'Project planning and scheduling techniques',
+                                            'Agile and traditional project management methodologies',
+                                            'Risk assessment and mitigation strategies',
+                                            'Effective communication and stakeholder management',
+                                            'Use of project management tools for tracking and collaboration'
+                                        ],
+                                        href: 'project-management/index.html'
+                                    },
+                                    {
+                                        badge: 'Strategy, roadmap & execution',
+                                        title: 'Product Management',
+                                        description: 'Gain expertise in leading product development from ideation to launch, focusing on strategy, user needs, and cross-functional collaboration.',
+                                        learnList: [
+                                            'Product lifecycle management and go-to-market strategies',
+                                            'Agile methodologies and roadmap planning',
+                                            'Market research and user feedback analysis',
+                                            'Prioritization frameworks for feature development',
+                                            'Effective communication with engineering, design, and business teams'
+                                        ],
+                                        href: 'product-management/index.html'
+                                    }
+                                ];
+
+
+                                function setAtomHtml(record, elemId, html) {
+                                    const atom = record.querySelector('[data-elem-id="' + elemId + '"] .tn-atom');
+                                    if (atom) atom.innerHTML = html;
+                                }
+
+                                function setAtomText(record, elemId, text) {
+                                    const atom = record.querySelector('[data-elem-id="' + elemId + '"] .tn-atom');
+                                    if (atom) atom.textContent = text;
+                                }
+
+                                function setCardHref(record, shapeId, href) {
+                                    const link = record.querySelector('[data-elem-id="' + shapeId + '"] a.tn-atom');
+                                    if (link) link.setAttribute('href', href);
+                                }
+
+                                function tintCardTitle(record, elemId) {
+                                    const atom = record.querySelector('[data-elem-id="' + elemId + '"] .tn-atom');
+                                    if (atom) atom.style.color = '#08b44b';
+                                }
+
+                                function collectCardNodes(record, shapeId) {
+                                    const start = record.querySelector('[data-elem-id="' + shapeId + '"]');
+                                    if (!start) return [];
+
+                                    const nodes = [];
+                                    let current = start;
+                                    while (current) {
+                                        if (
+                                            current !== start &&
+                                            current.classList.contains('bgshape-white')
+                                        ) {
+                                            break;
+                                        }
+                                        nodes.push(current);
+                                        current = current.nextElementSibling;
+                                    }
+
+                                    return nodes;
+                                }
+
+                                function applyProgramCardUpdate(record, config) {
+                                    setCardHref(record, config.shapeId, config.href);
+                                    setAtomHtml(record, config.titleId, config.title);
+                                    setAtomHtml(record, config.descId, config.description);
+                                    setAtomText(record, config.badgeId, config.badge);
+                                    tintCardTitle(record, config.titleId);
+                                }
+
+                                function createDesktopProgramClone(record, config) {
+                                    const sourceNodes = collectCardNodes(record, config.sourceShapeId);
+                                    if (!sourceNodes.length) return;
+
+                                    const cloneMap = new Map();
+
+                                    sourceNodes.forEach(function (node) {
+                                        const clone = node.cloneNode(true);
+                                        clone.classList.add('homepage-generated-card');
+                                        clone.classList.remove('t396__elem--anim-hidden');
+                                        clone.style.opacity = '1';
+                                        clone.style.visibility = 'visible';
+
+                                        const top = Number(clone.getAttribute('data-field-top-value'));
+                                        if (!Number.isNaN(top)) {
+                                            const newTop = top + config.topDelta;
+                                            clone.setAttribute('data-field-top-value', String(newTop));
+                                            clone.style.top = newTop + 'px';
+                                        }
+
+                                        cloneMap.set(node.getAttribute('data-elem-id'), clone);
+                                        node.parentNode.appendChild(clone);
+                                    });
+
+                                    const sourceShape = sourceNodes[0];
+                                    const cloneShape = cloneMap.get(sourceShape.getAttribute('data-elem-id'));
+                                    if (!cloneShape) return;
+
+                                    const anchor = cloneShape.querySelector('a.tn-atom');
+                                    if (anchor) anchor.setAttribute('href', config.href);
+
+                                    const titleClone = cloneMap.get(config.sourceTitleId);
+                                    const descClone = cloneMap.get(config.sourceDescId);
+                                    const learnTitleClone = cloneMap.get(config.sourceLearnTitleId);
+                                    const learnListClone = cloneMap.get(config.sourceLearnListId);
+                                    const badgeClone = cloneMap.get(config.sourceBadgeId);
+
+                                    if (titleClone) {
+                                        const atom = titleClone.querySelector('.tn-atom');
+                                        atom.innerHTML = config.title;
+                                        atom.style.color = '#08b44b';
+                                    }
+
+                                    if (descClone) {
+                                        descClone.querySelector('.tn-atom').innerHTML = config.description;
+                                    }
+
+                                    if (learnTitleClone && config.learnTitle) {
+                                        learnTitleClone.querySelector('.tn-atom').innerHTML = '<span style="color:#1a1a1a; font-weight:600;">' + config.learnTitle + '</span>';
+                                    }
+
+                                    if (learnListClone && config.learnList) {
+                                        learnListClone.querySelector('.tn-atom').innerHTML = '<span style="color:#1a1a1a; font-size:16px; line-height:1.5;">' + config.learnList + '</span>';
+                                    }
+
+                                    if (badgeClone) {
+                                        badgeClone.querySelector('.tn-atom').textContent = config.badge;
+                                    }
+                                }
+
+                                function toggleQuizCard(record, desktop) {
+                                    collectCardNodes(record, '1747915793492').forEach(function (node) {
+                                        node.style.display = desktop ? 'none' : '';
+                                    });
+                                }
+
+                                function buildMobileProgramCards(record) {
+                                    let container = record.querySelector('.program-cards-mobile');
+                                    if (!container) {
+                                        container = document.createElement('div');
+                                        container.className = 'program-cards-mobile';
+                                        record.appendChild(container);
+                                    }
+
+                                    container.innerHTML = MOBILE_PROGRAMS.map(function (program) {
+                                        return '<article class="program-cards-mobile__card">'
+                                            + '<div class="program-cards-mobile__badge">' + program.badge + '</div>'
+                                            + '<div class="program-cards-mobile__title">' + program.title + '</div>'
+                                            + '<div class="program-cards-mobile__desc">' + program.description + '</div>'
+                                            + '<div class="program-cards-mobile__learn">What you will learn;</div>'
+                                            + '<ul class="program-cards-mobile__list">'
+                                            + program.learnList.map(function (item) {
+                                                return '<li>' + item + '</li>';
+                                            }).join('')
+                                            + '</ul>'
+                                            + '<a class="program-cards-mobile__link" href="' + program.href + '">Learn more</a>'
+                                            + '</article>';
+                                    }).join('');
+                                }
+
+                                function buildDesktopProgramCards(record) {
+                                    record.querySelectorAll('.homepage-generated-card').forEach(function (node) {
+                                        node.remove();
+                                    });
+
+                                    const desktop = window.innerWidth >= 1200;
+                                    toggleQuizCard(record, desktop);
+                                    if (!desktop) return;
+
+                                    DESKTOP_ONLY_PROGRAMS.forEach(function (config) {
+                                        createDesktopProgramClone(record, config);
+                                    });
+                                }
+
                                 function adjustProgramCardRows() {
                                     const record = document.getElementById('rec1075004031');
                                     if (!record) return;
@@ -15852,6 +16354,9 @@ ${el.id} {
                                         let offset = 0;
 
                                         if (desktop) {
+                                            if (top >= 2632) {
+                                                offset = 944;
+                                            } else
                                             if (top >= 1974) {
                                                 offset = 708;
                                             } else if (top >= 1316) {
@@ -15871,8 +16376,20 @@ ${el.id} {
                                 }
 
                                 function runProgramCardAdjustments() {
+                                    const record = document.getElementById('rec1075004031');
+                                    if (!record) return;
+
+                                    buildMobileProgramCards(record);
+                                    PROGRAM_CARD_UPDATES.forEach(function (config) {
+                                        applyProgramCardUpdate(record, config);
+                                    });
+                                    buildDesktopProgramCards(record);
                                     adjustProgramCardRows();
                                     window.addEventListener('resize', adjustProgramCardRows);
+                                    window.addEventListener('resize', function () {
+                                        buildDesktopProgramCards(record);
+                                        adjustProgramCardRows();
+                                    });
                                 }
 
                                 if (document.readyState === 'loading') {

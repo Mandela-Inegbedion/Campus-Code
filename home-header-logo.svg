@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="130" viewBox="0 0 560 130" fill="none">
+  <path
+    d="M106.4 24.7A58 58 0 1 0 106.4 99.3L90.3 85.8A37 37 0 1 1 90.3 38.2Z"
+    fill="#029642"/>
+  <circle cx="62" cy="62" r="31" fill="white"/>
+  <g stroke="#029642" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="62" cy="62" r="24" stroke-width="4"/>
+    <path d="M62 38V86" stroke-width="4"/>
+    <path d="M50 41C46 47 44 54 44 62C44 70 46 77 50 83" stroke-width="4"/>
+    <path d="M74 41C78 47 80 54 80 62C80 70 78 77 74 83" stroke-width="4"/>
+    <path d="M39 62H85" stroke-width="4"/>
+    <path d="M45 50H79" stroke-width="4"/>
+    <path d="M45 74H79" stroke-width="4"/>
+  </g>
+  <g font-family="Arial Black, Arial, Helvetica, sans-serif" font-weight="900">
+    <text x="118" y="57" fill="#029642" font-size="50" letter-spacing="1.5">ODE</text>
+    <text x="118" y="98" fill="#029642" font-size="50" letter-spacing="1.5">AMPUS</text>
+    <text x="118" y="122" fill="#111111" font-size="26" letter-spacing="1.2">INTERNATIONAL</text>
+  </g>
+</svg>
