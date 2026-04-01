@@ -5772,13 +5772,16 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
       {
         title: "Programs",
         children: [
-          { title: "AI Automation", href: "/ai-automation/index.html" },
-          { title: "Business Intelligence Analytics", href: "/bi/index.html" },
-          { title: "Cyber Security", href: "/cybersecurity/index.html" },
-          { title: "Data Science", href: "/data-science/index.html" },
           { title: "Software Engineering", href: "/software-engineer/index.html" },
-          { title: "Quality Assurance", href: "/qa-engineer/index.html" },
-          { title: "UX/UI Design", href: "/uxui-design/index.html" },
+          { title: "Cloud Engineering", href: "#" },
+          { title: "Cybersecurity Engineering", href: "/cybersecurity/index.html" },
+          { title: "Blockchain Engineering", href: "#" },
+          { title: "Product Design", href: "/uxui-design/index.html" },
+          { title: "Data Analytics", href: "/data-analytics/index.html" },
+          { title: "Digital Marketing", href: "#" },
+          { title: "Artificial Intelligence (AI)", href: "/ai-automation/index.html" },
+          { title: "Project Management", href: "#" },
+          { title: "Product Management", href: "#" },
         ],
       },
       {
