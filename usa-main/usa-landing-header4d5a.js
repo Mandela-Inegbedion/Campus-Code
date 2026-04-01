@@ -5799,8 +5799,6 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
         title: "Resources",
         children: [
           { title: "About Code Campus", href: "/about/index.html" },
-          { title: "Free SQL Bootcamp", href: "/sql/index.html" },
-          { title: "FAQ", href: "/faq/index.html" },
         ],
       },
     ],
@@ -5819,8 +5817,6 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
       {
         title: "Resources",
         children: [
-          { title: "Free SQL Bootcamp", href: "/sql/index.html" },
-          { title: "FAQ", href: "/faq/index.html" },
         ],
       },
     ],
