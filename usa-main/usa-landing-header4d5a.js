@@ -4153,22 +4153,22 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
             },
             {
               title: "YouTube",
-              href: "https://www.youtube.com/@Code CampusTech",
+              href: "https://www.youtube.com/@codecampusng",
               icon: Wr,
             },
             {
               title: "X",
-              href: "https://twitter.com/Code CampusTech",
+              href: "https://x.com/codecampusng?s=11",
               icon: Gr,
             },
             {
               title: "LinkedIn",
-              href: "https://www.linkedin.com/school/tripleten/",
+              href: "https://www.linkedin.com/company/codecampusng/",
               icon: Qr,
             },
             {
               title: "TikTok",
-              href: "https://www.tiktok.com/@tripleten.tech?_t=8dABuoZ4By2&_r=1",
+              href: "https://www.tiktok.com/@codecampusng?_r=1&_t=ZS-959PNNtmaHA",
               icon: Jr,
             },
           ];
