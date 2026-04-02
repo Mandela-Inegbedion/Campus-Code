@@ -118,12 +118,12 @@
     record.style.setProperty("display", "block", "important");
     record.innerHTML =
       '<div class="cc-se-ai-shell"><div class="cc-se-ai-card">' +
-      '<h2 class="cc-se-ai-heading"><span class="accent">Learn AI tools</span> used by 76%* of software engineers while mastering the core skills to do the job</h2>' +
+      '<h2 class="cc-se-ai-heading"><span class="accent">Learn Software Engineering</span> with AI, the Right Way</h2>' +
       '<aside class="cc-se-ai-bubble"><p>Software fundamentals and AI experience make you more valuable and job-market ready.</p><span class="big">78%</span><div class="small">of organizations already use AI**</div></aside>' +
       '<div class="cc-se-ai-visual"><img src="' +
       heroImage +
       '" alt="" loading="lazy"></div>' +
-      '<div><p class="cc-se-ai-copy-title">Course Structure:</p><div class="cc-se-ai-copy">' +
+      '<div><p class="cc-se-ai-copy-title">Build real-world skills across frontend, backend, testing, and modern development practices.</p><p class="cc-se-ai-copy-title">Course Structure:</p><div class="cc-se-ai-copy">' +
       items
         .map(function (item) {
           return (
@@ -150,3 +150,4 @@
   setTimeout(render, 2200);
   setTimeout(render, 3500);
 })();
+
