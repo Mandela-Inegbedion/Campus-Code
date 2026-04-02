@@ -3,7 +3,7 @@
   var checkIcon =
     "../usa-assets/software-engineer/tild3266-6137-4134-b939-656362613465__checkcirclefilled.svg";
   var heroImage =
-    "../usa-assets/software-engineer/tild3837-3766-4861-a131-616663353963__frame_2087328970_1.svg";
+    "../usa-assets/software-engineer/tild3830-3166-4463-b136-666663393038__frame_2087328612.svg";
 
   var items = [
     "<strong>Introduction to Software Engineering:</strong> Understand the software development life cycle and agile methodologies.",
@@ -37,10 +37,10 @@
       " .cc-se-ai-heading .accent{color:#f06a3a;}" +
       "#" +
       recordId +
-      " .cc-se-ai-visual{align-self:end;}" +
+      " .cc-se-ai-visual{align-self:start;justify-self:start;margin-top:-6px;}" +
       "#" +
       recordId +
-      " .cc-se-ai-visual img{display:block;max-width:100%;height:auto;}" +
+      " .cc-se-ai-visual img{display:block;max-width:360px;width:100%;height:auto;}" +
       "#" +
       recordId +
       " .cc-se-ai-copy-title{margin:0 0 18px;color:#1a1a1a;font:500 20px/1.2 'SuisseIntl',Arial,sans-serif;}" +
@@ -150,4 +150,5 @@
   setTimeout(render, 2200);
   setTimeout(render, 3500);
 })();
+
 
