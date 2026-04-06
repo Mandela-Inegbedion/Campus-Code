@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why Choose Us | Code Campus</title>
+    <meta
+      name="description"
+      content="See why learners choose Code Campus for world-class instruction, flexible payments, modern teaching methods, and career opportunities."
+    />
+    <link rel="shortcut icon" href="../code-campus-favicon.svg" type="image/x-icon" />
+    <script
+      type="text/javascript"
+      src="../usa-assets/usa-main/usa-landing-header4d5a.js?ts=1751387049175"
+      async
+      onload="headerLoaded()"
+    ></script>
+    <script>
+      let headerReady = false;
+      const headerCallbackQueue = [];
+
+      function headerLoaded() {
+        headerReady = true;
+        for (const callback of headerCallbackQueue) callback();
+      }
+
+      function onHeaderLoaded(callback) {
+        if (headerReady) callback();
+        else headerCallbackQueue.push(callback);
+      }
+    </script>
+    <style>
+      :root {
+        --wcu-ink: #1a241f;
+        --wcu-muted: #55655d;
+        --wcu-bg: #f6f3ec;
+        --wcu-panel: #fffdf8;
+        --wcu-line: rgba(26, 36, 31, 0.1);
+        --wcu-green: #10bf44;
+        --wcu-green-deep: #0d9636;
+        --wcu-gold: #f3c764;
+        --wcu-shadow: 0 24px 60px rgba(25, 34, 29, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: var(--wcu-ink);
+        background:
+          radial-gradient(circle at top left, rgba(16, 191, 68, 0.08), transparent 24%),
+          linear-gradient(180deg, #fbf8f2 0%, #f2ede4 100%);
+      }
+
+      a {
+        color: inherit;
+      }
+
+      #header {
+        min-height: 66px;
+        background: #f2f1ee;
+      }
+
+      .wcu-shell {
+        width: min(1160px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .wcu-main section {
+        padding: 34px 0;
+      }
+
+      .wcu-hero {
+        padding-top: 42px;
+      }
+
+      .wcu-hero__card {
+        position: relative;
+        min-height: 420px;
+        border-radius: 34px;
+        overflow: hidden;
+        box-shadow: 0 36px 80px rgba(20, 25, 22, 0.22);
+        background:
+          linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.55)),
+          url("../usa-assets/about/tild3736-3936-4164-a166-306365613861__img_4082.jpg") center/cover no-repeat;
+      }
+
+      .wcu-hero__content {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        padding: 28px;
+      }
+
+      .wcu-kicker {
+        display: inline-flex;
+        align-items: center;
+        min-height: 32px;
+        padding: 0 14px;
+        margin-bottom: 16px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.14);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        color: #ffffff;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .wcu-hero h1 {
+        margin: 0;
+        color: #ffffff;
+        font-size: clamp(46px, 6vw, 78px);
+        line-height: 0.95;
+        letter-spacing: -0.05em;
+      }
+
+      .wcu-intro {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 24px;
+        align-items: center;
+        padding: 26px 28px;
+        border-radius: 28px;
+        background: linear-gradient(135deg, rgba(16, 191, 68, 0.08), rgba(255, 255, 255, 0.92));
+        border: 1px solid var(--wcu-line);
+        box-shadow: var(--wcu-shadow);
+      }
+
+      .wcu-intro h2,
+      .wcu-section-head h2,
+      .wcu-cta h2 {
+        margin: 0 0 12px;
+        font-size: clamp(32px, 4vw, 52px);
+        line-height: 1;
+        letter-spacing: -0.045em;
+      }
+
+      .wcu-intro p,
+      .wcu-section-head p,
+      .wcu-card p,
+      .wcu-review p {
+        margin: 0;
+        color: var(--wcu-muted);
+        font-size: 15px;
+        line-height: 1.6;
+      }
+
+      .wcu-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50px;
+        padding: 0 22px;
+        border-radius: 16px;
+        border: 1px solid transparent;
+        background: var(--wcu-green);
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: transform 0.2s ease;
+      }
+
+      .wcu-button:hover {
+        transform: translateY(-1px);
+      }
+
+      .wcu-section-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 24px;
+      }
+
+      .wcu-section-head p {
+        max-width: 420px;
+      }
+
+      .wcu-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .wcu-card,
+      .wcu-review,
+      .wcu-reviews-wrap,
+      .wcu-cta__panel {
+        background: rgba(255, 253, 248, 0.95);
+        border: 1px solid var(--wcu-line);
+        box-shadow: var(--wcu-shadow);
+      }
+
+      .wcu-card {
+        padding: 28px;
+        border-radius: 30px;
+      }
+
+      .wcu-card h3 {
+        margin: 0 0 12px;
+        color: var(--wcu-green);
+        font-size: clamp(26px, 2.8vw, 38px);
+        line-height: 1.05;
+        letter-spacing: -0.03em;
+      }
+
+      .wcu-card p {
+        margin-bottom: 14px;
+      }
+
+      .wcu-icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 18px;
+      }
+
+      .wcu-icons span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: var(--wcu-green);
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .wcu-reviews-wrap {
+        padding: 30px;
+        border-radius: 32px;
+      }
+
+      .wcu-reviews-wrap h2 {
+        margin: 0 0 24px;
+        color: var(--wcu-green);
+        font-size: clamp(34px, 4vw, 56px);
+        line-height: 1;
+        letter-spacing: -0.045em;
+        text-align: center;
+      }
+
+      .wcu-reviews-grid {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 16px;
+      }
+
+      .wcu-review {
+        padding: 18px;
+        border-radius: 22px;
+      }
+
+      .wcu-review__head {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+
+      .wcu-avatar {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+
+      .wcu-review__name {
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .wcu-review__meta {
+        color: #8a867e;
+        font-size: 12px;
+      }
+
+      .wcu-stars {
+        margin-bottom: 10px;
+        color: #f39a26;
+        font-size: 16px;
+        letter-spacing: 0.12em;
+      }
+
+      .wcu-cta__panel {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 24px;
+        align-items: center;
+        padding: 32px 34px;
+        border-radius: 30px;
+        background: linear-gradient(135deg, #13bb43 0%, #0e8f32 100%);
+      }
+
+      .wcu-cta h2,
+      .wcu-cta p {
+        color: #ffffff;
+        text-align: center;
+      }
+
+      .wcu-cta p {
+        margin: 0;
+        font-size: clamp(20px, 2.5vw, 34px);
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      .wcu-cta .wcu-button {
+        background: transparent;
+        border-color: rgba(255, 255, 255, 0.55);
+      }
+
+      @media (max-width: 940px) {
+        .wcu-shell {
+          width: min(100% - 24px, 1160px);
+        }
+
+        .wcu-main section {
+          padding: 26px 0;
+        }
+
+        .wcu-intro,
+        .wcu-grid,
+        .wcu-reviews-grid,
+        .wcu-cta__panel {
+          grid-template-columns: 1fr;
+        }
+
+        .wcu-section-head {
+          display: block;
+        }
+
+        .wcu-section-head p {
+          margin-top: 12px;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .wcu-button {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <main class="wcu-main">
+      <section class="wcu-hero">
+        <div class="wcu-shell">
+          <div class="wcu-hero__card">
+            <div class="wcu-hero__content">
+              <div>
+                <div class="wcu-kicker">Code Campus Advantage</div>
+                <h1>Why Choose Us</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wcu-shell">
+          <div class="wcu-intro">
+            <div>
+              <h2>Everything you need to learn, grow, and get hired.</h2>
+            </div>
+            <a class="wcu-button" href="../index.html#applynow">Apply Now</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wcu-shell">
+          <div class="wcu-section-head">
+            <h2>Why Choose Code Campus</h2>
+          </div>
+
+          <div class="wcu-grid">
+            <article class="wcu-card">
+              <h3>Global Standard Syllabus</h3>
+              <p>
+                Learning to read/write codes, and develop computing programs is an ever
+                evolving body of knowledge. When you have the current collection of this
+                body you'll fly high.
+              </p>
+              <p>
+                Code Campus gives you the best in-class syllabus that are used by the
+                tech companies in Silicon Valley. You'll gain the relevant knowledge
+                needed to be a top player in today's completely digital universe.
+              </p>
+              <p>
+                We give you this body of content in various formats, that impacts and
+                ensure that your learning is both fun and accelerated. You will be
+                building great stuff.
+              </p>
+              <div class="wcu-icons"><span>✓</span><span>✓</span><span>✓</span><span>✓</span><span>✓</span></div>
+            </article>
+
+            <article class="wcu-card">
+              <h3>World Class Instructors</h3>
+              <p>There are good teachers, and there are great ones!</p>
+              <p>
+                We bring to you the creme de la creme of the computing universe. The
+                trend setters and trail blazers. The highest ranking, and best in the
+                world of programming to take you on this journey.
+              </p>
+              <p>
+                Our expert instructors take you by the hand, through various means and
+                guide you till you become an expert.
+              </p>
+              <p>
+                At every time in this accelerated programming bootcamp, you have access to
+                world class instructors.
+              </p>
+              <p>You will become a world class programmer. Confirmed!</p>
+              <div class="wcu-icons"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            </article>
+
+            <article class="wcu-card">
+              <h3>Revolutionary Teaching Methods</h3>
+              <p>
+                We are deploying AR and VR in this process, so get ready for an immersive
+                time at Code Campus.
+              </p>
+              <p>
+                This approach to teaching is a breakthrough in the world of tutoring.
+              </p>
+              <p>
+                We use different teaching formats at various times in the bootcamp - real
+                and virtual.
+              </p>
+              <div class="wcu-icons"><span>✓</span><span>✓</span><span>✓</span><span>✓</span><span>✓</span></div>
+            </article>
+
+            <article class="wcu-card">
+              <h3>Stimulating Learning Environment</h3>
+              <p>
+                We have set up a world class, first-of-its-type learning campus with an
+                optimized capacity to stimulate learning in class!
+              </p>
+              <p>
+                This is further complimented with a very robust and supportive online
+                learning environment, with modern social learning technology that are used
+                by Silicon Valley companies.
+              </p>
+              <div class="wcu-icons"><span>✓</span><span>✓</span><span>✓</span><span>✓</span><span>✓</span></div>
+            </article>
+
+            <article class="wcu-card">
+              <h3>Flexible Payment Options</h3>
+              <p>
+                We have a series of options to make payment of tuition friendly for our
+                students, so you get to pay in two or three installments depending on your
+                unique situation.
+              </p>
+              <p>
+                This is further made interesting with our pocket friendly pricing in
+                comparison to what is being charged by top programming bootcamps around.
+              </p>
+              <p>
+                The 20 weeks bootcamp cost NGN600,000 only, so you just got yourself the
+                best deal ever!
+              </p>
+              <div class="wcu-icons"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            </article>
+
+            <article class="wcu-card">
+              <h3>Certified Job Opportunity</h3>
+              <p>
+                Code Campus offers the surest, the most guaranteed, and the most
+                certified opportunity to exciting and satisfying jobs in the tech
+                industry.
+              </p>
+              <p>
+                With our Global Network Access to high paying in-demand jobs across all
+                the continents of the world, which keeps increasing and expanding, you
+                already have an employment waiting for you.
+              </p>
+              <p>
+                You can also choose to go the way of entrepreneurship, and launch your
+                own startup, in which case, we got your back!
+              </p>
+              <div class="wcu-icons"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wcu-shell">
+          <div class="wcu-reviews-wrap">
+            <h2>Testimonials</h2>
+            <div class="wcu-reviews-grid">
+              <article class="wcu-review">
+                <div class="wcu-review__head">
+                  <img class="wcu-avatar" src="../usa-assets/usa-main/african-portraits/code1.jpg" alt="Code Campus review" />
+                  <div>
+                    <div class="wcu-review__name">Code Campus</div>
+                    <div class="wcu-review__meta">Based on 67 reviews</div>
+                  </div>
+                </div>
+                <div class="wcu-stars">★★★★★</div>
+                <p>Powered by Google. Trusted by learners building real progress in tech.</p>
+              </article>
+
+              <article class="wcu-review">
+                <div class="wcu-review__head">
+                  <img class="wcu-avatar" src="../usa-assets/usa-main/african-portraits/code2.jpg" alt="Nweeze Ozoemenam" />
+                  <div>
+                    <div class="wcu-review__name">Nweeze Ozoemenam</div>
+                    <div class="wcu-review__meta">a month ago</div>
+                  </div>
+                </div>
+                <div class="wcu-stars">★★★★★</div>
+                <p>Code Campus as the go-to place for learning tech. Today, I'm into tech and making some good strides.</p>
+              </article>
+
+              <article class="wcu-review">
+                <div class="wcu-review__head">
+                  <img class="wcu-avatar" src="../usa-assets/usa-main/african-portraits/code3.jpg" alt="Lekan Alabi" />
+                  <div>
+                    <div class="wcu-review__name">Lekan Alabi</div>
+                    <div class="wcu-review__meta">a month ago</div>
+                  </div>
+                </div>
+                <div class="wcu-stars">★★★★★</div>
+                <p>Scenarios. I would recommend Code Campus International to beginners and advanced Devs alike.</p>
+              </article>
+
+              <article class="wcu-review">
+                <div class="wcu-review__head">
+                  <img class="wcu-avatar" src="../usa-assets/usa-main/african-portraits/code4.jpg" alt="Asemakaha Mande" />
+                  <div>
+                    <div class="wcu-review__name">Asemakaha Mande</div>
+                    <div class="wcu-review__meta">a month ago</div>
+                  </div>
+                </div>
+                <div class="wcu-stars">★★★★★</div>
+                <p>Code Campus International is one of Nigeria's leading edu-tech firms dedicated to developing highly skilled tech interns.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wcu-cta">
+        <div class="wcu-shell">
+          <div class="wcu-cta__panel">
+            <div>
+              <h2>Happy Coding!</h2>
+              <p>Start your journey with the learning environment built for growth.</p>
+            </div>
+            <a class="wcu-button" href="../index.html#applynow">Apply Now</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="contact-form-widget" data-program="main" data-scoring-enabled="true" data-view="popup"></div>
+    <script type="module" defer src="../usa-assets/usa-main/widgets/widget.js"></script>
+
+    <footer id="footer"></footer>
+
+    <script>
+      const ccHeaderGreen = "#118847";
+
+      function ccApplyHeaderFixes() {
+        const header = document.getElementById("header");
+        if (!header) return;
+
+        header.querySelectorAll("a,button,div,span").forEach((el) => {
+          const text = (el.textContent || "").replace(/\s+/g, " ").trim().toLowerCase();
+          if (!text) return;
+          if (text === "log in") {
+            (el.closest("a,button") || el).style.setProperty("display", "none", "important");
+          }
+        });
+
+        header.querySelectorAll("a,button").forEach((el) => {
+          const text = (el.textContent || "").replace(/\s+/g, " ").trim().toLowerCase();
+          if (text !== "book a call") return;
+          el.style.setProperty("background", ccHeaderGreen, "important");
+          el.style.setProperty("border-color", ccHeaderGreen, "important");
+          el.style.setProperty("color", "#ffffff", "important");
+        });
+      }
+
+      function ccEnhanceFooterPrograms() {
+        const grid = document.querySelector("#footer .app-footer__grid");
+        if (!grid || grid.querySelector(".cc-footer-programs")) return;
+        const column = document.createElement("div");
+        column.className = "app-footer__column cc-footer-programs";
+        column.innerHTML =
+          '<div class="title label">Other Programs</div>' +
+          '<a class="title label spacing-top" href="/python-weekend/">Python Weekend</a>' +
+          '<a class="title label spacing-top" href="/canada-tech-fusion/">Canada Tech Fusion</a>' +
+          '<a class="title label spacing-top" href="/django-girls/">Django Girls</a>';
+        grid.appendChild(column);
+      }
+
+      function ccFixFooterCopyright() {
+        document
+          .querySelectorAll("#footer .app-footer__bottom-label .desktop, #footer .app-footer__bottom-label .mobile")
+          .forEach((el) => {
+            const text = (el.textContent || "").trim();
+            if (text === "Copyright Code Campus International, 2026") {
+              el.textContent = "\u00A9 Copyright Code Campus International, 2026";
+            }
+          });
+      }
+
+      function ccCenterFooterBottom() {
+        const footerBottom = document.querySelector("#footer .app-footer__bottom-label");
+        if (!footerBottom) return;
+        footerBottom.style.setProperty("justify-content", "center", "important");
+        footerBottom.style.setProperty("width", "100%", "important");
+        footerBottom.style.setProperty("text-align", "center", "important");
+      }
+
+      function ccCenterFooterSocial() {
+        document.querySelectorAll("#footer .app-footer__social-media").forEach((el) => {
+          el.style.setProperty("justify-content", "center", "important");
+          el.style.setProperty("margin-left", "auto", "important");
+          el.style.setProperty("margin-right", "auto", "important");
+        });
+      }
+
+      onHeaderLoaded(() => {
+        mountHeader("#header", "contentPage", {
+          actionButton: { tagName: "button", className: "action-button_form-popup" },
+          disableBottomPanel: true,
+        });
+
+        mountFooter("#footer");
+
+        const homeHeaderLogo = document.querySelector("#header .header-main__container .logo-svg img");
+        if (homeHeaderLogo) homeHeaderLogo.src = "../home-header-logo.svg";
+
+        requestAnimationFrame(() => {
+          ccApplyHeaderFixes();
+          ccEnhanceFooterPrograms();
+          ccFixFooterCopyright();
+          ccCenterFooterBottom();
+          ccCenterFooterSocial();
+        });
+        setTimeout(ccApplyHeaderFixes, 150);
+        setTimeout(ccEnhanceFooterPrograms, 300);
+        setTimeout(ccFixFooterCopyright, 300);
+        setTimeout(ccCenterFooterBottom, 300);
+        setTimeout(ccCenterFooterSocial, 300);
+      });
+    </script>
+  </body>
+</html>

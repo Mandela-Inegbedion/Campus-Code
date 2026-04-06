@@ -5749,10 +5749,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
       {
         title: "Why Code Campus",
         children: [
-          {
-            title: "Flexible payment options",
-            href: "/about/payment-options/index.html",
-          },
+          { title: "Why Choose Us", href: "/why-choose-us/" },
         ],
       },
       {
@@ -5766,10 +5763,7 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
       {
         title: "Why Code Campus",
         children: [
-          {
-            title: "Flexible payment options",
-            href: "/about/payment-options/index.html",
-          },
+          { title: "Why Choose Us", href: "/why-choose-us/" },
         ],
       },
       {
