@@ -964,18 +964,90 @@ function onHeaderLoaded (callback) {
         headerCallbackQueue.push(callback)
     }
 }
-</script> <!-- nominify end --> </div> </div> </div> </div> <!-- Timer --> </header> <!--/header--> <div id="rec736147646" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <header id="header"></header> <div id="offer-popup-form" style="display: none;" class="contact-form-widget" data-program="se" data-scoring-enabled="true" data-view="headless" data-steps-mod="default" data-form-position="last_screen"></div> <script>
+</script> <!-- nominify end --> </div> </div> </div> </div> <!-- Timer --> </header> <!--/header--> <div id="rec736147646" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <header id="header" class="cc-header-pending"></header> <div id="offer-popup-form" style="display: none;" class="contact-form-widget" data-program="se" data-scoring-enabled="true" data-view="headless" data-steps-mod="default" data-form-position="last_screen"></div> <script>
+
+const ccHeaderPendingClass = 'cc-header-pending';
+const ccHeaderGreen = '#118847';
+const ccHeaderGreenHover = '#0c6a37';
+
+function ccApplyHeaderFixes() {
+    const header = document.getElementById('header');
+    if (!header) return false;
+
+    let hasMountedHeader = false;
+
+    header.querySelectorAll('a,button,div,span').forEach(function (el) {
+        const text = (el.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase();
+        if (!text) return;
+        hasMountedHeader = true;
+
+        if (text === 'log in') {
+            (el.closest('a,button') || el).style.setProperty('display', 'none', 'important');
+        }
+    });
+
+    header.querySelectorAll('a,button').forEach(function (el) {
+        const text = (el.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase();
+        if (text !== 'book a call') return;
+
+        hasMountedHeader = true;
+        el.style.setProperty('background', ccHeaderGreen, 'important');
+        el.style.setProperty('background-color', ccHeaderGreen, 'important');
+        el.style.setProperty('background-image', 'none', 'important');
+        el.style.setProperty('color', '#ffffff', 'important');
+        el.style.setProperty('border-color', ccHeaderGreen, 'important');
+        el.style.setProperty('box-shadow', 'none', 'important');
+        el.onmouseenter = function () {
+            el.style.setProperty('background-color', ccHeaderGreenHover, 'important');
+            el.style.setProperty('border-color', ccHeaderGreenHover, 'important');
+        };
+        el.onmouseleave = function () {
+            el.style.setProperty('background-color', ccHeaderGreen, 'important');
+            el.style.setProperty('border-color', ccHeaderGreen, 'important');
+        };
+    });
+
+    if (hasMountedHeader) {
+        header.classList.remove(ccHeaderPendingClass);
+    }
+
+    return hasMountedHeader;
+}
+
+function ccWatchHeaderFixes() {
+    const header = document.getElementById('header');
+    if (!header) return;
+
+    const observer = new MutationObserver(function () {
+        if (ccApplyHeaderFixes()) {
+            observer.disconnect();
+        }
+    });
+
+    observer.observe(header, { childList: true, subtree: true });
+
+    setTimeout(function () {
+        ccApplyHeaderFixes();
+        header.classList.remove(ccHeaderPendingClass);
+        observer.disconnect();
+    }, 1500);
+}
 
 onHeaderLoaded(() => {
     mountHeader("#header", "longLanding2", {
         title: "Software Engineering Bootcamp",
         disableBottomPanel: true
     })   // Available templates: contentPage, fullLanding, shortLanding, longLanding
+    ccWatchHeaderFixes();
     // Offer banner intentionally disabled on this page.
     // mountOffer({ popupForm: "#offer-popup-form" })
 })
 
 </script> <style>
+#header.cc-header-pending {
+    visibility: hidden;
+}
+
 #header {
     height: 65px;
     background-color: #f2f1ee;
