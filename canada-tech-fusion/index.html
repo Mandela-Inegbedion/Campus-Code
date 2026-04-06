@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canada Tech Fusion | Code Campus</title>
+    <meta
+      name="description"
+      content="Canada Tech Fusion is a comprehensive and intensive four-month in-demand digital skills training that opens doors to new opportunities abroad."
+    />
+    <link rel="shortcut icon" href="../code-campus-favicon.svg" type="image/x-icon" />
+    <script
+      type="text/javascript"
+      src="../usa-assets/usa-main/usa-landing-header4d5a.js?ts=1751387049175"
+      async
+      onload="headerLoaded()"
+    ></script>
+    <script>
+      let headerReady = false;
+      const headerCallbackQueue = [];
+
+      function headerLoaded() {
+        headerReady = true;
+        for (const callback of headerCallbackQueue) {
+          callback();
+        }
+      }
+
+      function onHeaderLoaded(callback) {
+        if (headerReady) {
+          callback();
+        } else {
+          headerCallbackQueue.push(callback);
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --ctf-ink: #14231d;
+        --ctf-ink-soft: #30483d;
+        --ctf-paper: #f5f2ea;
+        --ctf-paper-2: #fffcf6;
+        --ctf-panel: #ffffff;
+        --ctf-green: #0f9d4a;
+        --ctf-green-deep: #0a6a31;
+        --ctf-mint: #d8f6d9;
+        --ctf-red: #ef2f2f;
+        --ctf-red-deep: #c81e1e;
+        --ctf-line: rgba(20, 35, 29, 0.12);
+        --ctf-shadow: 0 24px 60px rgba(15, 36, 28, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: var(--ctf-ink);
+        background:
+          radial-gradient(circle at top left, rgba(15, 157, 74, 0.08), transparent 26%),
+          linear-gradient(180deg, #f8f5ee 0%, #f1ede3 100%);
+      }
+
+      a {
+        color: inherit;
+      }
+
+      #header {
+        min-height: 66px;
+        background: #f2f1ee;
+      }
+
+      .ctf-main {
+        overflow: hidden;
+      }
+
+      .ctf-shell {
+        width: min(1160px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .ctf-main section {
+        padding: 34px 0;
+      }
+
+      .ctf-hero {
+        padding-top: 42px;
+      }
+
+      .ctf-hero__card {
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+        gap: 28px;
+        padding: 38px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 36px;
+        background:
+          radial-gradient(circle at top right, rgba(255, 255, 255, 0.12), transparent 30%),
+          linear-gradient(135deg, #17382a 0%, #101d19 55%, #0e1814 100%);
+        box-shadow: 0 36px 80px rgba(8, 19, 15, 0.24);
+      }
+
+      .ctf-hero__card::after {
+        content: "";
+        position: absolute;
+        right: -80px;
+        bottom: -90px;
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(216, 246, 217, 0.18), rgba(216, 246, 217, 0));
+        pointer-events: none;
+      }
+
+      .ctf-badge {
+        display: inline-flex;
+        align-items: center;
+        min-height: 32px;
+        padding: 0 14px;
+        border-radius: 999px;
+        background: rgba(216, 246, 217, 0.12);
+        border: 1px solid rgba(216, 246, 217, 0.18);
+        color: #ddffe4;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .ctf-hero h1 {
+        margin: 18px 0 18px;
+        max-width: 10ch;
+        color: #ffffff;
+        font-size: clamp(48px, 7vw, 88px);
+        line-height: 0.94;
+        letter-spacing: -0.055em;
+      }
+
+      .ctf-hero__lede {
+        max-width: 620px;
+        margin: 0 0 22px;
+        color: rgba(255, 255, 255, 0.84);
+        font-size: 19px;
+        line-height: 1.55;
+      }
+
+      .ctf-price-line {
+        margin: 0 0 8px;
+        color: #c7ffd2;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+
+      .ctf-support-line {
+        margin: 0 0 28px;
+        color: #87efab;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.55;
+      }
+
+      .ctf-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+
+      .ctf-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50px;
+        padding: 0 22px;
+        border-radius: 16px;
+        border: 1px solid transparent;
+        font-size: 15px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+      }
+
+      .ctf-button:hover {
+        transform: translateY(-1px);
+      }
+
+      .ctf-button--primary {
+        background: var(--ctf-mint);
+        color: var(--ctf-ink);
+        box-shadow: 0 18px 36px rgba(216, 246, 217, 0.18);
+      }
+
+      .ctf-button--ghost {
+        border-color: rgba(255, 255, 255, 0.2);
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.03);
+      }
+
+      .ctf-button--outline {
+        border-color: rgba(15, 157, 74, 0.45);
+        color: var(--ctf-green);
+        background: transparent;
+      }
+
+      .ctf-button--white {
+        border-color: rgba(255, 255, 255, 0.5);
+        color: #ffffff;
+        background: transparent;
+      }
+
+      .ctf-hero__aside {
+        display: grid;
+        gap: 18px;
+        align-content: start;
+      }
+
+      .ctf-flag-panel,
+      .ctf-info-panel,
+      .ctf-callout,
+      .ctf-card,
+      .ctf-objectives,
+      .ctf-audience,
+      .ctf-workflow,
+      .ctf-photo-large {
+        background: rgba(255, 255, 255, 0.92);
+        border: 1px solid var(--ctf-line);
+        box-shadow: var(--ctf-shadow);
+      }
+
+      .ctf-flag-panel {
+        padding: 18px;
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.96);
+      }
+
+      .ctf-flag {
+        position: relative;
+        aspect-ratio: 1.22 / 1;
+        width: 100%;
+        min-height: 250px;
+        border-radius: 22px;
+        overflow: hidden;
+        background:
+          linear-gradient(90deg, #ff2222 0 25%, #ffffff 25% 75%, #ff2222 75% 100%);
+      }
+
+      .ctf-flag::before {
+        content: "CANADA";
+        position: absolute;
+        left: 50%;
+        top: 20px;
+        transform: translateX(-50%);
+        color: rgba(20, 35, 29, 0.15);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.35em;
+      }
+
+      .ctf-flag::after {
+        content: "✦";
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        color: var(--ctf-red);
+        font-size: clamp(76px, 13vw, 134px);
+        text-shadow: 0 4px 0 rgba(0, 0, 0, 0.04);
+      }
+
+      .ctf-info-panel {
+        padding: 22px 24px;
+        border-radius: 24px;
+        background:
+          linear-gradient(180deg, #ffffff 0%, #f6fbf6 100%);
+      }
+
+      .ctf-info-panel h2 {
+        margin: 0 0 10px;
+        font-size: 24px;
+        line-height: 1.15;
+      }
+
+      .ctf-info-panel p {
+        margin: 0 0 10px;
+        color: var(--ctf-ink-soft);
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .ctf-callout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 24px;
+        align-items: center;
+        padding: 28px 30px;
+        border-radius: 28px;
+        background:
+          linear-gradient(135deg, rgba(15, 157, 74, 0.08), rgba(255, 255, 255, 0.92));
+      }
+
+      .ctf-callout h2,
+      .ctf-section-head h2,
+      .ctf-objectives h2,
+      .ctf-audience h2,
+      .ctf-workflow h2,
+      .ctf-cta h2 {
+        margin: 0 0 12px;
+        color: var(--ctf-ink);
+        font-size: clamp(32px, 4vw, 54px);
+        line-height: 1;
+        letter-spacing: -0.045em;
+      }
+
+      .ctf-callout p {
+        margin: 0 0 8px;
+        color: #4d6155;
+        font-size: 15px;
+        line-height: 1.5;
+      }
+
+      .ctf-section-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 26px;
+      }
+
+      .ctf-section-head p {
+        max-width: 420px;
+        margin: 0;
+        color: #547064;
+        font-size: 15px;
+        line-height: 1.55;
+      }
+
+      .ctf-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .ctf-card {
+        padding: 24px;
+        border-radius: 26px;
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(247, 252, 248, 0.96));
+      }
+
+      .ctf-card h3 {
+        margin: 0 0 10px;
+        color: var(--ctf-ink);
+        font-size: 18px;
+        line-height: 1.3;
+      }
+
+      .ctf-card p,
+      .ctf-objectives p,
+      .ctf-objectives li,
+      .ctf-audience p,
+      .ctf-audience li,
+      .ctf-workflow p {
+        margin: 0;
+        color: #466055;
+        font-size: 14px;
+        line-height: 1.62;
+      }
+
+      .ctf-card::before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 4px;
+        margin-bottom: 18px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--ctf-green), #7ae29f);
+      }
+
+      .ctf-gallery {
+        display: grid;
+        grid-template-columns: 1.15fr 1fr 0.95fr;
+        gap: 18px;
+        margin-top: 22px;
+      }
+
+      .ctf-photo,
+      .ctf-photo-large,
+      .ctf-laptop-art {
+        position: relative;
+        overflow: hidden;
+        border-radius: 28px;
+      }
+
+      .ctf-photo {
+        min-height: 220px;
+      }
+
+      .ctf-photo::before,
+      .ctf-photo::after,
+      .ctf-photo-large::before,
+      .ctf-photo-large::after,
+      .ctf-laptop-art::before,
+      .ctf-laptop-art::after {
+        content: "";
+        position: absolute;
+      }
+
+      .ctf-photo--city::before {
+        inset: 0;
+        background:
+          radial-gradient(circle at 25% 22%, rgba(255, 255, 255, 0.65), transparent 18%),
+          linear-gradient(180deg, #83cfff 0%, #e9f8ff 44%, #9ad078 45%, #6ca45b 100%);
+      }
+
+      .ctf-photo--city::after {
+        inset: auto 0 0 0;
+        height: 50%;
+        background:
+          linear-gradient(90deg, rgba(58, 78, 87, 0.72) 0 12%, transparent 12% 18%, rgba(82, 99, 108, 0.6) 18% 31%, transparent 31% 44%, rgba(65, 88, 98, 0.64) 44% 55%, transparent 55% 100%);
+      }
+
+      .ctf-photo--lake::before {
+        inset: 0;
+        background:
+          linear-gradient(180deg, #d5ecff 0%, #98cbff 35%, #60c2cf 36%, #237d96 68%, #165467 100%);
+      }
+
+      .ctf-photo--lake::after {
+        left: 50%;
+        bottom: 26px;
+        width: 92px;
+        height: 56px;
+        transform: translateX(-50%);
+        background:
+          linear-gradient(90deg, #ff2222 0 25%, #ffffff 25% 75%, #ff2222 75% 100%);
+        box-shadow: 0 18px 30px rgba(0, 0, 0, 0.18);
+      }
+
+      .ctf-photo--street::before,
+      .ctf-photo-large::before {
+        inset: 0;
+        background:
+          radial-gradient(circle at 50% 22%, rgba(255, 255, 255, 0.65), transparent 18%),
+          linear-gradient(180deg, #dcecff 0%, #fdfefe 32%, #b4bfca 33%, #758292 100%);
+      }
+
+      .ctf-photo--street::after,
+      .ctf-photo-large::after {
+        inset: 0;
+        background:
+          linear-gradient(90deg, rgba(80, 88, 102, 0.75) 0 14%, transparent 14% 22%, rgba(92, 101, 114, 0.56) 22% 36%, transparent 36% 63%, rgba(83, 94, 106, 0.68) 63% 74%, transparent 74% 100%);
+      }
+
+      .ctf-photo__label {
+        position: absolute;
+        left: 16px;
+        bottom: 16px;
+        z-index: 2;
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 700;
+        text-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+      }
+      
+      .ctf-objectives {
+        padding: 30px;
+        border-radius: 32px;
+      }
+
+      .ctf-objectives p {
+        margin-bottom: 14px;
+      }
+
+      .ctf-objectives ul,
+      .ctf-audience ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .ctf-objectives li,
+      .ctf-audience li {
+        margin-bottom: 10px;
+      }
+
+      .ctf-audience-wrap {
+        display: grid;
+        grid-template-columns: minmax(0, 0.95fr) minmax(300px, 1.05fr);
+        gap: 24px;
+        align-items: stretch;
+      }
+
+      .ctf-audience {
+        padding: 30px;
+        border-radius: 32px;
+        background:
+          linear-gradient(180deg, #ffffff 0%, #f8fdf9 100%);
+      }
+
+      .ctf-subhead {
+        margin: 24px 0 10px;
+        color: var(--ctf-green);
+        font-size: 16px;
+      }
+
+      .ctf-laptop-art {
+        min-height: 100%;
+        background:
+          radial-gradient(circle at 18% 15%, rgba(255, 255, 255, 0.7), transparent 16%),
+          linear-gradient(135deg, #d7b191 0%, #9c6c4f 34%, #513a32 70%, #231d1d 100%);
+      }
+
+      .ctf-laptop-art::before {
+        left: 18%;
+        right: 14%;
+        bottom: 19%;
+        height: 34%;
+        border-radius: 16px;
+        background:
+          linear-gradient(180deg, #dce3e8 0%, #adb7bf 8%, #1b2125 9%, #1b2125 74%, #909ca5 75%, #d5dde2 100%);
+        transform: perspective(900px) rotateX(56deg);
+        box-shadow: 0 18px 36px rgba(0, 0, 0, 0.25);
+      }
+
+      .ctf-laptop-art::after {
+        inset: 20% 28% auto 22%;
+        height: 18%;
+        border-radius: 18px 18px 22px 22px;
+        background: rgba(255, 255, 255, 0.12);
+        filter: blur(18px);
+      }
+
+      .ctf-workflow {
+        padding: 30px;
+        border-radius: 32px;
+      }
+
+      .ctf-workflow p {
+        margin-bottom: 13px;
+      }
+
+      .ctf-workflow strong {
+        color: var(--ctf-ink);
+      }
+
+      .ctf-photo-large {
+        min-height: 380px;
+      }
+
+      .ctf-cta {
+        padding-bottom: 54px;
+      }
+
+      .ctf-cta__panel {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 24px;
+        align-items: center;
+        padding: 32px 34px;
+        border-radius: 30px;
+        background:
+          linear-gradient(135deg, var(--ctf-red) 0%, var(--ctf-red-deep) 100%);
+        box-shadow: 0 32px 60px rgba(200, 30, 30, 0.24);
+      }
+
+      .ctf-cta h2 {
+        color: #ffffff;
+        font-size: clamp(34px, 4vw, 56px);
+      }
+
+      .ctf-cta p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.95);
+        font-size: clamp(20px, 2.5vw, 34px);
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      @media (max-width: 940px) {
+        .ctf-shell {
+          width: min(100% - 24px, 1160px);
+        }
+
+        .ctf-main section {
+          padding: 26px 0;
+        }
+
+        .ctf-hero__card,
+        .ctf-callout,
+        .ctf-grid,
+        .ctf-gallery,
+        .ctf-audience-wrap,
+        .ctf-cta__panel {
+          grid-template-columns: 1fr;
+        }
+
+        .ctf-hero__card,
+        .ctf-callout,
+        .ctf-objectives,
+        .ctf-audience,
+        .ctf-workflow,
+        .ctf-cta__panel {
+          padding: 24px;
+        }
+
+        .ctf-section-head {
+          display: block;
+        }
+
+        .ctf-section-head p {
+          margin-top: 12px;
+        }
+
+        .ctf-laptop-art {
+          min-height: 300px;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .ctf-actions {
+          flex-direction: column;
+        }
+
+        .ctf-button {
+          width: 100%;
+        }
+
+        .ctf-hero h1 {
+          font-size: 48px;
+        }
+
+        .ctf-hero__lede {
+          font-size: 17px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <main class="ctf-main">
+      <section class="ctf-hero">
+        <div class="ctf-shell">
+          <div class="ctf-hero__card">
+            <div>
+              <div class="ctf-badge">Canada Tech Fusion</div>
+              <h1>Relocate to Canada.</h1>
+              <p class="ctf-hero__lede">
+                Canada Tech Fusion is a comprehensive and intensive four-month in-demand
+                digital skills training that opens doors to new opportunities abroad!
+              </p>
+              <p class="ctf-price-line">Fee: N5,500,000</p>
+              <p class="ctf-support-line">
+                Includes Training Materials, Visa Assistance, Job Placement Support,
+                Cultural Integration.
+              </p>
+
+              <div class="ctf-actions">
+                <a class="ctf-button ctf-button--primary" href="../index.html#applynow">
+                  Register
+                </a>
+                <a class="ctf-button ctf-button--ghost" href="#how-it-works">
+                  Explore Program
+                </a>
+              </div>
+            </div>
+
+            <aside class="ctf-hero__aside">
+              <div class="ctf-flag-panel">
+                <div class="ctf-flag" aria-label="Canada flag"></div>
+              </div>
+
+              <div class="ctf-info-panel">
+                <h2>Applications are now open (Abuja)</h2>
+                <p>Enroll Now for Canada Tech Fusion - Limited Seats!</p>
+                <p>Secure Your Future in Canada's Booming Tech Industry!</p>
+                <p>Payment Options - 2 Installments!</p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="ctf-shell">
+          <div class="ctf-callout">
+            <div>
+              <h2>Build a future-ready tech path with relocation support.</h2>
+              <p>
+                This page keeps your original content, but now the experience feels like a
+                modern landing page instead of the old static layout.
+              </p>
+            </div>
+
+            <a class="ctf-button ctf-button--outline" href="../index.html#applynow">Apply Now</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="ctf-shell">
+          <div class="ctf-section-head">
+            <h2>Why Enroll in Canada Tech Fusion?</h2>
+            <p>
+              A cleaner visual system, stronger hierarchy, and card-based layout make the
+              value of the program easier to scan at a glance.
+            </p>
+          </div>
+
+          <div class="ctf-grid">
+            <article class="ctf-card">
+              <h3>Accelerated Career Growth:</h3>
+              <p>
+                The Canada Tech Fusion Course is a launchpad for your tech career. Gain a
+                competitive edge in the job market, accelerate your career growth, and
+                position yourself for success as a top-notch software engineer in
+                Canada's dynamic tech industry.
+              </p>
+            </article>
+
+            <article class="ctf-card">
+              <h3>Smooth Transition to Canada:</h3>
+              <p>
+                We streamline your journey from Nigeria to Canada, providing guidance and
+                support for a seamless transition. Our dedicated team assists you with the
+                visa process and offers valuable insights into Canadian culture, helping
+                you adapt and integrate into your new tech environment.
+              </p>
+            </article>
+
+            <article class="ctf-card">
+              <h3>Global Tech Opportunities</h3>
+              <p>
+                By enrolling in our Canada Tech Fusion Course, you open doors to a world
+                of tech opportunities in one of the leading tech hubs globally - Canada.
+                Be at the forefront of innovation and join a vibrant tech community that
+                values talent and creativity.
+              </p>
+            </article>
+
+            <article class="ctf-card">
+              <h3>Job Placement Assistance:</h3>
+              <p>
+                Secure exciting job opportunities in renowned Canadian tech companies
+                through our extensive network and placement support. We connect you with
+                potential employers, enhancing your chances of landing a fulfilling tech
+                role that aligns with your aspirations and skill set.
+              </p>
+            </article>
+          </div>
+
+          <div class="ctf-gallery" aria-label="Canada visual gallery">
+            <div class="ctf-photo ctf-photo--city">
+              <div class="ctf-photo__label">City view</div>
+            </div>
+            <div class="ctf-photo ctf-photo--lake">
+              <div class="ctf-photo__label">Canada journey</div>
+            </div>
+            <div class="ctf-photo ctf-photo--street">
+              <div class="ctf-photo__label">Downtown life</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="ctf-shell">
+          <article class="ctf-objectives">
+            <h2>Course Objectives</h2>
+            <p>
+              Upon completion of this course, you will be equipped with a comprehensive
+              skill set essential for excelling in the tech industry. You'll attain
+              advanced proficiency in key programming languages, frameworks, and tools
+              vital for contemporary software development.
+            </p>
+            <p>
+              Through engaging in real-world projects, you'll gain practical experience
+              and create a diverse portfolio, enhancing your problem-solving abilities and
+              critical thinking skills.
+            </p>
+            <ul>
+              <li>
+                <strong>Technical Proficiency:</strong> Attain advanced proficiency in key
+                programming languages, frameworks, and tools essential for modern software
+                development.
+              </li>
+              <li>
+                <strong>Job-ready Skillset:</strong> Acquire the skills necessary for
+                immediate entry into the job market, including job interview preparation,
+                resume writing guidance, and mock interview practice.
+              </li>
+              <li>
+                <strong>Cultural Adaptability:</strong> Understand and appreciate Canadian
+                work culture and societal norms, enabling a smooth transition and
+                integration into the tech industry.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="ctf-shell">
+          <div class="ctf-audience-wrap">
+            <article class="ctf-audience">
+              <h2>Target Audience</h2>
+              <ul>
+                <li>
+                  Individuals who want to become Software Engineers, Data Analysts, Cloud
+                  Engineers, Cyber Security Engineers
+                </li>
+                <li>Individuals who wants to relocate to Canada</li>
+              </ul>
+
+              <h3 class="ctf-subhead">Prerequisite</h3>
+              <ul>
+                <li>Basic Computer Literacy</li>
+                <li>Basic PC Operating System Navigation Skills</li>
+                <li>Basic Internet Usage Skills</li>
+              </ul>
+
+              <div class="ctf-actions" style="margin-top: 22px;">
+                <a class="ctf-button ctf-button--outline" href="../index.html#applynow">
+                  Register
+                </a>
+              </div>
+            </article>
+
+            <div class="ctf-laptop-art" aria-label="Learning and work visual">
+              <div class="ctf-photo__label">Hands-on learning</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works">
+        <div class="ctf-shell">
+          <article class="ctf-workflow">
+            <h2>How It Works</h2>
+            <p>
+              <strong>Application and Enrollment:</strong> Start by submitting your
+              application for the Canada Tech Fusion Course through our website. Our
+              admissions team will review your application and guide you through the
+              enrollment process.
+            </p>
+            <p>
+              <strong>Orientation and Course Overview:</strong> Once enrolled, you'll
+              participate in an orientation session where you'll receive an overview of
+              the course structure, expectations, and what to anticipate during the
+              program.
+            </p>
+            <p>
+              <strong>Intensive Training and Hands-on Learning:</strong> Dive into the
+              intensive training program where you'll engage with a curriculum designed to
+              enhance your technical skills. Expect hands-on learning experiences through
+              real-world projects, coding challenges, and workshops.
+            </p>
+            <p>
+              <strong>Project-based Assignments:</strong> Apply your learning to a
+              variety of projects, gaining practical experience and building a portfolio
+              that showcases your abilities to potential employers.
+            </p>
+            <p>
+              <strong>Soft Skills and Professional Development:</strong> Alongside
+              technical training, we emphasize the development of soft skills like
+              effective communication, teamwork, and time management, preparing you for a
+              professional work environment.
+            </p>
+            <p>
+              <strong>Job Placement Preparation:</strong> Receive dedicated support and
+              guidance for job placement, including resume building, interview
+              preparation, and access to our network of Canadian tech industry partners.
+            </p>
+            <p>
+              <strong>Cultural and Relocation Support:</strong> Gain insights into
+              Canadian work culture and societal norms, as well as receive guidance for a
+              smooth transition to Canada, including visa assistance and accommodation
+              options.
+            </p>
+            <p>
+              <strong>Graduation and Alumni Network:</strong> Upon successful completion
+              of the course, you'll graduate with newfound skills and a certificate. Join
+              our alumni network and stay connected with a community of like-minded
+              professionals.
+            </p>
+            <p>
+              <strong>Tech Career Launch:</strong> Utilize the skills, knowledge, and
+              support gained during the program to embark on a successful tech career in
+              Canada, utilizing our job placement assistance and industry connections.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="ctf-shell">
+          <div class="ctf-photo-large ctf-photo--street" aria-label="Canada city street">
+            <div class="ctf-photo__label">Next stop: Canada</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="ctf-cta">
+        <div class="ctf-shell">
+          <div class="ctf-cta__panel">
+            <div>
+              <h2>Are you ready to embark on this transformative journey?</h2>
+              <p>Apply now and unlock a world of opportunities!</p>
+            </div>
+
+            <a class="ctf-button ctf-button--white" href="../index.html#applynow">Apply</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="contact-form-widget" data-program="main" data-scoring-enabled="true" data-view="popup"></div>
+    <script type="module" defer src="../usa-assets/usa-main/widgets/widget.js"></script>
+
+    <footer id="footer"></footer>
+
+    <script>
+      const ccHeaderGreen = "#118847";
+
+      function ccApplyHeaderFixes() {
+        const header = document.getElementById("header");
+        if (!header) return;
+
+        header.querySelectorAll("a,button,div,span").forEach((el) => {
+          const text = (el.textContent || "").replace(/\s+/g, " ").trim().toLowerCase();
+          if (!text) return;
+
+          if (text === "log in") {
+            (el.closest("a,button") || el).style.setProperty("display", "none", "important");
+          }
+        });
+
+        header.querySelectorAll("a,button").forEach((el) => {
+          const text = (el.textContent || "").replace(/\s+/g, " ").trim().toLowerCase();
+          if (text !== "book a call") return;
+
+          el.style.setProperty("background", ccHeaderGreen, "important");
+          el.style.setProperty("border-color", ccHeaderGreen, "important");
+          el.style.setProperty("color", "#ffffff", "important");
+        });
+      }
+
+      function ccEnhanceFooterPrograms() {
+        const grid = document.querySelector("#footer .app-footer__grid");
+        if (!grid || grid.querySelector(".cc-footer-programs")) return;
+
+        const column = document.createElement("div");
+        column.className = "app-footer__column cc-footer-programs";
+        column.innerHTML =
+          '<div class="title label">Other Programs</div>' +
+          '<a class="title label spacing-top" href="/python-weekend/">Python Weekend</a>' +
+          '<a class="title label spacing-top" href="/canada-tech-fusion/">Canada Tech Fusion</a>' +
+          '<a class="title label spacing-top" href="/django-girls/">Django Girls</a>';
+        grid.appendChild(column);
+      }
+
+      function ccFixFooterCopyright() {
+        document
+          .querySelectorAll(
+            "#footer .app-footer__bottom-label .desktop, #footer .app-footer__bottom-label .mobile",
+          )
+          .forEach((el) => {
+            const text = (el.textContent || "").trim();
+            if (text === "Copyright Code Campus International, 2026") {
+              el.textContent = "\u00A9 Copyright Code Campus International, 2026";
+            }
+          });
+      }
+
+      function ccCenterFooterBottom() {
+        const footerBottom = document.querySelector("#footer .app-footer__bottom-label");
+        if (!footerBottom) return;
+
+        footerBottom.style.setProperty("justify-content", "center", "important");
+        footerBottom.style.setProperty("width", "100%", "important");
+        footerBottom.style.setProperty("text-align", "center", "important");
+      }
+
+      function ccCenterFooterSocial() {
+        document.querySelectorAll("#footer .app-footer__social-media").forEach((el) => {
+          el.style.setProperty("justify-content", "center", "important");
+          el.style.setProperty("margin-left", "auto", "important");
+          el.style.setProperty("margin-right", "auto", "important");
+        });
+      }
+
+      onHeaderLoaded(() => {
+        mountHeader("#header", "contentPage", {
+          actionButton: {
+            tagName: "button",
+            className: "action-button_form-popup",
+          },
+          disableBottomPanel: true,
+        });
+
+        mountFooter("#footer");
+
+        const homeHeaderLogo = document.querySelector(
+          "#header .header-main__container .logo-svg img",
+        );
+        if (homeHeaderLogo) {
+          homeHeaderLogo.src = "../home-header-logo.svg";
+        }
+
+        requestAnimationFrame(() => {
+          ccApplyHeaderFixes();
+          ccEnhanceFooterPrograms();
+          ccFixFooterCopyright();
+          ccCenterFooterBottom();
+          ccCenterFooterSocial();
+        });
+        setTimeout(ccApplyHeaderFixes, 150);
+        setTimeout(ccEnhanceFooterPrograms, 300);
+        setTimeout(ccFixFooterCopyright, 300);
+        setTimeout(ccCenterFooterBottom, 300);
+        setTimeout(ccCenterFooterSocial, 300);
+      });
+    </script>
+  </body>
+</html>

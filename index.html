@@ -42286,9 +42286,9 @@ ${el.id} {
                   }
 
                   #footer .app-footer__grid {
-                    grid-template-columns: repeat(3, minmax(220px, 280px));
-                    justify-content: space-between;
-                    column-gap: 40px;
+                    grid-template-columns: minmax(180px, 1fr) minmax(320px, 1.25fr) minmax(220px, 1fr) minmax(240px, 1fr);
+                    justify-content: initial;
+                    column-gap: 56px;
                     row-gap: 32px;
                   }
 
@@ -42334,9 +42334,38 @@ ${el.id} {
                 </style>
                 <footer id="footer"></footer>
                 <script>
+                  function ccEnhanceFooterPrograms() {
+                    const grid = document.querySelector("#footer .app-footer__grid");
+                    if (!grid || grid.querySelector(".cc-footer-programs")) return;
+
+                    const column = document.createElement("div");
+                    column.className = "app-footer__column cc-footer-programs";
+                    column.innerHTML =
+                      '<div class="title label">Other Programs</div>' +
+                      '<a class="title label spacing-top" href="/python-weekend/">Python Weekend</a>' +
+                      '<a class="title label spacing-top" href="/canada-tech-fusion/">Canada Tech Fusion</a>' +
+                      '<a class="title label spacing-top" href="/django-girls/">Django Girls</a>';
+                    grid.appendChild(column);
+                  }
+
+                  function ccFixFooterCopyright() {
+                    document
+                      .querySelectorAll(
+                        "#footer .app-footer__bottom-label .desktop, #footer .app-footer__bottom-label .mobile",
+                      )
+                      .forEach((el) => {
+                        const text = (el.textContent || "").trim();
+                        if (text === "Copyright Code Campus International, 2026") {
+                          el.textContent = "© Copyright Code Campus International, 2026";
+                        }
+                      });
+                  }
+
                   onHeaderLoaded(() => {
                     mountFooter("#footer");
                     requestAnimationFrame(() => {
+                      ccEnhanceFooterPrograms();
+                      ccFixFooterCopyright();
                       const footerBottom = document.querySelector(
                         "#footer .app-footer__bottom-label",
                       );
@@ -42352,6 +42381,8 @@ ${el.id} {
                         "",
                       );
                     });
+                    setTimeout(ccEnhanceFooterPrograms, 300);
+                    setTimeout(ccFixFooterCopyright, 300);
                   });
                 </script>
                 <!-- nominify end -->

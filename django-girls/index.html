@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Django Girls | Code Campus</title>
+    <meta
+      name="description"
+      content="Django Girls inspires women to fall in love with programming through free Python and Django workshops, community stories, events, and learning opportunities."
+    />
+    <link rel="shortcut icon" href="../code-campus-favicon.svg" type="image/x-icon" />
+    <script
+      type="text/javascript"
+      src="../usa-assets/usa-main/usa-landing-header4d5a.js?ts=1751387049175"
+      async
+      onload="headerLoaded()"
+    ></script>
+    <script>
+      let headerReady = false;
+      const headerCallbackQueue = [];
+
+      function headerLoaded() {
+        headerReady = true;
+        for (const callback of headerCallbackQueue) {
+          callback();
+        }
+      }
+
+      function onHeaderLoaded(callback) {
+        if (headerReady) {
+          callback();
+        } else {
+          headerCallbackQueue.push(callback);
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --dg-bg: #f7f3ea;
+        --dg-panel: #fffdf8;
+        --dg-panel-soft: #fffaf2;
+        --dg-ink: #2f2c28;
+        --dg-muted: #6d665e;
+        --dg-line: rgba(47, 44, 40, 0.12);
+        --dg-orange: #f39a26;
+        --dg-orange-deep: #d97706;
+        --dg-rose: #f55f8c;
+        --dg-gold: #ffd7a0;
+        --dg-shadow: 0 24px 60px rgba(56, 43, 19, 0.1);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: var(--dg-ink);
+        background:
+          radial-gradient(circle at top left, rgba(243, 154, 38, 0.09), transparent 22%),
+          linear-gradient(180deg, #fbf7ef 0%, #f4efe6 100%);
+      }
+
+      a {
+        color: inherit;
+      }
+
+      #header {
+        min-height: 66px;
+        background: #f2f1ee;
+      }
+
+      .dg-main {
+        overflow: hidden;
+      }
+
+      .dg-shell {
+        width: min(1160px, calc(100% - 32px));
+        margin: 0 auto;
+      }
+
+      .dg-main section {
+        padding: 34px 0;
+      }
+
+      .dg-hero {
+        padding-top: 42px;
+      }
+
+      .dg-hero__card {
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(300px, 0.9fr);
+        gap: 28px;
+        padding: 38px;
+        border-radius: 36px;
+        background:
+          radial-gradient(circle at top right, rgba(255, 255, 255, 0.1), transparent 28%),
+          linear-gradient(135deg, #3a3029 0%, #4c3d34 55%, #6f533f 100%);
+        box-shadow: 0 36px 80px rgba(58, 43, 27, 0.24);
+      }
+
+      .dg-badge {
+        display: inline-flex;
+        align-items: center;
+        min-height: 32px;
+        padding: 0 14px;
+        border-radius: 999px;
+        background: rgba(255, 215, 160, 0.18);
+        border: 1px solid rgba(255, 215, 160, 0.28);
+        color: #fff4da;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .dg-hero h1 {
+        margin: 18px 0 16px;
+        max-width: 10ch;
+        color: #ffffff;
+        font-size: clamp(44px, 6.5vw, 82px);
+        line-height: 0.95;
+        letter-spacing: -0.05em;
+      }
+
+      .dg-hero__lede {
+        max-width: 620px;
+        margin: 0 0 24px;
+        color: rgba(255, 255, 255, 0.86);
+        font-size: 19px;
+        line-height: 1.55;
+      }
+
+      .dg-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+      }
+
+      .dg-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 50px;
+        padding: 0 22px;
+        border-radius: 16px;
+        border: 1px solid transparent;
+        font-size: 15px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: transform 0.2s ease, background-color 0.2s ease;
+      }
+
+      .dg-button:hover {
+        transform: translateY(-1px);
+      }
+
+      .dg-button--primary {
+        background: var(--dg-orange);
+        color: #ffffff;
+      }
+
+      .dg-button--ghost {
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.2);
+        color: #ffffff;
+      }
+
+      .dg-button--outline {
+        background: transparent;
+        border-color: rgba(243, 154, 38, 0.45);
+        color: var(--dg-orange-deep);
+      }
+
+      .dg-button--white {
+        background: transparent;
+        border-color: rgba(255, 255, 255, 0.55);
+        color: #ffffff;
+      }
+
+      .dg-hero__art {
+        display: grid;
+        gap: 18px;
+        align-content: start;
+      }
+
+      .dg-art-card,
+      .dg-panel,
+      .dg-card,
+      .dg-story-card,
+      .dg-news-card,
+      .dg-cta__panel {
+        background: rgba(255, 253, 248, 0.94);
+        border: 1px solid var(--dg-line);
+        box-shadow: var(--dg-shadow);
+      }
+
+      .dg-art-card {
+        padding: 18px;
+        border-radius: 28px;
+      }
+
+      .dg-hero-art {
+        position: relative;
+        min-height: 260px;
+        border-radius: 22px;
+        overflow: hidden;
+        background:
+          linear-gradient(135deg, #6b5849 0%, #8b6a52 40%, #d6b082 100%);
+      }
+
+      .dg-hero-art::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          radial-gradient(circle at 32% 35%, rgba(255, 255, 255, 0.7), transparent 16%),
+          radial-gradient(circle at 72% 22%, rgba(255, 255, 255, 0.2), transparent 18%);
+      }
+
+      .dg-hero-art::after {
+        content: "DJANGO";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-3deg);
+        color: #f4d15b;
+        font-size: clamp(40px, 6vw, 70px);
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-shadow:
+          -2px -2px 0 #876117,
+          2px -2px 0 #876117,
+          -2px 2px 0 #876117,
+          2px 2px 0 #876117,
+          0 16px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .dg-mini-panel {
+        padding: 22px 24px;
+        border-radius: 24px;
+        background:
+          linear-gradient(180deg, #fffaf4 0%, #fff4e6 100%);
+      }
+
+      .dg-mini-panel h2,
+      .dg-section-head h2,
+      .dg-panel h2,
+      .dg-cta h2 {
+        margin: 0 0 12px;
+        font-size: clamp(30px, 3.8vw, 52px);
+        line-height: 1;
+        letter-spacing: -0.04em;
+      }
+
+      .dg-mini-panel p,
+      .dg-card p,
+      .dg-panel p,
+      .dg-panel li,
+      .dg-story-card p,
+      .dg-news-card p {
+        margin: 0;
+        color: var(--dg-muted);
+        font-size: 14px;
+        line-height: 1.62;
+      }
+
+      .dg-section-head {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 24px;
+      }
+
+      .dg-section-head p {
+        max-width: 420px;
+        margin: 0;
+        color: var(--dg-muted);
+        font-size: 15px;
+        line-height: 1.55;
+      }
+
+      .dg-grid-2 {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .dg-panel,
+      .dg-card {
+        padding: 28px;
+        border-radius: 28px;
+      }
+
+      .dg-card::before {
+        content: "";
+        display: block;
+        width: 42px;
+        height: 4px;
+        margin-bottom: 16px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--dg-orange), var(--dg-rose));
+      }
+
+      .dg-media {
+        position: relative;
+        min-height: 220px;
+        margin-top: 18px;
+        border-radius: 22px;
+        overflow: hidden;
+        background:
+          linear-gradient(135deg, #98765d 0%, #6f5847 40%, #3a2d27 100%);
+      }
+
+      .dg-media::after {
+        content: "Workshop video";
+        position: absolute;
+        left: 20px;
+        bottom: 18px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      .dg-media::before {
+        content: "▶";
+        position: absolute;
+        left: 22px;
+        top: 22px;
+        display: grid;
+        place-items: center;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.16);
+        color: #ffffff;
+        font-size: 20px;
+      }
+
+      .dg-highlight {
+        color: var(--dg-orange-deep);
+        font-weight: 700;
+      }
+
+      .dg-events {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+      }
+
+      .dg-event {
+        position: relative;
+        min-height: 180px;
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: var(--dg-shadow);
+        background: #b6a494;
+      }
+
+      .dg-event::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.48)),
+          linear-gradient(135deg, #547848 0%, #2f5d7b 50%, #714939 100%);
+      }
+
+      .dg-event:nth-child(2)::before {
+        background:
+          linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.48)),
+          linear-gradient(135deg, #7a4f39 0%, #29405a 50%, #2d2c2b 100%);
+      }
+
+      .dg-event:nth-child(3)::before {
+        background:
+          linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.48)),
+          linear-gradient(135deg, #6e3d47 0%, #2f314f 50%, #111827 100%);
+      }
+
+      .dg-event:nth-child(4)::before {
+        background:
+          linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.48)),
+          linear-gradient(135deg, #8a673e 0%, #46473f 50%, #2c3533 100%);
+      }
+
+      .dg-event:nth-child(5)::before {
+        background:
+          linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.48)),
+          linear-gradient(135deg, #56553e 0%, #4c3f28 50%, #352618 100%);
+      }
+
+      .dg-event:nth-child(6)::before {
+        background:
+          linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.48)),
+          linear-gradient(135deg, #2a6762 0%, #538f9e 50%, #7cb6be 100%);
+      }
+
+      .dg-event__content {
+        position: absolute;
+        inset: auto 18px 16px 18px;
+        color: #ffffff;
+      }
+
+      .dg-event__title {
+        display: block;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.05;
+      }
+
+      .dg-event__date {
+        display: block;
+        margin-top: 4px;
+        font-size: 14px;
+        opacity: 0.95;
+      }
+
+      .dg-link-row {
+        margin-top: 14px;
+      }
+
+      .dg-link {
+        color: var(--dg-orange-deep);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .dg-stories {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+        gap: 20px;
+      }
+
+      .dg-story-card,
+      .dg-news-card {
+        padding: 28px;
+        border-radius: 28px;
+      }
+
+      .dg-portrait-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        margin: 18px 0 12px;
+      }
+
+      .dg-portrait {
+        min-height: 170px;
+        border-radius: 20px;
+        background:
+          radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.35), transparent 18%),
+          linear-gradient(135deg, #d9c4b4 0%, #b2876c 45%, #765541 100%);
+      }
+
+      .dg-news-list {
+        display: grid;
+        gap: 14px;
+      }
+
+      .dg-news-item {
+        padding-bottom: 14px;
+        border-bottom: 1px solid var(--dg-line);
+      }
+
+      .dg-news-item:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+      }
+
+      .dg-split {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+      }
+
+      .dg-meter {
+        margin: 16px 0 18px;
+      }
+
+      .dg-meter__labels {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+      }
+
+      .dg-pill {
+        display: inline-flex;
+        align-items: center;
+        min-height: 30px;
+        padding: 0 10px;
+        border-radius: 999px;
+        background: #ffe3bf;
+        color: var(--dg-orange-deep);
+        font-size: 13px;
+        font-weight: 700;
+      }
+
+      .dg-progress {
+        height: 14px;
+        border-radius: 999px;
+        background: #f0ebe2;
+        overflow: hidden;
+      }
+
+      .dg-progress span {
+        display: block;
+        width: 32%;
+        height: 100%;
+        background: linear-gradient(90deg, var(--dg-orange), var(--dg-rose));
+      }
+
+      .dg-input-row {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 10px;
+        margin: 16px 0 10px;
+      }
+
+      .dg-input-row input {
+        min-height: 48px;
+        padding: 0 14px;
+        border: 1px solid var(--dg-line);
+        border-radius: 14px;
+        background: #ffffff;
+        font: inherit;
+      }
+
+      .dg-sponsors {
+        padding: 28px;
+        border-radius: 30px;
+        background: linear-gradient(180deg, rgba(255, 253, 248, 0.96), rgba(255, 248, 239, 0.96));
+        border: 1px solid var(--dg-line);
+        box-shadow: var(--dg-shadow);
+      }
+
+      .dg-sponsors h2 {
+        margin: 0 0 10px;
+        font-size: clamp(30px, 3vw, 46px);
+        line-height: 1;
+      }
+
+      .dg-tier {
+        margin-top: 26px;
+        text-align: center;
+      }
+
+      .dg-tier h3 {
+        margin: 0 0 14px;
+        font-size: 34px;
+        line-height: 1;
+      }
+
+      .dg-logo-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        max-width: 620px;
+        margin: 0 auto;
+      }
+
+      .dg-logo {
+        display: grid;
+        place-items: center;
+        min-height: 86px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.65);
+        border: 1px solid rgba(47, 44, 40, 0.08);
+        font-size: 18px;
+        font-weight: 700;
+      }
+
+      .dg-logo--django {
+        font-size: 26px;
+        color: #0c4b33;
+      }
+
+      .dg-cta__panel {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 24px;
+        align-items: center;
+        padding: 32px 34px;
+        border-radius: 30px;
+        background: linear-gradient(135deg, #f39a26 0%, #df6f3b 100%);
+      }
+
+      .dg-cta h2 {
+        color: #ffffff;
+      }
+
+      .dg-cta p {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.95);
+        font-size: clamp(20px, 2.6vw, 34px);
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      @media (max-width: 940px) {
+        .dg-shell {
+          width: min(100% - 24px, 1160px);
+        }
+
+        .dg-main section {
+          padding: 26px 0;
+        }
+
+        .dg-hero__card,
+        .dg-grid-2,
+        .dg-events,
+        .dg-stories,
+        .dg-split,
+        .dg-cta__panel {
+          grid-template-columns: 1fr;
+        }
+
+        .dg-section-head {
+          display: block;
+        }
+
+        .dg-section-head p {
+          margin-top: 12px;
+        }
+
+        .dg-logo-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .dg-actions {
+          flex-direction: column;
+        }
+
+        .dg-button {
+          width: 100%;
+        }
+
+        .dg-portrait-grid,
+        .dg-input-row {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header"></header>
+
+    <main class="dg-main">
+      <section class="dg-hero">
+        <div class="dg-shell">
+          <div class="dg-hero__card">
+            <div>
+              <div class="dg-badge">Django Girls</div>
+              <h1>We inspire women to fall in love with programming.</h1>
+              <p class="dg-hero__lede">
+                Django Girls organize free Python and Django workshops, create open
+                sourced online tutorials and curate amazing first experiences with
+                technology.
+              </p>
+
+              <div class="dg-actions">
+                <a class="dg-button dg-button--primary" href="../index.html#applynow">
+                  Join the Community
+                </a>
+                <a class="dg-button dg-button--ghost" href="#events">
+                  Explore Events
+                </a>
+              </div>
+            </div>
+
+            <aside class="dg-hero__art">
+              <div class="dg-art-card">
+                <div class="dg-hero-art" aria-label="Django Girls visual"></div>
+              </div>
+
+              <div class="dg-mini-panel">
+                <h2>Support us</h2>
+                <p>
+                  Volunteer, organize an event in your city, or help expand access to
+                  beginner-friendly programming workshops.
+                </p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="dg-shell">
+          <div class="dg-grid-2">
+            <article class="dg-panel">
+              <h2>What is Django Girls?</h2>
+              <p>
+                Django Girls is a non-profit organization and a community that empowers
+                and helps women to organize free, one-day programming workshops by
+                providing tools, resources and support. We are a volunteer run
+                organization with hundreds of people contributing to bring more amazing
+                women into the world of technology.
+              </p>
+              <p style="margin-top: 14px;">
+                During each of our events, 30-60 women build their first web application
+                using HTML, CSS, Python and Django.
+              </p>
+            </article>
+
+            <article class="dg-panel">
+              <h2>Workshop Preview</h2>
+              <p>
+                A first coding experience should feel welcoming, practical and exciting.
+                Django Girls workshops are designed to make technology more approachable by
+                creating resources designed with empathy.
+              </p>
+              <div class="dg-media"></div>
+            </article>
+
+            <article class="dg-card">
+              <h2 style="font-size: clamp(28px, 3vw, 42px);">Django Girls impact</h2>
+              <p>
+                Since 2014, an army of <span class="dg-highlight">2589 volunteers</span>
+                in the Django Girls community organized
+                <span class="dg-highlight">246 events</span>. We've been to
+                <span class="dg-highlight">812 cities</span> in
+                <span class="dg-highlight">110 countries</span> and then all on a map.
+              </p>
+              <p style="margin-top: 14px;">
+                A total of <span class="dg-highlight">16415 incredible women attended</span>
+                events organized by members of our community.
+              </p>
+            </article>
+
+            <article class="dg-card">
+              <h2 style="font-size: clamp(28px, 3vw, 42px);">Bring Django Girls to your city!</h2>
+              <p>
+                Is there no Django Girls event in your city? You can help make it happen.
+                We open sourced the Organizer Manual that provides you with all
+                information required to organize Django Girls workshop. By volunteering to
+                organize, you're joining a vibrant and supportive community of organizers
+                all over the world.
+              </p>
+              <div class="dg-actions" style="margin-top: 18px;">
+                <a class="dg-button dg-button--outline" href="../index.html#applynow">
+                  Apply to organize a workshop
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="events">
+        <div class="dg-shell">
+          <div class="dg-section-head">
+            <h2>Upcoming events</h2>
+            <p>
+              A polished events grid gives this page the same professional campaign feel
+              as the rest of the custom program pages.
+            </p>
+          </div>
+
+          <div class="dg-events">
+            <article class="dg-event">
+              <div class="dg-event__content">
+                <span class="dg-event__title">Domstadt</span>
+                <span class="dg-event__date">13th April 2026</span>
+              </div>
+            </article>
+            <article class="dg-event">
+              <div class="dg-event__content">
+                <span class="dg-event__title">Suvorji</span>
+                <span class="dg-event__date">14th April 2026</span>
+              </div>
+            </article>
+            <article class="dg-event">
+              <div class="dg-event__content">
+                <span class="dg-event__title">Dushanbe</span>
+                <span class="dg-event__date">14th April 2026</span>
+              </div>
+            </article>
+            <article class="dg-event">
+              <div class="dg-event__content">
+                <span class="dg-event__title">New York City</span>
+                <span class="dg-event__date">18th April 2026</span>
+              </div>
+            </article>
+            <article class="dg-event">
+              <div class="dg-event__content">
+                <span class="dg-event__title">Loja</span>
+                <span class="dg-event__date">23rd April 2026</span>
+              </div>
+            </article>
+            <article class="dg-event">
+              <div class="dg-event__content">
+                <span class="dg-event__title">Mombasa</span>
+                <span class="dg-event__date">24th April 2026</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="dg-link-row">
+            <a class="dg-link" href="../index.html#applynow">Show all 16 upcoming events →</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="dg-shell">
+          <div class="dg-stories">
+            <article class="dg-story-card">
+              <h2>Badass Django Ladies</h2>
+              <p>
+                Each week we try to introduce one badass lady who uses Python or Django
+                and highlight her work.
+              </p>
+
+              <div class="dg-portrait-grid">
+                <div class="dg-portrait"></div>
+                <div class="dg-portrait"></div>
+              </div>
+
+              <a class="dg-link" href="../index.html#applynow">Read all Django Stories →</a>
+            </article>
+
+            <article class="dg-news-card">
+              <h2>Latest from our blog</h2>
+              <div class="dg-news-list">
+                <div class="dg-news-item">
+                  <a class="dg-link" href="../index.html#applynow">It's our 10th birthday!</a>
+                  <p>
+                    Django Girls has turned 10! We're so proud to reach this momentous
+                    milestone, and of everything the community has achieved during the
+                    past decade.
+                  </p>
+                </div>
+                <div class="dg-news-item">
+                  <a class="dg-link" href="../index.html#applynow">Read all 5 community highlights</a>
+                  <p>
+                    We keep sharing updates, achievements and stories that help more
+                    beginners see themselves in tech.
+                  </p>
+                </div>
+                <div class="dg-news-item">
+                  <a class="dg-link" href="../index.html#applynow">DigitalOcean joins as global partner!</a>
+                  <p>
+                    As we begin our fundraising campaign, we are excited to announce
+                    another great company joining us as a global partner.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="dg-shell">
+          <div class="dg-split">
+            <article class="dg-panel">
+              <h2>Support our work</h2>
+              <p>
+                Django Girls is a volunteer run organization, and we depend on your
+                support to make it happen.
+              </p>
+
+              <div class="dg-meter">
+                <div class="dg-meter__labels">
+                  <span class="dg-pill">$1,060</span>
+                  <span class="dg-pill">$2,500 monthly goal pledged</span>
+                </div>
+                <div class="dg-progress"><span></span></div>
+              </div>
+
+              <div class="dg-actions">
+                <a class="dg-button dg-button--primary" href="../index.html#applynow">
+                  Make a recurring donation on Patreon
+                </a>
+              </div>
+            </article>
+
+            <article class="dg-panel">
+              <h2>Stay up to date!</h2>
+              <p>
+                Subscribe to Django Girls Dispatch to receive the latest and greatest from
+                our community every two weeks, straight to your inbox!
+              </p>
+
+              <div class="dg-input-row">
+                <input type="email" placeholder="email address" aria-label="email address" />
+                <a class="dg-button dg-button--primary" href="../index.html#applynow">Subscribe</a>
+              </div>
+
+              <a class="dg-link" href="../index.html#applynow">See the Django Girls Dispatch archives</a>
+
+              <h2 style="margin-top: 28px; font-size: clamp(28px, 3vw, 40px);">Check out our podcast!</h2>
+              <p>
+                We have a new podcast that highlights stories from the community. Listen
+                on Apple Pod, Google Pod, Amazon Music, and Spotify.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="dg-shell">
+          <article class="dg-sponsors">
+            <h2>They already sponsor us! 💞</h2>
+            <p>
+              These incredible companies made a pledge to diversity and are actively
+              helping us to change the ratio in the tech industry.
+            </p>
+
+            <div class="dg-tier">
+              <h3>Diamond 💖 ✨</h3>
+              <div class="dg-logo-grid">
+                <div class="dg-logo">PostHog</div>
+                <div class="dg-logo dg-logo--django">django</div>
+              </div>
+            </div>
+
+            <div class="dg-tier">
+              <h3>Gold 💖 ✨</h3>
+              <div class="dg-logo-grid">
+                <div class="dg-logo">pythonanywhere</div>
+                <div class="dg-logo">lincoln loop</div>
+              </div>
+            </div>
+
+            <div class="dg-tier">
+              <h3>They already support us! 💞</h3>
+              <div class="dg-logo-grid">
+                <div class="dg-logo">Python Software Foundation</div>
+                <div class="dg-logo">SENTRY</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="dg-cta">
+        <div class="dg-shell">
+          <div class="dg-cta__panel">
+            <div>
+              <h2>Bring more women into tech with a stronger first experience.</h2>
+              <p>Volunteer, organize, support, or join the next Django Girls journey.</p>
+            </div>
+
+            <a class="dg-button dg-button--white" href="../index.html#applynow">Get Involved</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="contact-form-widget" data-program="main" data-scoring-enabled="true" data-view="popup"></div>
+    <script type="module" defer src="../usa-assets/usa-main/widgets/widget.js"></script>
+
+    <footer id="footer"></footer>
+
+    <script>
+      const ccHeaderGreen = "#118847";
+
+      function ccApplyHeaderFixes() {
+        const header = document.getElementById("header");
+        if (!header) return;
+
+        header.querySelectorAll("a,button,div,span").forEach((el) => {
+          const text = (el.textContent || "").replace(/\s+/g, " ").trim().toLowerCase();
+          if (!text) return;
+
+          if (text === "log in") {
+            (el.closest("a,button") || el).style.setProperty("display", "none", "important");
+          }
+        });
+
+        header.querySelectorAll("a,button").forEach((el) => {
+          const text = (el.textContent || "").replace(/\s+/g, " ").trim().toLowerCase();
+          if (text !== "book a call") return;
+
+          el.style.setProperty("background", ccHeaderGreen, "important");
+          el.style.setProperty("border-color", ccHeaderGreen, "important");
+          el.style.setProperty("color", "#ffffff", "important");
+        });
+      }
+
+      function ccEnhanceFooterPrograms() {
+        const grid = document.querySelector("#footer .app-footer__grid");
+        if (!grid || grid.querySelector(".cc-footer-programs")) return;
+
+        const column = document.createElement("div");
+        column.className = "app-footer__column cc-footer-programs";
+        column.innerHTML =
+          '<div class="title label">Other Programs</div>' +
+          '<a class="title label spacing-top" href="/python-weekend/">Python Weekend</a>' +
+          '<a class="title label spacing-top" href="/canada-tech-fusion/">Canada Tech Fusion</a>' +
+          '<a class="title label spacing-top" href="/django-girls/">Django Girls</a>';
+        grid.appendChild(column);
+      }
+
+      function ccFixFooterCopyright() {
+        document
+          .querySelectorAll(
+            "#footer .app-footer__bottom-label .desktop, #footer .app-footer__bottom-label .mobile",
+          )
+          .forEach((el) => {
+            const text = (el.textContent || "").trim();
+            if (text === "Copyright Code Campus International, 2026") {
+              el.textContent = "\u00A9 Copyright Code Campus International, 2026";
+            }
+          });
+      }
+
+      function ccCenterFooterBottom() {
+        const footerBottom = document.querySelector("#footer .app-footer__bottom-label");
+        if (!footerBottom) return;
+
+        footerBottom.style.setProperty("justify-content", "center", "important");
+        footerBottom.style.setProperty("width", "100%", "important");
+        footerBottom.style.setProperty("text-align", "center", "important");
+      }
+
+      function ccCenterFooterSocial() {
+        document.querySelectorAll("#footer .app-footer__social-media").forEach((el) => {
+          el.style.setProperty("justify-content", "center", "important");
+          el.style.setProperty("margin-left", "auto", "important");
+          el.style.setProperty("margin-right", "auto", "important");
+        });
+      }
+
+      onHeaderLoaded(() => {
+        mountHeader("#header", "contentPage", {
+          actionButton: {
+            tagName: "button",
+            className: "action-button_form-popup",
+          },
+          disableBottomPanel: true,
+        });
+
+        mountFooter("#footer");
+
+        const homeHeaderLogo = document.querySelector(
+          "#header .header-main__container .logo-svg img",
+        );
+        if (homeHeaderLogo) {
+          homeHeaderLogo.src = "../home-header-logo.svg";
+        }
+
+        requestAnimationFrame(() => {
+          ccApplyHeaderFixes();
+          ccEnhanceFooterPrograms();
+          ccFixFooterCopyright();
+          ccCenterFooterBottom();
+          ccCenterFooterSocial();
+        });
+        setTimeout(ccApplyHeaderFixes, 150);
+        setTimeout(ccEnhanceFooterPrograms, 300);
+        setTimeout(ccFixFooterCopyright, 300);
+        setTimeout(ccCenterFooterBottom, 300);
+        setTimeout(ccCenterFooterSocial, 300);
+      });
+    </script>
+  </body>
+</html>

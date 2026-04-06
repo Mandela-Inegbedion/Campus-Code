@@ -975,13 +975,30 @@ function ccApplyHeaderFixes() {
     if (!header) return false;
 
     let hasMountedHeader = false;
+    var hideHeaderBlock = function (el) {
+        var block = el;
+        while (block && block.parentElement && block.parentElement !== header) {
+            block = block.parentElement;
+        }
+        (block || el).style.setProperty('display', 'none', 'important');
+    };
+
+    header.querySelectorAll('.cta-form:not(.popup), .cta-form__text-info').forEach(function (el) {
+        hasMountedHeader = true;
+        hideHeaderBlock(el);
+    });
 
     header.querySelectorAll('a,button,div,span').forEach(function (el) {
         const text = (el.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase();
         if (!text) return;
         hasMountedHeader = true;
 
-        if (text === 'log in') {
+        if (text.indexOf('discount applies to software engineering') !== -1) {
+            el.textContent = 'Software Engineering, BI Analytics, Quality Assurance, Cyber Security, UX/UI Design, AI Automation, and Data Science programs.';
+            return;
+        }
+
+        if (text === 'log in' || text === 'reviews' || text === 'tuition' || text === 'faq') {
             (el.closest('a,button') || el).style.setProperty('display', 'none', 'important');
         }
     });
@@ -1046,6 +1063,10 @@ onHeaderLoaded(() => {
 </script> <style>
 #header.cc-header-pending {
     visibility: hidden;
+}
+
+#header .cta-form__text-info {
+    display: none !important;
 }
 
 body.cc-se-loading #rec896189200,
@@ -4770,8 +4791,55 @@ window.addEventListener('message',
     </script> <!-- nominify end --> </div> </div> </div> </div> <div id="rec740619880" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <!--!ANNEXX!--><!--!ANX820-1!--><!--![{"id":"","data":""},{"id":"anxcommentblock","data":""}]!--> <script> document.addEventListener('DOMContentLoaded', function () { document.querySelectorAll('*').forEach(function (e) { let nt = e.childNodes; if (nt && e.textContent.trim() && /^(div|a|p|h1|h2|h3|h4|h5|h6|span|ul|li|u)/i.test(e.tagName) && (function () { return Array.from(nt).some(function (el) { return el.nodeType === 3 && el.textContent.trim(); }); }())) { Array.from(nt).forEach(function (n) { if (n.nodeType === 3) { n.textContent = n.textContent.replace(/\u2028/g, ' '); } }); } }); document.querySelectorAll(".r").forEach(e => { if (e.dataset.recordType === "400") t400_init(e.id.replace(/\D/g,'')); }); }); </script> <!-- nominify end --> </div> </div> </div> </div> <div id="rec1068660566" class="r t-rec" style=" " data-animationappear="off" data-record-type="674"> <!-- T674 --> <div class="t674"> <style>body {background-color:#f2f1ee !important;;}#allrecords {background-color:transparent !important;}</style> </div> <script>(function() {var isSafariOnIOS=!!navigator.userAgent.match(/iP(hone|od|ad)/)&&navigator.userAgent.match(/WebKit/i)&&!navigator.userAgent.match(/CriOS/i)&&!navigator.userAgent.match(/FxiOS/i);if(!isSafariOnIOS) return;var recid='rec1068660566';var rec=document.getElementById(recid);if(!rec) return;rec.classList.add('safari');})();</script> </div> <div id="rec736147797" class="r t-rec" style=" " data-animationappear="off" data-record-type="270"> <div class="t270"></div> <script>t_onReady(function() {var hash=window.location.hash;t_onFuncLoad('t270_scroll',function() {t270_scroll(hash,-3);});setTimeout(function() {var curPath=window.location.pathname;var curFullPath=window.location.origin + curPath;var recs=document.querySelectorAll('.r');Array.prototype.forEach.call(recs,function(rec) {var selects='a[href^="#"]:not([href="#"]):not(.carousel-control):not(.t-carousel__control):not([href^="#price"]):not([href^="#submenu"]):not([href^="#popup"]):not([href*="#zeropopup"]):not([href*="#closepopup"]):not([href*="#closeallpopup"]):not([href^="#prodpopup"]):not([href^="#order"]):not([href^="#!"]):not([target="_blank"]),' +
 'a[href^="' + curPath + '#"]:not([href*="#!/tfeeds/"]):not([href*="#!/tproduct/"]):not([href*="#!/tab/"]):not([href*="#popup"]):not([href*="#zeropopup"]):not([href*="#closepopup"]):not([href*="#closeallpopup"]):not([target="_blank"]),' +
 'a[href^="' + curFullPath + '#"]:not([href*="#!/tfeeds/"]):not([href*="#!/tproduct/"]):not([href*="#!/tab/"]):not([href*="#popup"]):not([href*="#zeropopup"]):not([href*="#closepopup"]):not([href*="#closeallpopup"]):not([target="_blank"])';var elements=rec.querySelectorAll(selects);Array.prototype.forEach.call(elements,function(element) {element.addEventListener('click',function(event) {event.preventDefault();var hash=this.hash.trim();t_onFuncLoad('t270_scroll',function() {t270_scroll(hash,-3);});});});});if(document.querySelectorAll('.js-store').length>0||document.querySelectorAll('.js-feed').length>0) {t_onFuncLoad('t270_scroll',function() {t270_scroll(hash,-3,1);});}},500);setTimeout(function() {var hash=window.location.hash;if(hash&&document.querySelectorAll('a[name="' + hash.slice(1) + '"], div[id="' + hash.slice(1) + '"]').length>0) {if(window.isMobile) {t_onFuncLoad('t270_scroll',function() {t270_scroll(hash,0);});} else {t_onFuncLoad('t270_scroll',function() {t270_scroll(hash,0);});}}},1000);window.addEventListener('popstate',function() {var hash=window.location.hash;if(hash&&document.querySelectorAll('a[name="' + hash.slice(1) + '"], div[id="' + hash.slice(1) + '"]').length>0) {if(window.isMobile) {t_onFuncLoad('t270_scroll',function() {t270_scroll(hash,0);});} else {t_onFuncLoad('t270_scroll',function() {t270_scroll(hash,0);});}}});});</script> </div> <!--footer--> <footer id="t-footer" class="t-records" data-hook="blocks-collection-content-node" data-tilda-project-id="5594246" data-tilda-page-id="28367000" data-tilda-page-alias="footer" data-tilda-formskey="0540e8aff6e3931b3f2c4c7035594246" data-tilda-stat-scroll="yes" data-tilda-lazy="yes" data-tilda-root-zone="one" data-tilda-project-headcode="yes"> <!-- code for footer --> <div id="rec998211316" class="r t-rec" style="background-color:#f2f1ee; " data-animationappear="off" data-record-type="131" data-bg-color="#f2f1ee"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <footer id="footer"></footer> <script>
+function ccEnhanceFooterPrograms() {
+  var grid = document.querySelector("#footer .app-footer__grid");
+  if (!grid || grid.querySelector(".cc-footer-programs")) return;
+
+  var column = document.createElement("div");
+  column.className = "app-footer__column cc-footer-programs";
+  column.innerHTML =
+    '<div class="title label">Other Programs</div>' +
+    '<a class="title label spacing-top" href="/python-weekend/">Python Weekend</a>' +
+    '<a class="title label spacing-top" href="/canada-tech-fusion/">Canada Tech Fusion</a>' +
+    '<a class="title label spacing-top" href="/django-girls/">Django Girls</a>';
+  grid.appendChild(column);
+}
+
+function ccFixFooterCopyright() {
+  document.querySelectorAll("#footer .app-footer__bottom-label .desktop, #footer .app-footer__bottom-label .mobile").forEach(function (el) {
+    var text = (el.textContent || '').trim();
+    if (text === 'Copyright Code Campus International, 2026') {
+      el.textContent = '© Copyright Code Campus International, 2026';
+    }
+  });
+}
+
+function ccCenterFooterBottom() {
+  var footerBottom = document.querySelector("#footer .app-footer__bottom-label");
+  if (!footerBottom) return;
+  footerBottom.style.setProperty('justify-content', 'center', 'important');
+  footerBottom.style.setProperty('width', '100%', 'important');
+  footerBottom.style.setProperty('text-align', 'center', 'important');
+}
+
+function ccCenterFooterSocial() {
+  document.querySelectorAll("#footer .app-footer__social-media").forEach(function (el) {
+    el.style.setProperty('justify-content', 'center', 'important');
+    el.style.setProperty('margin-left', 'auto', 'important');
+    el.style.setProperty('margin-right', 'auto', 'important');
+  });
+}
+
 onHeaderLoaded(() => {
   mountFooter("#footer")
+  requestAnimationFrame(ccEnhanceFooterPrograms)
+  requestAnimationFrame(ccFixFooterCopyright)
+  requestAnimationFrame(ccCenterFooterBottom)
+  requestAnimationFrame(ccCenterFooterSocial)
+  setTimeout(ccEnhanceFooterPrograms, 300)
+  setTimeout(ccFixFooterCopyright, 300)
+  setTimeout(ccCenterFooterBottom, 300)
+  setTimeout(ccCenterFooterSocial, 300)
 })
 </script> <!-- nominify end --> </div> </div> </div> </div> <!-- ÑÐºÑ€Ñ‹Ð²Ð°ÐµÑ‚ ÑÑ‚Ð°Ð½Ð´Ð°Ñ€Ñ‚Ð½Ð¾Ðµ ÑÐ¾Ð¾Ð±Ñ‰ÐµÐ½Ð¸Ðµ Ñ‚Ð¸Ð»ÑŒÐ´Ñ‹ Ð¾Ð± ÑƒÑÐ¿ÐµÑ…Ðµ Ð² Ñ„Ð¾Ñ€Ð¼Ðµ --> <div id="rec669733793" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <style>
     .t-form-success-popup{
