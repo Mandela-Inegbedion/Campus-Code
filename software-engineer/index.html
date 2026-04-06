@@ -2361,13 +2361,47 @@ dialog::backdrop {
           <div class="p__btn-i"></div> </button> </div> </dialog> <!-- nominify end --> </div> </div> </div> </div> <div id="rec747388441" class="r t-rec" style=" " data-animationappear="off" data-record-type="131"> <!-- T123 --> <div class="t123"> <div class="t-container_100 "> <div class="t-width t-width_100 "> <!-- nominify begin --> <script>
 // popups 
  const buttonTwo = document.querySelector('#rec745407938 .tn-elem[data-elem-id="1715093146297"]');
+const buttonTwoText = document.querySelector('#rec745407938 .tn-elem[data-elem-id="1715093146298"]');
+const buttonTwoIcon = document.querySelector('#rec745407938 .tn-elem[data-elem-id="1715093146300"]');
 const dialogSecond = document.getElementById('popup-video-2');
 const dialogCloserTwo = document.getElementById('btn-close-desc');
 const dialogCloserTwoMob = document.getElementById('btn-close-mob-m');
 const dialogCloserTwoDwn = document.getElementById('btn-cl-dwn');
+const firstIncludedButton = document.querySelector('#rec736739862 a[href="#popupgetjob"]');
+const firstIncludedText = document.querySelector('#rec736739862 .tn-elem[data-elem-id="1713423857558"]');
+const firstIncludedIcon = document.querySelector('#rec736739862 .tn-elem[data-elem-id="1713423857561"]');
 
 
 const dialogCloser = document.querySelector('.p__button');
+if (firstIncludedButton) {
+  (firstIncludedButton.closest('.tn-elem') || firstIncludedButton).style.display = 'none';
+}
+if (firstIncludedText) {
+  firstIncludedText.style.display = 'none';
+}
+if (firstIncludedIcon) {
+  firstIncludedIcon.style.display = 'none';
+}
+if (buttonTwo) {
+  buttonTwo.style.display = 'none';
+}
+if (buttonTwoText) {
+  buttonTwoText.style.display = 'none';
+}
+if (buttonTwoIcon) {
+  buttonTwoIcon.style.display = 'none';
+}
+[ 
+  ['#rec745407938 .tn-elem[data-elem-id="1715093146295"] .tn-atom', "How do you find a job when everything requires experience?<br>You'll have the opportunity to gain that experience at bootcamp!<br>Our students can apply to take on real business projects for client companies to put on their resumes and in their portfolios."],
+  ['#rec736739862 .tn-elem[data-elem-id="1713356465071"] .tn-atom', "Finding a Software Engineering job is much easier with professional help.<br>Prep for interviews with someone who knows the point of every question. Perfect your resume with someone who's seen thousands.<br>Automate the job search with AI."],
+  ['#rec737435324 .tn-elem[data-elem-id="1713350887930"] .tn-atom', "We believe that you'll get into tech in 10 months. In fact, we put money on it."],
+  ['#rec737435324 .tn-elem[data-elem-id="1713351131528"] .tn-atom', 'Apply to relevant jobs and stay in touch with your career coach'],
+  ['#rec737435324 .tn-elem[data-elem-id="1713351187825"] .tn-atom', "If you don't have a job after 300 days, we will refund 100% of your tuition"]
+].forEach(function(item){
+  document.querySelectorAll(item[0]).forEach(function(el){
+    el.innerHTML = item[1];
+  });
+});
 
 function closeOnBackDropClick({ currentTarget, target }) {
   const dialog = currentTarget;
@@ -2436,7 +2470,9 @@ dialogCloserTwoMob.addEventListener('click', (event) => {
 
 
 dialogSecond.addEventListener('click', closeOnBackDropClickTwo);
-buttonTwo.addEventListener('click', openModalAndLockScrollTwo);
+if (buttonTwo) {
+  buttonTwo.addEventListener('click', openModalAndLockScrollTwo);
+}
 
 // slider
 
