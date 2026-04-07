@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -6,32 +6,268 @@
   <title>Product Management | Code Campus</title>
   <meta name="description" content="Product Management program page at Code Campus.">
   <link rel="shortcut icon" href="/code-campus-favicon.svg" type="image/x-icon">
+  <script type="text/javascript" src="../usa-assets/usa-main/usa-landing-header4d5a.js" async onload="headerLoaded()"></script>
+  <script>
+    let headerReady = false;
+    const headerCallbackQueue = [];
+
+    function headerLoaded() {
+      headerReady = true;
+      for (let callback of headerCallbackQueue) {
+        callback();
+      }
+    }
+
+    function onHeaderLoaded(callback) {
+      if (headerReady) {
+        callback();
+      } else {
+        headerCallbackQueue.push(callback);
+      }
+    }
+  </script>
   <style>
-    body { margin: 0; background: #f2f1ee; color: #1a1a1a; font-family: Arial, sans-serif; }
-    #header { min-height: 90px; background: #f2f1ee; }
-    .program-shell { max-width: 1160px; margin: 0 auto; padding: 48px 20px 96px; }
-    .program-card { background: #ffffff; border-radius: 16px; padding: 48px 32px; }
-    .program-eyebrow { color: #808080; font-size: 14px; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
-    h1 { font-size: 48px; line-height: 1; margin: 0 0 16px; }
-    p { font-size: 18px; line-height: 1.6; margin: 0; max-width: 720px; }
-    #footer { min-height: 200px; }
-    @media (max-width: 767px) { #header { min-height: 84px; } .program-shell { padding: 32px 16px 72px; } .program-card { padding: 32px 20px; } h1 { font-size: 36px; } p { font-size: 16px; } }
+    body {
+      margin: 0;
+      background: #f2f1ee;
+      color: #1a1a1a;
+      font-family: 'SuisseIntl', Arial, sans-serif;
+    }
+
+    #header.cc-program-pending {
+      visibility: hidden;
+    }
+
+    #header .cta-form__text-info {
+      display: none !important;
+    }
+
+    #header {
+      height: 65px;
+      background-color: #f2f1ee;
+    }
+
+    .t-records {
+      opacity: unset !important;
+    }
+
+    .program-shell {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 48px 20px 96px;
+      box-sizing: border-box;
+    }
+
+    .program-card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 48px 40px;
+      box-sizing: border-box;
+    }
+
+    .program-eyebrow {
+      color: #118847;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      color: #1a1a1a;
+      font-size: 48px;
+      line-height: 1;
+      font-weight: 500;
+      letter-spacing: -1px;
+    }
+
+    p {
+      margin: 0;
+      color: #1a1a1a;
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 760px;
+    }
+
+    @media screen and (max-width: 767px) {
+      #header {
+        height: 65px;
+      }
+
+      .program-shell {
+        padding: 32px 16px 72px;
+      }
+
+      .program-card {
+        padding: 32px 20px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>
-  <header id="header"></header>
+  <header id="header" class="cc-program-pending"></header>
+
   <main class="program-shell">
     <section class="program-card">
       <div class="program-eyebrow">Program Page</div>
       <h1>Product Management</h1>
-      <p>This page is ready for your content. The shared header and footer are active, and this program now has its own standalone URL.</p>
+      <p>This page is ready for your content. The shared header and shared footer now use the same setup and styling approach as the Software Engineering page.</p>
     </section>
   </main>
+
   <footer id="footer"></footer>
-  <script src="../usa-assets/usa-main/usa-landing-header4d5a.js"></script>
+
   <script>
-    mountHeader("#header", "contentPage", { disableBottomPanel: true });
-    mountFooter("#footer");
+    const ccHeaderPendingClass = 'cc-program-pending';
+    const ccHeaderGreen = '#118847';
+    const ccHeaderGreenHover = '#0c6a37';
+
+    function ccApplyHeaderFixes() {
+      const header = document.getElementById('header');
+      if (!header) return false;
+
+      let hasMountedHeader = false;
+      var hideHeaderBlock = function (el) {
+        var block = el;
+        while (block && block.parentElement && block.parentElement !== header) {
+          block = block.parentElement;
+        }
+        (block || el).style.setProperty('display', 'none', 'important');
+      };
+
+      header.querySelectorAll('.cta-form:not(.popup), .cta-form__text-info').forEach(function (el) {
+        hasMountedHeader = true;
+        hideHeaderBlock(el);
+      });
+
+      header.querySelectorAll('a,button,div,span').forEach(function (el) {
+        const text = (el.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase();
+        if (!text) return;
+        hasMountedHeader = true;
+
+        if (text.indexOf('discount applies to software engineering') !== -1) {
+          el.textContent = 'Software Engineering, BI Analytics, Quality Assurance, Cyber Security, UX/UI Design, AI Automation, and Data Science programs.';
+          return;
+        }
+
+        if (text === 'log in' || text === 'reviews' || text === 'tuition' || text === 'faq') {
+          (el.closest('a,button') || el).style.setProperty('display', 'none', 'important');
+        }
+      });
+
+      header.querySelectorAll('a,button').forEach(function (el) {
+        const text = (el.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase();
+        if (text !== 'book a call') return;
+
+        hasMountedHeader = true;
+        el.style.setProperty('background', ccHeaderGreen, 'important');
+        el.style.setProperty('background-color', ccHeaderGreen, 'important');
+        el.style.setProperty('background-image', 'none', 'important');
+        el.style.setProperty('color', '#ffffff', 'important');
+        el.style.setProperty('border-color', ccHeaderGreen, 'important');
+        el.style.setProperty('box-shadow', 'none', 'important');
+        el.onmouseenter = function () {
+          el.style.setProperty('background-color', ccHeaderGreenHover, 'important');
+          el.style.setProperty('border-color', ccHeaderGreenHover, 'important');
+        };
+        el.onmouseleave = function () {
+          el.style.setProperty('background-color', ccHeaderGreen, 'important');
+          el.style.setProperty('border-color', ccHeaderGreen, 'important');
+        };
+      });
+
+      if (hasMountedHeader) {
+        header.classList.remove(ccHeaderPendingClass);
+      }
+
+      return hasMountedHeader;
+    }
+
+    function ccWatchHeaderFixes() {
+      const header = document.getElementById('header');
+      if (!header) return;
+
+      const observer = new MutationObserver(function () {
+        if (ccApplyHeaderFixes()) {
+          observer.disconnect();
+        }
+      });
+
+      observer.observe(header, { childList: true, subtree: true });
+
+      setTimeout(function () {
+        ccApplyHeaderFixes();
+        header.classList.remove(ccHeaderPendingClass);
+        observer.disconnect();
+      }, 1500);
+    }
+
+    function ccEnhanceFooterPrograms() {
+      var grid = document.querySelector('#footer .app-footer__grid');
+      if (!grid || grid.querySelector('.cc-footer-programs')) return;
+
+      var column = document.createElement('div');
+      column.className = 'app-footer__column cc-footer-programs';
+      column.innerHTML =
+        '<div class="title label">Other Programs</div>' +
+        '<a class="title label spacing-top" href="/python-weekend/">Python Weekend</a>' +
+        '<a class="title label spacing-top" href="/canada-tech-fusion/">Canada Tech Fusion</a>' +
+        '<a class="title label spacing-top" href="/django-girls/">Django Girls</a>';
+      grid.appendChild(column);
+    }
+
+    function ccFixFooterCopyright() {
+      document.querySelectorAll('#footer .app-footer__bottom-label .desktop, #footer .app-footer__bottom-label .mobile').forEach(function (el) {
+        var text = (el.textContent || '').trim();
+        if (text === 'Copyright Code Campus International, 2026') {
+          el.textContent = 'Â© Copyright Code Campus International, 2026';
+        }
+      });
+    }
+
+    function ccCenterFooterBottom() {
+      var footerBottom = document.querySelector('#footer .app-footer__bottom-label');
+      if (!footerBottom) return;
+      footerBottom.style.setProperty('justify-content', 'center', 'important');
+      footerBottom.style.setProperty('width', '100%', 'important');
+      footerBottom.style.setProperty('text-align', 'center', 'important');
+    }
+
+    function ccCenterFooterSocial() {
+      document.querySelectorAll('#footer .app-footer__social-media').forEach(function (el) {
+        el.style.setProperty('justify-content', 'center', 'important');
+        el.style.setProperty('margin-left', 'auto', 'important');
+        el.style.setProperty('margin-right', 'auto', 'important');
+      });
+    }
+
+    onHeaderLoaded(() => {
+      mountHeader('#header', 'longLanding2', {
+        title: 'Product Management Bootcamp',
+        disableBottomPanel: true
+      });
+      ccWatchHeaderFixes();
+      mountFooter('#footer');
+      requestAnimationFrame(ccEnhanceFooterPrograms);
+      requestAnimationFrame(ccFixFooterCopyright);
+      requestAnimationFrame(ccCenterFooterBottom);
+      requestAnimationFrame(ccCenterFooterSocial);
+      setTimeout(ccEnhanceFooterPrograms, 300);
+      setTimeout(ccFixFooterCopyright, 300);
+      setTimeout(ccCenterFooterBottom, 300);
+      setTimeout(ccCenterFooterSocial, 300);
+    });
   </script>
 </body>
 </html>
+
