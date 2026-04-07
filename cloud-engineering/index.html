@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Engineering | Code Campus</title>
+  <meta name="description" content="Cloud Engineering program page at Code Campus.">
+  <link rel="shortcut icon" href="/code-campus-favicon.svg" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      background: #f2f1ee;
+      color: #1a1a1a;
+      font-family: Arial, sans-serif;
+    }
+
+    #header {
+      min-height: 90px;
+      background: #f2f1ee;
+    }
+
+    .program-shell {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 48px 20px 96px;
+    }
+
+    .program-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 48px 32px;
+    }
+
+    .program-eyebrow {
+      color: #808080;
+      font-size: 14px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    h1 {
+      font-size: 48px;
+      line-height: 1;
+      margin: 0 0 16px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 0;
+      max-width: 720px;
+    }
+
+    #footer {
+      min-height: 200px;
+    }
+
+    @media (max-width: 767px) {
+      #header {
+        min-height: 84px;
+      }
+
+      .program-shell {
+        padding: 32px 16px 72px;
+      }
+
+      .program-card {
+        padding: 32px 20px;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header id="header"></header>
+
+  <main class="program-shell">
+    <section class="program-card">
+      <div class="program-eyebrow">Program Page</div>
+      <h1>Cloud Engineering</h1>
+      <p>This page is ready for your content. The shared header and footer are active, and this program now has its own standalone URL.</p>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script src="../usa-assets/usa-main/usa-landing-header4d5a.js"></script>
+  <script>
+    mountHeader("#header", "contentPage", {
+      disableBottomPanel: true
+    });
+
+    mountFooter("#footer");
+  </script>
+</body>
+</html>
