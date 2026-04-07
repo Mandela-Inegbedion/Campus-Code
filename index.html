@@ -25830,6 +25830,58 @@ ${el.id} {
               <!-- nominify end -->
               <script>
                 (function () {
+                  const HOME_PROGRAM_IMAGES = {
+                    "Software Engineering":
+                      "home-program-images/software-engineer.jpg",
+                    "Cloud Engineering":
+                      "home-program-images/cloud-engineering.jpg",
+                    "Cybersecurity Engineering":
+                      "home-program-images/cyber-security.jpg",
+                    "Blockchain Engineering":
+                      "home-program-images/blockchain-engineering.jpg",
+                    "Product Design": "home-program-images/product-design.jpg",
+                    "Data Analytics": "home-program-images/data-analytics.jpg",
+                    "Digital Marketing":
+                      "home-program-images/digital-marketing.jpg",
+                    "Artificial Intelligence (AI)":
+                      "home-program-images/artificial-intelligence.jpg",
+                    "Project Management":
+                      "home-program-images/project-management.jpg",
+                    "Product Management":
+                      "home-program-images/product-management.jpg",
+                  };
+
+                  const ORIGINAL_PROGRAM_IMAGE_IDS = [
+                    {
+                      title: "Software Engineering",
+                      imageCardId: "1741342728079",
+                    },
+                    {
+                      title: "Data Analytics",
+                      imageCardId: "1741342728263",
+                    },
+                    {
+                      title: "Blockchain Engineering",
+                      imageCardId: "1741354612678",
+                    },
+                    {
+                      title: "Cloud Engineering",
+                      imageCardId: "1741354877924",
+                    },
+                    {
+                      title: "Cybersecurity Engineering",
+                      imageCardId: "1741354877703",
+                    },
+                    {
+                      title: "Artificial Intelligence (AI)",
+                      imageCardId: "1741354877467",
+                    },
+                    {
+                      title: "Product Design",
+                      imageCardId: "1747915794157",
+                    },
+                  ];
+
                   const PROGRAM_CARD_UPDATES = [
                     {
                       shapeId: "1741354877548",
@@ -26093,6 +26145,17 @@ ${el.id} {
                     if (atom) atom.textContent = text;
                   }
 
+                  function setImageByElemId(record, elemId, imageUrl) {
+                    const atom = record.querySelector(
+                      '[data-elem-id="' + elemId + '"] .tn-atom',
+                    );
+                    if (!atom || !imageUrl) return;
+                    atom.style.backgroundImage = 'url("' + imageUrl + '")';
+                    atom.style.backgroundPosition = "center center";
+                    atom.style.backgroundSize = "cover";
+                    atom.style.backgroundRepeat = "no-repeat";
+                  }
+
                   function setCardHref(record, shapeId, href) {
                     const link = record.querySelector(
                       '[data-elem-id="' + shapeId + '"] a.tn-atom',
@@ -26217,6 +26280,26 @@ ${el.id} {
                       badgeClone.querySelector(".tn-atom").textContent =
                         config.badge;
                     }
+
+                    const imageClone = Array.from(cloneMap.values()).find(
+                      function (node) {
+                        return (
+                          node.classList &&
+                          node.classList.contains("image-card")
+                        );
+                      },
+                    );
+                    if (imageClone) {
+                      const imageAtom = imageClone.querySelector(".tn-atom");
+                      const imageUrl = HOME_PROGRAM_IMAGES[config.title];
+                      if (imageAtom && imageUrl) {
+                        imageAtom.style.backgroundImage =
+                          'url("' + imageUrl + '")';
+                        imageAtom.style.backgroundPosition = "center center";
+                        imageAtom.style.backgroundSize = "cover";
+                        imageAtom.style.backgroundRepeat = "no-repeat";
+                      }
+                    }
                   }
 
                   function toggleQuizCard(record, desktop) {
@@ -26335,6 +26418,13 @@ ${el.id} {
                     if (!record) return;
 
                     buildMobileProgramCards(record);
+                    ORIGINAL_PROGRAM_IMAGE_IDS.forEach(function (config) {
+                      setImageByElemId(
+                        record,
+                        config.imageCardId,
+                        HOME_PROGRAM_IMAGES[config.title],
+                      );
+                    });
                     PROGRAM_CARD_UPDATES.forEach(function (config) {
                       applyProgramCardUpdate(record, config);
                     });
