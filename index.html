@@ -7393,6 +7393,41 @@ ${el.id} {
                     homeHeaderLogo.src = "home-header-logo.svg";
                   }
 
+                  const homepageProgramRoutes = {
+                    "Software Engineering": "/software-engineer/index.html",
+                    "Cloud Engineering": "/cloud-engineering/index.html",
+                    "Cybersecurity Engineering":
+                      "/cybersecurity-engineering/index.html",
+                    "Blockchain Engineering":
+                      "/blockchain-engineering/index.html",
+                    "Product Design": "/product-design/index.html",
+                    "Data Analytics": "/data-analytics/index.html",
+                    "Digital Marketing": "/digital-marketing/index.html",
+                    "Artificial Intelligence (AI)":
+                      "/artificial-intelligence/index.html",
+                    "Project Management": "/project-management/index.html",
+                    "Product Management": "/product-management/index.html",
+                  };
+
+                  const normalizeProgramLabel = (text) =>
+                    (text || "").replace(/\s+/g, " ").trim();
+
+                  document.addEventListener(
+                    "click",
+                    (event) => {
+                      const link = event.target.closest("#header a");
+                      if (!link) return;
+
+                      const label = normalizeProgramLabel(link.textContent);
+                      const href = homepageProgramRoutes[label];
+                      if (!href) return;
+
+                      event.preventDefault();
+                      event.stopPropagation();
+                      window.location.href = href;
+                    },
+                    true,
+                  );
                   // Keep the offer block in code for later, but do not show it now.
                   // mountOffer("#offer", { popupForm: "#offer-popup-form" })
                 });
@@ -21244,7 +21279,7 @@ ${el.id} {
               data-field-widthmode-res-768-value="fixed"
               data-field-heightmode-res-768-value="fixed"
             >
-              <a class="tn-atom" href="bi/index.html" target="_blank"> </a>
+              <a class="tn-atom" href="data-analytics/index.html" target="_blank"> </a>
             </div>
             <div
               class="t396__elem tn-elem tn-elem__10750040311741342728136"
@@ -22710,7 +22745,7 @@ ${el.id} {
               data-field-widthmode-res-768-value="fixed"
               data-field-heightmode-res-768-value="fixed"
             >
-              <a class="tn-atom" href="uxui-design/index.html" target="_blank">
+              <a class="tn-atom" href="cloud-engineering/index.html" target="_blank">
               </a>
             </div>
             <div
@@ -23194,7 +23229,7 @@ ${el.id} {
             >
               <a
                 class="tn-atom"
-                href="ai-automation/index.html"
+                href="product-design/index.html"
                 target="_blank"
               >
               </a>
@@ -23902,7 +23937,7 @@ ${el.id} {
             >
               <a
                 class="tn-atom"
-                href="cybersecurity/index.html"
+                href="cybersecurity-engineering/index.html"
                 target="_blank"
               >
               </a>
@@ -25925,7 +25960,7 @@ ${el.id} {
                         "How to derive actionable insights from data",
                         "Statistical analysis and probability",
                       ],
-                      href: "bi/index.html",
+                      href: "data-analytics/index.html",
                     },
                     {
                       badge: "AI tools & risks in cyber defense",
