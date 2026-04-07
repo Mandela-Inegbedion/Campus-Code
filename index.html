@@ -40927,8 +40927,8 @@ ${el.id} {
                       "@type": "ImageObject",
                       "@id": "https://tripleten.com/",
                       "inLanguage": "en-US",
-                      "url": "https://tripleten.com/usa-assets/usa-main/tild6136-3734-4462-b035-653533353336__group_2087325852_1.png",
-                      "contentUrl": "https://tripleten.com/usa-assets/usa-main/tild6136-3734-4462-b035-653533353336__group_2087325852_1.png",
+                      "url": "software-engineer/custom-images/advisors-trio.png",
+                      "contentUrl": "software-engineer/custom-images/advisors-trio.png",
                       "width": "404",
                       "height": "156"
                     },
@@ -42456,7 +42456,42 @@ ${el.id} {
       data-cf-beacon='{"rayId":"9596fec78afa04a0","version":"2025.6.2","serverTiming":{"name":{"cfExtPri":true,"cfEdge":true,"cfOrigin":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"5b2dbb67681344b3ad910b697026f867","b":1}'
       crossorigin="anonymous"
     ></script>
-  </body>
+  
+<script>
+(function () {
+  const advisorSrc = 'software-engineer/custom-images/advisors-trio.png';
+  function swapAdvisorImages(root) {
+    const scope = root && root.querySelectorAll ? root : document;
+    scope.querySelectorAll('img[alt="Sales Image"]').forEach((img) => {
+      if (img.getAttribute('src') !== advisorSrc) {
+        img.setAttribute('src', advisorSrc);
+      }
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      swapAdvisorImages(document);
+    });
+  } else {
+    swapAdvisorImages(document);
+  }
+  const observer = new MutationObserver((mutations) => {
+    for (const mutation of mutations) {
+      mutation.addedNodes.forEach((node) => {
+        if (node.nodeType === 1) {
+          if (node.matches && node.matches('img[alt="Sales Image"]')) {
+            node.setAttribute('src', advisorSrc);
+          } else {
+            swapAdvisorImages(node);
+          }
+        }
+      });
+    }
+  });
+  observer.observe(document.documentElement, { childList: true, subtree: true });
+})();
+</script>
+</body>
   <!-- Mirrored from tripleten.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Jul 2025 14:17:01 GMT -->
 
   <script id="cc-disable-home-video">
