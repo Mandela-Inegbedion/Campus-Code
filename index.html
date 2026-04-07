@@ -26281,6 +26281,15 @@ ${el.id} {
                         config.badge;
                     }
 
+                    if (
+                      (config.title === "Project Management" ||
+                        config.title === "Product Management") &&
+                      cloneShape
+                    ) {
+                      cloneShape.setAttribute("data-field-height-value", "422");
+                      cloneShape.style.height = "422px";
+                    }
+
                     const imageClone = Array.from(cloneMap.values()).find(
                       function (node) {
                         return (
@@ -26290,6 +26299,13 @@ ${el.id} {
                       },
                     );
                     if (imageClone) {
+                      if (
+                        config.title === "Project Management" ||
+                        config.title === "Product Management"
+                      ) {
+                        imageClone.style.display = "none";
+                        return;
+                      }
                       const imageAtom = imageClone.querySelector(".tn-atom");
                       const imageUrl = HOME_PROGRAM_IMAGES[config.title];
                       if (imageAtom && imageUrl) {
