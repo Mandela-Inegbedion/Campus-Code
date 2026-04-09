@@ -6,12 +6,12 @@
     "../usa-assets/software-engineer/tild3830-3166-4463-b136-666663393038__frame_2087328612.svg";
 
   var items = [
-    "<strong>Introduction to Software Engineering:</strong> Understand the software development life cycle and agile methodologies.",
-    "<strong>Frontend Development:</strong> Learn HTML, CSS, JavaScript, and frameworks like React and Next.js for creating interactive user interfaces.",
-    "<strong>Backend Development:</strong> Learn backend technologies such as Node.js, Django, and databases like SQL and NoSQL.",
-    "<strong>Software Testing and Debugging:</strong> Learn testing frameworks and debugging techniques to ensure your code is bug-free.",
-    "<strong>Real-World Project:</strong> Work on a capstone project that involves creating a fully functional software application.",
-    "<strong>Bootcamp Advantage:</strong> This bootcamp is uniquely designed to build you into a world class software engineer with a globally recognized certificate and job placement support.",
+    "<strong>Introduction to Product Management:</strong> Understanding the role of a product manager and the product lifecycle.",
+    "<strong>Market Research & User Needs Analysis:</strong> Conducting competitor analysis, customer interviews, and market validation.",
+    "<strong>Agile & Lean Product Development:</strong> Using frameworks like Scrum and Kanban to manage teams and workflows.",
+    "<strong>Product Strategy & Roadmap Planning:</strong> Defining a product vision and creating a structured roadmap.",
+    "<strong>Go-To-Market Strategy & Product Launch:</strong> Developing and executing a successful product launch strategy.",
+    "<strong>Bootcamp Advantage:</strong> This bootcamp is uniquely designed to build you into a world class product manager, with a globally recognized certificate and job placement support.",
   ];
 
   function ensureStyle() {
@@ -123,7 +123,7 @@
       '<div class="cc-se-ai-visual"><img src="' +
       heroImage +
       '" alt="" loading="lazy"></div>' +
-      '<div><p class="cc-se-ai-copy-title">Build real-world skills across frontend, backend, testing, and modern development practices.</p><p class="cc-se-ai-copy-title">Course Structure:</p><div class="cc-se-ai-copy">' +
+      '<div><p class="cc-se-ai-copy-title"></p><p class="cc-se-ai-copy-title">Course Structure:</p><div class="cc-se-ai-copy">' +
       items
         .map(function (item) {
           return (
