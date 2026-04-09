@@ -118,7 +118,7 @@
     record.style.setProperty("display", "block", "important");
     record.innerHTML =
       '<div class="cc-se-ai-shell"><div class="cc-se-ai-card">' +
-      '<h2 class="cc-se-ai-heading"><span class="accent">Learn Software Engineering</span> with AI, the Right Way</h2>' +
+      '<h2 class="cc-se-ai-heading"><span class="accent">Learn Product Management</span> with AI, the Right Way</h2>' +
       '<aside class="cc-se-ai-bubble"><p>Software fundamentals and AI experience make you more valuable and job-market ready.</p><span class="big">78%</span><div class="small">of organizations already use AI**</div></aside>' +
       '<div class="cc-se-ai-visual"><img src="' +
       heroImage +
