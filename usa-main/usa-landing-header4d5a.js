@@ -5773,6 +5773,8 @@ var gn = (e2, L0, X) => (rc(e2, typeof L0 != "symbol" ? L0 + "" : L0, X), X);
         title: "Programs",
         children: [
           { title: "Software Engineering", href: "/software-engineer/index.html" },
+          { title: "software-engineer-test-1", href: "/software-engineer-test-1/index.html" },
+          { title: "software-engineer-test-2", href: "/software-engineer-test-2/index.html" },
           { title: "Cloud Engineering", href: "#" },
           { title: "Cybersecurity Engineering", href: "/cybersecurity/index.html" },
           { title: "Blockchain Engineering", href: "#" },
