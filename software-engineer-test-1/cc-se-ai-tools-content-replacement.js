@@ -134,7 +134,7 @@
           );
         })
         .join("") +
-      '</div><div class="cc-se-ai-sources">*Source: Developer Survey 2024&nbsp;&nbsp;&nbsp;&nbsp;**Source: Stanford HAI</div></div>' +
+      "</div></div>" +
       "</div></div>";
   }
 
